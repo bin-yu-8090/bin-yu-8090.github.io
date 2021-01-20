@@ -1,11 +1,7 @@
 import React, { Component } from 'react'
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {Grid} from '@material-ui/core';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
 import NavigationBar from '../components/navigationBar'
-
 import styled from 'styled-components'
 
 // define the style of the elements in this component using Styled.component

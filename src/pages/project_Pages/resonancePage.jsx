@@ -1,7 +1,13 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
+
+import resonance_img_1 from '../../images/reSonance/resonance_closeUp.JPG'; 
+import resonance_img_2 from '../../images/reSonance/resonance_system.png'; 
+import resonance_img_3 from '../../images/reSonance/resonance_lab.png'; 
+import resonance_img_4 from '../../images/reSonance/resonance_psv_setup.png'; 
+import resonance_img_5 from '../../images/reSonance/resonance_psv.JPG'; 
 
 const Mainpage = styled.div`
 background-color: #F2F2F2;
@@ -59,7 +65,7 @@ export const  ResonancePage= ()=> {
             <Grid container spacing={2}>
             <Grid item xs={12}>
               <ProjectTitle>
-                RESONANCE
+                RESonance
               </ProjectTitle>
             </Grid>
             <Grid item xs={12}>
@@ -79,7 +85,7 @@ export const  ResonancePage= ()=> {
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/reSonance/resonance_closeUp.JPG')} width="77%"/>
+              <img src={resonance_img_1} width="77%"/>
             </div>
             </Grid>
 
@@ -93,7 +99,7 @@ export const  ResonancePage= ()=> {
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/reSonance/resonance_system.png')} width="77%"/>
+              <img src={resonance_img_2} width="77%"/>
             </div>
             </Grid>
                     
@@ -107,7 +113,7 @@ export const  ResonancePage= ()=> {
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/reSonance/resonance_lab.png')} width="77%"/>
+              <img src={resonance_img_3} width="77%"/>
             </div>
             </Grid>
 
@@ -121,14 +127,14 @@ export const  ResonancePage= ()=> {
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/reSonance/resonance_psv_setup.png')} width="77%"/>
+              <img src={resonance_img_4} width="77%"/>
             </div>
             </Grid>
 
 
             <Grid item xs={12}>
               <div style={{textAlign:'center'}}>
-                <img src={require('../../images/reSonance/resonance_psv.JPG')} width="77%"/>
+                <img src={resonance_img_5} width="77%"/>
               </div>
             </Grid>
 

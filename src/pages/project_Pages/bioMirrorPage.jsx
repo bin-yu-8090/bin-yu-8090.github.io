@@ -1,7 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
+
+// import images in this page
+import biomirror_1_gif from '../../images/bioMirror/Biomirror_2_small.gif'; // Tell Webpack this JS file uses this image
+import biomirror_2_gif from '../../images/bioMirror/Biomirror_1_2_small.gif'; // Tell Webpack this JS file uses this image
+import biomirror_3_gif from '../../images/bioMirror/Biomirror_3_small.gif'; // Tell Webpack this JS file uses this image
+import biomirror_s2_img from '../../images/bioMirror/BioMirror_S1.jpg'; // Tell Webpack this JS file uses this image
+import biomirror_s3_img from '../../images/bioMirror/BioMirror_S2.jpg'; // Tell Webpack this JS file uses this image
+import biomirror_milan_img from '../../images/bioMirror/BioMirror_Milan.jpg'; // Tell Webpack this JS file uses this image
+
 
 const Mainpage = styled.div`
 background-color: #F2F2F2;
@@ -59,7 +68,7 @@ export const BioMirrorPage = ()=> {
             <Grid container spacing={2}>
             <Grid item xs={12}>
               <ProjectTitle>
-                BIOMIRROR
+                BioMirror
               </ProjectTitle>
             </Grid>
             <Grid item xs={12}>
@@ -87,37 +96,37 @@ export const BioMirrorPage = ()=> {
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/bioMirror/Biomirror_2_small.gif')}/>
+              <img src={biomirror_1_gif}/>
             </div>
             </Grid>
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/bioMirror/Biomirror_1_2_small.gif')}/>
+              <img src={biomirror_2_gif}/>
             </div>
             </Grid>
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/bioMirror/Biomirror_3_small.gif')}/>
+              <img src={biomirror_3_gif}/>
             </div>
             </Grid>
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/bioMirror/BioMirror_S1.jpg')} width="77%" />
+              <img src={biomirror_s2_img} width="77%" />
             </div>
             </Grid>
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/bioMirror/BioMirror_S2.jpg')} width="77%" />
+              <img src={biomirror_s3_img} width="77%" />
             </div>
             </Grid>
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/bioMirror/BioMirror_Milan.jpg')} width="77%" />
+              <img src={biomirror_milan_img} width="77%" />
             </div>
             </Grid>
 

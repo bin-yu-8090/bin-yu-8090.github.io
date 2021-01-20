@@ -1,7 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
+
+import heartcalligraphy_img_1 from '../../images/heartCalligraphy/Heart-Calligraphy_charcoal.jpg'; 
+import heartcalligraphy_img_2 from '../../images/heartCalligraphy/Heart-Calligraphy_gouache.jpg'; 
+import heartcalligraphy_img_3 from '../../images/heartCalligraphy/Heart-Calligraphy_Ink-dots.jpg'; 
+import heartcalligraphy_img_4 from '../../images/heartCalligraphy/HC_1.jpg'; 
+import heartcalligraphy_img_5 from '../../images/heartCalligraphy/HC_2.jpg'; 
+import heartcalligraphy_img_6 from '../../images/heartCalligraphy/HC_3.jpg'; 
+import heartcalligraphy_img_7 from '../../images/heartCalligraphy/HC_4.jpg'; 
+
 
 const Mainpage = styled.div`
 background-color: #F2F2F2;
@@ -59,7 +68,7 @@ export const HeartCalligraphyPage = ()=> {
             <Grid container spacing={2}>
             <Grid item xs={12}>
               <ProjectTitle>
-                HEART CALLIGRAPHY
+                Heart Calligraphy
               </ProjectTitle>
             </Grid>
             <Grid item xs={12}>
@@ -81,44 +90,44 @@ export const HeartCalligraphyPage = ()=> {
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/heartCalligraphy/Heart-Calligraphy_charcoal.jpg')} width='77%'/>
+              <img src={heartcalligraphy_img_1} width='77%'/>
             </div>
             </Grid>
 
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/heartCalligraphy/Heart-Calligraphy_gouache.jpg')} width='77%'/>
+              <img src={heartcalligraphy_img_2} width='77%'/>
             </div>
             </Grid>
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/heartCalligraphy/Heart-Calligraphy_Ink-dots.jpg')} width='77%'/>
+              <img src={heartcalligraphy_img_3} width='77%'/>
             </div>
             </Grid>
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/heartCalligraphy/HC_1.jpg')} width='77%'/>
+              <img src={heartcalligraphy_img_4} width='77%'/>
             </div>
             </Grid>
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/heartCalligraphy/HC_2.jpg')} width='77%'/>
+              <img src={heartcalligraphy_img_5} width='77%'/>
             </div>
             </Grid>
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/heartCalligraphy/HC_3.jpg')} width='77%'/>
+              <img src={heartcalligraphy_img_6} width='77%'/>
             </div>
             </Grid>
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/heartCalligraphy/HC_4.jpg')} width='77%'/>
+              <img src={heartcalligraphy_img_7} width='77%'/>
             </div>
             </Grid>
 

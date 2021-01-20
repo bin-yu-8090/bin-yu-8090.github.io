@@ -3,6 +3,34 @@ import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
 
+import heartbloom_img_1 from '../../images/heartBloom/heartbloom_1.gif'; 
+import heartbloom_img_2 from '../../images/heartBloom/heartbloom_2.gif'; 
+import heartbloom_img_3 from '../../images/heartBloom/heartbloom_3.gif'; 
+import heartbloom_img_4 from '../../images/heartBloom/heartbloom_4.gif'; 
+import heartbloom_img_5 from '../../images/heartBloom/heartbloom_red_flower_drawing.JPG'; 
+import heartbloom_img_6 from '../../images/heartBloom/heartbloom_flowers.jpg'; 
+import heartbloom_img_7 from '../../images/heartBloom/HeartBloom_dubai1.jpg'; 
+import heartbloom_img_8 from '../../images/heartBloom/HeartBloom_dubai2.jpg'; 
+import heartbloom_img_9 from '../../images/heartBloom/HeartBloom_dubai3.jpg'; 
+import heartbloom_img_10 from '../../images/heartBloom/HeartBloom_dubai4.JPG'; 
+import heartbloom_img_11 from '../../images/heartBloom/heartbloom_children_1.JPG'; 
+import heartbloom_img_12 from '../../images/heartBloom/heartbloom_children_2.JPG'; 
+import heartbloom_img_13 from '../../images/heartBloom/heartbloom_children_3.JPG'; 
+import heartbloom_img_14 from '../../images/heartBloom/heartbloom_children_4.png'; 
+import heartbloom_img_15 from '../../images/heartBloom/heartbloom_children_5.png'; 
+import heartbloom_img_16 from '../../images/heartBloom/HeartBloom_collective_drawing.png'; 
+import heartbloom_img_17 from '../../images/heartBloom/HeartBloom_DDW_6.jpg'; 
+import heartbloom_img_18 from '../../images/heartBloom/HeartBloom_DDW_7.jpg'; 
+import heartbloom_img_19 from '../../images/heartBloom/HeartBloom_DDW_8.jpg'; 
+import heartbloom_img_20 from '../../images/heartBloom/HeartBloom_DDW_5.jpg'; 
+import heartbloom_img_21 from '../../images/heartBloom/HeartBloom_DDW_1.jpg'; 
+import heartbloom_img_22 from '../../images/heartBloom/HeartBloom_DDW_2.jpg'; 
+import heartbloom_img_23 from '../../images/heartBloom/HeartBloom_DDW_3.jpg'; 
+import heartbloom_img_24 from '../../images/heartBloom/HeartBloom_DDW_4.jpg'; 
+import heartbloom_img_25 from '../../images/heartBloom/HeartBloom_DDW_9.jpg'; 
+import heartbloom_img_26 from '../../images/heartBloom/HeartBloom_DDW_10.jpg'; 
+
+
 const Mainpage = styled.div`
 background-color: #F2F2F2;
 min-height: 100vh;
@@ -84,7 +112,7 @@ export const HeartBloomPage = ()=> {
             <Grid container spacing={2}>
             <Grid item xs={12}>
               <ProjectTitle>
-                HEART BLOOM
+                HeartBloom
               </ProjectTitle>
             </Grid>
             <Grid item xs={12}>
@@ -143,16 +171,16 @@ export const HeartBloomPage = ()=> {
             <MultipleImgsFrame >
               <Grid container spacing={1}>
                 <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/heartbloom_1.gif')} width='100%' />
+                  <img src={heartbloom_img_1} width='100%' />
                 </Grid>
                 <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/heartbloom_2.gif')}  width='100%'/>
+                  <img src={heartbloom_img_2}  width='100%'/>
                 </Grid>
                 <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/heartbloom_3.gif')}  width='100%'/>
+                  <img src={heartbloom_img_3}  width='100%'/>
                 </Grid>
                 <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/heartbloom_4.gif')}  width='100%'/>
+                  <img src={heartbloom_img_4}  width='100%'/>
                 </Grid>
               </Grid>            
             </MultipleImgsFrame>
@@ -160,7 +188,7 @@ export const HeartBloomPage = ()=> {
 
             <Grid item xs={12}>
              <div style={{textAlign:'center'}}>
-               <img src={require('../../images/heartBloom/heartbloom_red_flower_drawing.JPG')} width='77%'/>
+               <img src={heartbloom_img_5} width='77%'/>
               </div>
              </Grid>
 
@@ -171,7 +199,7 @@ export const HeartBloomPage = ()=> {
             </ProjectDiscriptionText>
      
              <div style={{textAlign:'center'}}>
-               <img src={require('../../images/heartBloom/heartbloom_flowers.jpg')} width='77%'/>
+               <img src={heartbloom_img_6} width='77%'/>
               </div>
              </Grid>
 
@@ -201,16 +229,16 @@ export const HeartBloomPage = ()=> {
               <MultipleImgsFrame >
                 <Grid container spacing={1}>
                   <Grid item xs={6}>
-                    <img src={require('../../images/heartBloom/HeartBloom_dubai1.jpg')} width='100%' />
+                    <img src={heartbloom_img_7} width='100%' />
                   </Grid>
                   <Grid item xs={6}>
-                    <img src={require('../../images/heartBloom/HeartBloom_dubai2.jpg')}  width='100%'/>
+                    <img src={heartbloom_img_8}  width='100%'/>
                   </Grid>
                   <Grid item xs={6}>
-                    <img src={require('../../images/heartBloom/HeartBloom_dubai3.jpg')}  width='100%'/>
+                    <img src={heartbloom_img_9}  width='100%'/>
                   </Grid>
                   <Grid item xs={6}>
-                    <img src={require('../../images/heartBloom/HeartBloom_dubai4.JPG')}  width='100%'/>
+                    <img src={heartbloom_img_10}  width='100%'/>
                   </Grid>
                 </Grid>            
               </MultipleImgsFrame>
@@ -236,16 +264,16 @@ export const HeartBloomPage = ()=> {
               <MultipleImgsFrame >
                 <Grid container spacing={1}>
                   <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/heartbloom_children_1.JPG')} width='100%'/>
+                  <img src={heartbloom_img_11} width='100%'/>
                   </Grid>
                   <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/heartbloom_children_3.JPG')} width='100%'/>
+                  <img src={heartbloom_img_12} width='100%'/>
                   </Grid>
                   <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/heartbloom_children_2.JPG')} width='100%'/>
+                  <img src={heartbloom_img_13} width='100%'/>
                   </Grid>
                   <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/heartbloom_children_4.png')} width='100%'/>
+                  <img src={heartbloom_img_14} width='100%'/>
                   </Grid>
                 </Grid>            
               </MultipleImgsFrame>
@@ -253,7 +281,7 @@ export const HeartBloomPage = ()=> {
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/heartBloom/heartbloom_children_5.png')} width='77%'/>
+              <img src={heartbloom_img_15} width='77%'/>
             </div>
             </Grid>
 
@@ -268,7 +296,7 @@ export const HeartBloomPage = ()=> {
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/heartBloom/HeartBloom_collective_drawing.png')} width='77%'/>
+              <img src={heartbloom_img_16} width='77%'/>
             </div>
             </Grid>
 
@@ -306,16 +334,16 @@ export const HeartBloomPage = ()=> {
               <MultipleImgsFrame >
                 <Grid container spacing={1}>
                   <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/HeartBloom_DDW_6.jpg')} width='100%'/>
+                  <img src={heartbloom_img_17} width='100%'/>
                   </Grid>
                   <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/HeartBloom_DDW_7.jpg')} width='100%'/>
+                  <img src={heartbloom_img_18} width='100%'/>
                   </Grid>
                   <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/HeartBloom_DDW_8.jpg')} width='100%'/>
+                  <img src={heartbloom_img_19} width='100%'/>
                   </Grid>
                   <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/HeartBloom_DDW_5.jpg')} width='100%'/>
+                  <img src={heartbloom_img_20} width='100%'/>
                   </Grid>
                 </Grid>            
               </MultipleImgsFrame>
@@ -326,16 +354,16 @@ export const HeartBloomPage = ()=> {
               <MultipleImgsFrame >
                 <Grid container spacing={1}>
                   <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/HeartBloom_DDW_1.jpg')} width='100%'/>
+                  <img src={heartbloom_img_21} width='100%'/>
                   </Grid>
                   <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/HeartBloom_DDW_2.jpg')} width='100%'/>
+                  <img src={heartbloom_img_22} width='100%'/>
                   </Grid>
                   <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/HeartBloom_DDW_3.jpg')} width='100%'/>
+                  <img src={heartbloom_img_23} width='100%'/>
                   </Grid>
                   <Grid item xs={6}>
-                  <img src={require('../../images/heartBloom/HeartBloom_DDW_4.jpg')} width='100%'/>
+                  <img src={heartbloom_img_24} width='100%'/>
                   </Grid>
                 </Grid>            
               </MultipleImgsFrame>
@@ -344,12 +372,12 @@ export const HeartBloomPage = ()=> {
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/heartBloom/HeartBloom_DDW_9.jpg')} width='77%'/>
+              <img src={heartbloom_img_25} width='77%'/>
             </div>
             </Grid>
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/heartBloom/HeartBloom_DDW_10.jpg')} width='77%'/>
+              <img src={heartbloom_img_26} width='77%'/>
             </div>
             </Grid>
 

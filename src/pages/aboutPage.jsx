@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import NavigationBar from '../components/navigationBar'
 
+import profile_img from '../images/by_profile_photo.png'; // Tell Webpack this JS file uses this image
+
 const Mainpage = styled.div`
 background-color: #282947;
 min-height: 100vh;
@@ -53,7 +55,7 @@ export const AboutPage = ()=> {
 
           <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../images/by_profile_photo.png')}  height="180"  style={{ marginLeft: '20px', marginRight: '20px'}}/>
+              <img src={profile_img}  height="180"  style={{ marginLeft: '20px', marginRight: '20px'}}/>
             </div>
           </Grid>
 

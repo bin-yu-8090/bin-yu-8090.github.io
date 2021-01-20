@@ -4,7 +4,6 @@ import Grid from '@material-ui/core/Grid'
 import NavigationBar from '../components/navigationBar'
 import Carousel, { Modal, ModalGateway } from "react-images";
 import Gallery from "react-photo-gallery";
-
 import {PHOTOES} from '../images/photoLinks' 
 
 
@@ -12,7 +11,6 @@ const Mainpage = styled.div`
 background-color: '#F5F5F5';
 min-height: 100vh;
 `;
-
 
 export function PhotographyPage (props){
 

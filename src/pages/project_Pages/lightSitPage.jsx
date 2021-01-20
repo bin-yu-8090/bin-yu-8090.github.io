@@ -1,7 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
+
+import lightsit_img_1 from '../../images/lightSit/LightSit_pics-00.jpg'; 
+import lightsit_img_2 from '../../images/lightSit/system.png'; 
+import lightsit_img_3 from '../../images/lightSit/LightSit_pics-02.jpg'; 
+import lightsit_img_4 from '../../images/lightSit/intervention_mode.jpg'; 
+import lightsit_img_5 from '../../images/lightSit/LightSit_pics-03.jpg'; 
+import lightsit_img_6 from '../../images/lightSit/stretch_mode.jpg'; 
+import lightsit_img_7 from '../../images/lightSit/LightSit_pics-04.jpg'; 
+import lightsit_img_8 from '../../images/lightSit/breathing_mode.jpg'; 
 
 const Mainpage = styled.div`
 background-color: #F2F2F2;
@@ -69,7 +78,7 @@ export const LightSitPage = ()=> {
             <Grid container spacing={2}>
             <Grid item xs={12}>
               <ProjectTitle>
-                LIGHTSIT
+                LightSit
               </ProjectTitle>
             </Grid>
             <Grid item xs={12}>
@@ -91,82 +100,82 @@ export const LightSitPage = ()=> {
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/lightSit/LightSit_pics-00.jpg')} width='77%'/>
+              <img src={lightsit_img_1} width='77%'/>
             </div>
             </Grid>
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
-              <img src={require('../../images/lightSit/system.png')} width='77%'/>
+              <img src={lightsit_img_2} width='77%'/>
             </div>
             </Grid>
 
             <Grid item xs={12}>
-            <ProjectDiscriptionText>
-            Althrough the new way of working has many advantages, the more intelligent use of time, 
-            space and resources often results in less exercise and more stress.
-            LightSit offers a solution. A cushion fille
-            </ProjectDiscriptionText>
+              <ProjectDiscriptionText>
+                Althrough the new way of working has many advantages, the more intelligent use of time, 
+                space and resources often results in less exercise and more stress.
+                LightSit offers a solution. A cushion fille
+              </ProjectDiscriptionText>
             </Grid>
 
             <Grid item xs={12}>
-            <div style={{textAlign:'center'}}>
-              <img src={require('../../images/lightSit/LightSit_pics-02.jpg')} width='77%'/>
-            </div>
+              <div style={{textAlign:'center'}}>
+                <img src={lightsit_img_3} width='77%'/>
+              </div>
             </Grid>
 
             <Grid item xs={12}>
-            <div style={{textAlign:'center'}}>
-              <img src={require('../../images/lightSit/intervention_mode.jpg')} width='77%'/>
-            </div>
+              <div style={{textAlign:'center'}}>
+                <img src={lightsit_img_4} width='77%'/>
+              </div>
             </Grid>
 
             <Grid item xs={12}>
-            <ProjectDiscriptionText>
-            Althrough the new way of working has many advantages, the more intelligent use of time, 
-            space and resources often results in less exercise and more stress.
-            LightSit offers a solution. A cushion fille
-            </ProjectDiscriptionText>
+              <ProjectDiscriptionText>
+                Althrough the new way of working has many advantages, the more intelligent use of time, 
+                space and resources often results in less exercise and more stress.
+                LightSit offers a solution. A cushion fille
+              </ProjectDiscriptionText>
             </Grid>
 
             <Grid item xs={12}>
-            <div style={{textAlign:'center'}}>
-              <img src={require('../../images/lightSit/LightSit_pics-03.jpg')} width='77%'/>
-            </div>
+              <div style={{textAlign:'center'}}>
+                <img src={lightsit_img_5} width='77%'/>
+              </div>
             </Grid>
 
             <Grid item xs={12}>
-            <div style={{textAlign:'center'}}>
-              <img src={require('../../images/lightSit/stretch_mode.jpg')} width='77%'/>
-            </div>
+              <div style={{textAlign:'center'}}>
+                <img src={lightsit_img_6} width='77%'/>
+              </div>
             </Grid>
 
             <Grid item xs={12}>
-            <ProjectDiscriptionText>
-            Althrough the new way of working has many advantages, the more intelligent use of time, 
-            space and resources often results in less exercise and more stress.
-            LightSit offers a solution. A cushion fille
-            </ProjectDiscriptionText>
+              <ProjectDiscriptionText>
+                Althrough the new way of working has many advantages, the more intelligent use of time, 
+                space and resources often results in less exercise and more stress.
+                LightSit offers a solution. A cushion fille
+              </ProjectDiscriptionText>
             </Grid>
 
             <Grid item xs={12}>
-            <div style={{textAlign:'center'}}>
-              <img src={require('../../images/lightSit/LightSit_pics-04.jpg')} width='77%'/>
-            </div>
+              <div style={{textAlign:'center'}}>
+                <img src={lightsit_img_7} width='77%'/>
+              </div>
             </Grid>
 
             <Grid item xs={12}>
-            <div style={{textAlign:'center'}}>
-              <img src={require('../../images/lightSit/breathing_mode.jpg')} width='77%'/>
-            </div>
+              <div style={{textAlign:'center'}}>
+                <img src={lightsit_img_8} width='77%'/>
+              </div>
             </Grid>
 
             <Grid item xs={12}>
-            <ProjectDiscriptionText>
-            Althrough the new way of working has many advantages, the more intelligent use of time, 
-            space and resources often results in less exercise and more stress.
-            LightSit offers a solution. A cushion fille
-            </ProjectDiscriptionText>
+              <ProjectDiscriptionText>
+              Althrough the new way of working has many advantages, the more intelligent use of time, 
+              space and resources often results in less exercise and more stress.
+              LightSit offers a solution. A cushion fille
+              </ProjectDiscriptionText>
             </Grid>
 
 

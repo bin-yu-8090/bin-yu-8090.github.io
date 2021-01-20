@@ -62,7 +62,7 @@ export const ProjecstPage = ()=> {
         <Grid item xs={4}> 
          <ProjectCard
               image={Resonance_IMAGE}
-              name={"Resonance"}
+              name={"RESonance"}
               description={"In this work, we investigate a biofeedback environment that enhances the self-awareness and self-regulation of its inhabitant for better health."}
               linkto={"/projects/Resonance"}
               keypwords={['Ambient Interface','Immersive Experience','Biofeedback']}
