@@ -1,0 +1,97 @@
+
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../font/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../font/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../font/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Nunito-Italic";
+  src: url("../font/Nunito-Italic.ttf");
+}
+
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../font/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../font/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Nutito-Regular";
+  src: url("../font/Nunito-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Nutito-Bold";
+  src: url("../font/Nunito-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Nutito-Light";
+  src: url("../font/Nunito-Light.ttf");
+}
+
+.strongtext{
+  font-family:'Roboto-Medium'
+}
+.journalname{
+  font-family:'Nunito-Italic'
+}
+
+/* mouse over link */
+a:hover {
+  color:#FAE058;
+  text-decoration: none;
+}
+
+/* selected link */
+a {
+  color: #68CAFA;
+}
+* {
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+
+.navigationBarLink{
+  color:#FFFFFF;
+  padding-right: 15px;
+}
+
+.navigationBarLink:hover{
+  color:#68CAFA;
+}
+
+
+.navigationBarLink_Light{
+  color:#404040;
+  padding-right: 15px;
+}
+
+.navigationBarLink_Light:hover{
+  color:#63BCE5;
+}
+
+.rowC{
+  display:flex; 
+  flex-direction:row;
+  padding-top:2em}
