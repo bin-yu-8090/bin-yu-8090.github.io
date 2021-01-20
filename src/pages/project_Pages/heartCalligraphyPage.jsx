@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
+import NavigationBar from '../../components/navigationBar'
 
 import heartcalligraphy_img_1 from '../../images/heartCalligraphy/Heart-Calligraphy_charcoal.jpg'; 
 import heartcalligraphy_img_2 from '../../images/heartCalligraphy/Heart-Calligraphy_gouache.jpg'; 
@@ -63,7 +64,7 @@ export const HeartCalligraphyPage = ()=> {
    return (     
       <Mainpage>
         <NavigationBar theme={'light'}/>
-        
+
         <Grid container spacing={2}>
           <Grid item xs={3}></Grid>
           <Grid item xs={6}>

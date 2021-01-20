@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
+import NavigationBar from '../../components/navigationBar'
 
 import lightsit_img_1 from '../../images/lightSit/LightSit_pics-00.jpg'; 
 import lightsit_img_2 from '../../images/lightSit/system.png'; 
@@ -73,7 +74,7 @@ export const LightSitPage = ()=> {
    return (     
       <Mainpage>
         <NavigationBar theme={'light'}/>
-        
+
         <Grid container spacing={2}>
           <Grid item xs={3}></Grid>
           <Grid item xs={6}>

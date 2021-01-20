@@ -1,7 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
+import NavigationBar from '../../components/navigationBar'
 
 import heartbloom_img_1 from '../../images/heartBloom/heartbloom_1.gif'; 
 import heartbloom_img_2 from '../../images/heartBloom/heartbloom_2.gif'; 
@@ -107,7 +108,7 @@ export const HeartBloomPage = ()=> {
    return (     
       <Mainpage>
         <NavigationBar theme={'light'}/>
-        
+
         <Grid container spacing={2}>
           <Grid item xs={3}></Grid>
           <Grid item xs={6}>

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
+import NavigationBar from '../../components/navigationBar'
 
 import resonance_img_1 from '../../images/reSonance/resonance_closeUp.JPG'; 
 import resonance_img_2 from '../../images/reSonance/resonance_system.png'; 
@@ -59,7 +60,7 @@ const ProjectDiscriptionText= styled.p`
 export const  ResonancePage= ()=> { 
    return (     
       <Mainpage>
-      
+
         <NavigationBar theme={'light'}/>
 
         <Grid container spacing={2}>

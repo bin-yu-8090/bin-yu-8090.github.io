@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
+import NavigationBar from '../../components/navigationBar'
 
 // import images in this page
 import biomirror_1_gif from '../../images/bioMirror/Biomirror_2_small.gif'; // Tell Webpack this JS file uses this image
@@ -63,7 +64,7 @@ export const BioMirrorPage = ()=> {
    return (     
       <Mainpage>
         <NavigationBar theme={'light'}/>
-        
+
         <Grid container spacing={2}>
           <Grid item xs={3}></Grid>
           <Grid item xs={6}>
