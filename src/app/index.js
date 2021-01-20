@@ -9,7 +9,6 @@ function App() {
 
     return (
         <Router>
-         
                 <Route path="/" exact component={IntroPage}/>
                 <Route path="/about" exact component={AboutPage}/>
                 <Route path="/photography" exact component={PhotographyPage}/>
@@ -19,9 +18,7 @@ function App() {
                 <Route path="/projects/HeartCalligraphy" exact component={HeartCalligraphyPage}/>
                 <Route path="/projects/LightSit" exact component={LightSitPage}/>
                 <Route path="/projects/Resonance" exact component={ResonancePage}/>
-                <Route path="/projects/HeartBloom" exact component={HeartBloomPage}/>
-               
-                
+                <Route path="/projects/HeartBloom" exact component={HeartBloomPage}/>      
         </Router>
 
     )
