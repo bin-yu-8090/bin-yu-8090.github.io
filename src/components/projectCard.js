@@ -87,7 +87,7 @@ export default function ProjectCard(props) {
   return (
     <ThemeProvider theme={theme}>
     <Card className={classes.root}>
-    <Link to={props.linkto} target="_blank"> 
+    <Link to={props.linkto}> 
       <CardActionArea 
          classes={{
           root: classes.actionArea,
