@@ -106,6 +106,8 @@ const ProjectEndText= styled.p`
 export const HeartBloomPage = ()=> { 
    return (     
       <Mainpage>
+        <NavigationBar theme={'light'}/>
+        
         <Grid container spacing={2}>
           <Grid item xs={3}></Grid>
           <Grid item xs={6}>
