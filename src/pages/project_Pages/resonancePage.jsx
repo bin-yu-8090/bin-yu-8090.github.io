@@ -17,7 +17,7 @@ min-height: 100vh;
 
 const ProjectTitle = styled.h1`
   font-size: 4em;
-  color: #7F7F7F;
+  color: #262626;
   padding-top:1em;
   text-align: center;
   font-family: 'Nutito-Regular';
@@ -74,16 +74,16 @@ export const  ResonancePage= ()=> {
             </Grid>
             <Grid item xs={12}>
               <ProjectSubTitle>
-              A space responds to your body
+              A Biofeedback Mind-Room for Immersive Relaxation Experience
               </ProjectSubTitle>
             </Grid>
             <Grid item xs={12}>
               <ProjectIntroText>
               RESonance is a lightweight, room-scale audio-visual biofeedback system for relaxation training. 
-              RESonance harnesses ambient lights and nature sounds to create an immersive environment where users can know about their physiological states and activities in real time. 
-              On one hand, as a biofeedback interface, RESonance presents heart rate viability (HRV) data to help the users learn and practice self-regulation (i.e., resonance breathing) for relaxation. 
+              RESonance harnesses ambient lights and natural sound to create an immersive environment where users can know about their physiological states and activities in real-time. 
+              On the one hand, as a biofeedback interface, RESonance presents heart rate variability (HRV) data to help the users learn and practice self-regulation (i.e., resonance breathing) for relaxation. 
               The design principle of ‘natural coupling’ was employed in interface design to provide a gentle-yet-intuitive representation of biofeedback.  
-              On the other hand, we the stimuli of coloured light and nature sounds may lead to an enhanced relaxation effect. 
+              On the other hand, the stimuli of light and soundscape may lead to an enhanced relaxation effect.
               </ProjectIntroText>
             </Grid>
 

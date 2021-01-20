@@ -2,7 +2,7 @@
   "name": "bin-yu.com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://bin-yu-8090.github.io/",
+  "homepage": "http://bin-yu.com/",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@testing-library/jest-dom": "^5.11.4",

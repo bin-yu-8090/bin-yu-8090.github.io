@@ -39,7 +39,7 @@ min-height: 100vh;
 
 const ProjectTitle = styled.h1`
   font-size: 4em;
-  color: #000000;
+  color: #262626;
   padding-top:1em;
   text-align: center;
   font-family: 'Nutito-Regular';
