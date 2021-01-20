@@ -14,11 +14,11 @@ function App() {
                 <Route path="/photography" exact component={PhotographyPage}/>
                 <Route path="/projects" exact component={ProjecstPage}/>         
                 <Route path="/blogs" exact component={BlogsPage}/>
-                <Route path="/projects/BioMirror" exact component={BioMirrorPage}/>
-                <Route path="/projects/HeartCalligraphy" exact component={HeartCalligraphyPage}/>
-                <Route path="/projects/LightSit" exact component={LightSitPage}/>
-                <Route path="/projects/Resonance" exact component={ResonancePage}/>
-                <Route path="/projects/HeartBloom" exact component={HeartBloomPage}/>      
+                <Route path="/BioMirror" exact component={BioMirrorPage}/>
+                <Route path="/HeartCalligraphy" exact component={HeartCalligraphyPage}/>
+                <Route path="/LightSit" exact component={LightSitPage}/>
+                <Route path="/Resonance" exact component={ResonancePage}/>
+                <Route path="/HeartBloom" exact component={HeartBloomPage}/>      
         </Router>
 
     )

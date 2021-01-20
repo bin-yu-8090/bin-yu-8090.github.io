@@ -33,7 +33,7 @@ export const ProjecstPage = ()=> {
               name={"BioMirror"}
               description={
                 "In this work, we investigated the interaction between ourselves and the spaces we inhabit, translating internal bodily processes to tactile surfaces."}
-              linkto={"/projects/BioMirror"}
+              linkto={"/BioMirror"}
               keypwords={['Tangible Interface', 'Shape-changing Interface','HCI','Biofeedback']}
             />
         </Grid>
@@ -42,7 +42,7 @@ export const ProjecstPage = ()=> {
               image={HeartCalligraphy_IMAGE}
               name={"Heart Calligraphy"}
               description={"In this work, we explored the role of the body as a channel through which physiology manifests itself as a form of beauty."}
-              linkto={"/projects/HeartCalligraphy"}
+              linkto={"/HeartCalligraphy"}
               keypwords={['Artistic Visualization', 'Live-art Installation','Biofeedback']}
             />      
         </Grid>
@@ -54,7 +54,7 @@ export const ProjecstPage = ()=> {
               image={HeartBloom_IMAGE}
               name={"Heart Bloom"}
               description={"In this work, we explored the role of the body as a channel through which physiology manifests itself as a form of beauty."}
-              linkto={"/projects/HeartBloom"}
+              linkto={"/HeartBloom"}
               keypwords={['Metaphorical Visualization','Live-art Installation','Biofeedback','Charity design']}
             />   
         </Grid>
@@ -64,7 +64,7 @@ export const ProjecstPage = ()=> {
               image={Resonance_IMAGE}
               name={"RESonance"}
               description={"In this work, we investigate a biofeedback environment that enhances the self-awareness and self-regulation of its inhabitant for better health."}
-              linkto={"/projects/Resonance"}
+              linkto={"/Resonance"}
               keypwords={['Ambient Interface','Immersive Experience','Biofeedback']}
             />  
         </Grid>
@@ -77,7 +77,7 @@ export const ProjecstPage = ()=> {
               image={LightSit_IMAGE}
               name={"LightSit"}
               description={"In this work, we designed a health-promoting system that can easily embed into a workplace to support fitness and relaxation breaks."}
-              linkto={"/projects/LightSit"}
+              linkto={"/LightSit"}
               keypwords={['Unobtrusive Sensing','Ambient Light','Workplace heath']}
             />  
         </Grid>
@@ -87,7 +87,7 @@ export const ProjecstPage = ()=> {
               image={Placeholder_IMAGE}
               name={"HRV Visualization"}
               description={"In this work, we explored the role of the body as a channel through which physiology manifests itself as a form of beauty."}
-              linkto={"/projects/HeartCalligraphy"}
+              linkto={"/HeartCalligraphy"}
               keypwords={['Visualization']}
             />  
         </Grid>
