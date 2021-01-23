@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d91d56cc.chunk.css",
-    "main.js": "/static/js/main.91399b9a.chunk.js",
-    "main.js.map": "/static/js/main.91399b9a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.31a8ab05.js",
-    "runtime-main.js.map": "/static/js/runtime-main.31a8ab05.js.map",
+    "main.css": "/static/css/main.15e89306.chunk.css",
+    "main.js": "/static/js/main.3f53bc7b.chunk.js",
+    "main.js.map": "/static/js/main.3f53bc7b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.0aa04b2e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.0aa04b2e.js.map",
     "static/css/2.aa2b96de.chunk.css": "/static/css/2.aa2b96de.chunk.css",
-    "static/js/2.da0cc3fb.chunk.js": "/static/js/2.da0cc3fb.chunk.js",
-    "static/js/2.da0cc3fb.chunk.js.map": "/static/js/2.da0cc3fb.chunk.js.map",
-    "static/js/3.742361ee.chunk.js": "/static/js/3.742361ee.chunk.js",
-    "static/js/3.742361ee.chunk.js.map": "/static/js/3.742361ee.chunk.js.map",
+    "static/js/2.cc735ec4.chunk.js": "/static/js/2.cc735ec4.chunk.js",
+    "static/js/2.cc735ec4.chunk.js.map": "/static/js/2.cc735ec4.chunk.js.map",
+    "static/js/3.36c5c404.chunk.js": "/static/js/3.36c5c404.chunk.js",
+    "static/js/3.36c5c404.chunk.js.map": "/static/js/3.36c5c404.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.aa2b96de.chunk.css.map": "/static/css/2.aa2b96de.chunk.css.map",
-    "static/css/main.d91d56cc.chunk.css.map": "/static/css/main.d91d56cc.chunk.css.map",
-    "static/js/2.da0cc3fb.chunk.js.LICENSE.txt": "/static/js/2.da0cc3fb.chunk.js.LICENSE.txt",
+    "static/css/main.15e89306.chunk.css.map": "/static/css/main.15e89306.chunk.css.map",
+    "static/js/2.cc735ec4.chunk.js.LICENSE.txt": "/static/js/2.cc735ec4.chunk.js.LICENSE.txt",
     "static/media/BioMirror_Milan.8dd78886.jpg": "/static/media/BioMirror_Milan.8dd78886.jpg",
     "static/media/BioMirror_S1.dcd91123.jpg": "/static/media/BioMirror_S1.dcd91123.jpg",
     "static/media/BioMirror_S2.cce9f3d1.jpg": "/static/media/BioMirror_S2.cce9f3d1.jpg",
@@ -76,10 +76,10 @@
     "static/media/system.13759f4b.png": "/static/media/system.13759f4b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.31a8ab05.js",
+    "static/js/runtime-main.0aa04b2e.js",
     "static/css/2.aa2b96de.chunk.css",
-    "static/js/2.da0cc3fb.chunk.js",
-    "static/css/main.d91d56cc.chunk.css",
-    "static/js/main.91399b9a.chunk.js"
+    "static/js/2.cc735ec4.chunk.js",
+    "static/css/main.15e89306.chunk.css",
+    "static/js/main.3f53bc7b.chunk.js"
   ]
 }
