@@ -44,10 +44,11 @@ const LinkText = styled.a`
   font-size: 1em;
   padding-left:0.5em;
   padding-right:0.5em;
-  color: #C19936;
+  color: #4C8AC6;
   font-family: 'Nutito-Light';
   &:hover {
-    color:#262626;
+    color:#0063b2;
+    font-family: 'Nutito-Regular';
   }
 `;
 
@@ -91,11 +92,11 @@ export const LightSitPage = ()=> {
             </Grid>
             <Grid item xs={12}>
               <ProjectIntroText>
-                Althrough the new way of working has many advantages, the more intelligent use of time, space and resources often results in less exercise and more stress.
-                LightSit offers a solution. A cushion filled with sensors that discreetly register your breathing patterns and a light strip integrated in the mornitor stand.
+               Although the new way of working has many advantages, the more intelligent use of time, space and resources often result in less exercise and more stress.
+                LightSit offers a solution. A cushion filled with sensors that discreetly register your breathing patterns and a light strip integrated in the monitor stand.
                 If you have been sitting for too long, you are supported with stretching exercises for your back by the strip of light that shifts between left and right. 
                 If you are suffering from stress, you are invited to concentrate on your breathing. Through the rhythm of the illuminating and dimming lights.
-                LightSit contributes to office vitality initiatives and features in the unobtrusive sensing and the ambient display that it can facilitate ofitness 
+                LightSit contributes to office vitality initiatives and features in the unobtrusive sensing and the ambient display that it can facilitate fitness 
                 and relaxation training seamlessly without overburdening the work routine.
               </ProjectIntroText>
             </Grid>
@@ -108,16 +109,42 @@ export const LightSitPage = ()=> {
             </Grid>
 
             <Grid item xs={12}>
+              <div>
+                  <ReactPlayer style={{margin: '0 auto'}}
+                      url="https://vimeo.com/267333802"
+                    />
+              </div>
+            </Grid>
+
+
+            <Grid item xs={12}>
+              <ProjectDiscriptionText>
+              We developed a seat pad that can monitor a user’s sitting behavior and heart rate. 
+              Six square-type force-sensing resistors (FSRs) are embedded on the front side of the fabric pad to detect the sitting postures and sedentary durations. 
+              On the other side of the seat pad, two polyvinylidene fluoride (PVDF)film sensors are used for measuring Heart rate variability (HRV), 
+              which has been widely used as a robust stress indicator. 
+              In the LightSit software, the data can be processed into targeted information, 
+              which maps to changes in light color and patterns as feedback. 
+              A flexible light strip was integrated into the bottom surface of a monitor stand as a lighting display 
+              to facilitate ambient user-system interaction and present feedback information beyond screen-based visualizations.
+              </ProjectDiscriptionText>
+            </Grid>
+
+            <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
               <img src={lightsit_img_2} width='77%'/>
             </div>
             </Grid>
 
             <Grid item xs={12}>
+             <hr/>
+            </Grid>
+
+            <Grid item xs={12}>
               <ProjectDiscriptionText>
-                Althrough the new way of working has many advantages, the more intelligent use of time, 
-                space and resources often results in less exercise and more stress.
-                LightSit offers a solution. A cushion fille
+              In <em><strong>Ambient Intervention Mode</strong></em>, the measured sedentary time (10–30 min) is mapped to the brightness of the light(10 to 255) 
+              and the user's data is mapped to the saturation of the light (10–255). When the user sits for an extended period with high-stress 
+              levels (close to minimum HRV value), the light becomes brighter and more saturated (orange).
               </ProjectDiscriptionText>
             </Grid>
 
@@ -126,7 +153,7 @@ export const LightSitPage = ()=> {
                 <img src={lightsit_img_3} width='77%'/>
               </div>
             </Grid>
-
+         
             <Grid item xs={12}>
               <div style={{textAlign:'center'}}>
                 <img src={lightsit_img_4} width='77%'/>
@@ -134,10 +161,14 @@ export const LightSitPage = ()=> {
             </Grid>
 
             <Grid item xs={12}>
+             <hr/>
+            </Grid>
+
+            <Grid item xs={12}>
               <ProjectDiscriptionText>
-                Althrough the new way of working has many advantages, the more intelligent use of time, 
-                space and resources often results in less exercise and more stress.
-                LightSit offers a solution. A cushion fille
+              In <em><strong>Interactive Exercise Mode</strong></em>, LightSit could engage the office worker in the stretch training by providing the guidance for achieving target movements 
+              and real-time feedback about the exercise flow and results. The light shows a direction for the body trunk movement and change color when the user moves to the instructed side. 
+              Then, a sparkling pattern appears once the user arrives at the target position. Finally, the light shifts to the opposite side to suggest a new lateral movement.
               </ProjectDiscriptionText>
             </Grid>
 
@@ -154,12 +185,17 @@ export const LightSitPage = ()=> {
             </Grid>
 
             <Grid item xs={12}>
+             <hr/>
+            </Grid>
+
+            <Grid item xs={12}>
               <ProjectDiscriptionText>
-                Althrough the new way of working has many advantages, the more intelligent use of time, 
-                space and resources often results in less exercise and more stress.
-                LightSit offers a solution. A cushion fille
+              In <em><strong>Deep Breathing Mode</strong></em>, The user's IBI data controls the light brightness so that the light becomes bright during inhalation and becomes dim during exhalation. 
+              This immediate feedback can help the individual better focus on breathing regulation and achieve a smooth and deep breathing pattern. 
+              The user HRV data controls the saturation value ranging from 10 to 250. Thus, a highly saturated colored light represents an improved HRV, which indicates a healthy benefit from slow breathing.
               </ProjectDiscriptionText>
             </Grid>
+
 
             <Grid item xs={12}>
               <div style={{textAlign:'center'}}>
@@ -172,24 +208,7 @@ export const LightSitPage = ()=> {
                 <img src={lightsit_img_8} width='77%'/>
               </div>
             </Grid>
-
-            <Grid item xs={12}>
-              <ProjectDiscriptionText>
-              Althrough the new way of working has many advantages, the more intelligent use of time, 
-              space and resources often results in less exercise and more stress.
-              LightSit offers a solution. A cushion fille
-              </ProjectDiscriptionText>
-            </Grid>
-
-
-            <Grid item xs={12}>
-              <div>
-                  <ReactPlayer style={{margin: '0 auto'}}
-                      url="https://vimeo.com/267333802"
-                    />
-              </div>
-            </Grid>
-
+ 
 
             <Grid item xs={12}>
             <ProjectEndText>

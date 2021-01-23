@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import NavigationBar from '../components/navigationBar'
+import { motion } from "framer-motion"
 
 import profile_img from '../images/by_profile_photo.png'; // Tell Webpack this JS file uses this image
 
@@ -51,6 +52,12 @@ export const AboutPage = ()=> {
         <NavigationBar theme={'dark'}/>
         <br/>
         <br/>
+
+        <motion.div  
+         initial={{ opacity: 0,}}
+         animate={{ opacity: 1 }}
+         exit={{ opacity: 0 }}>  
+
         <Grid container spacing={2}>
 
           <Grid item xs={12}>
@@ -403,6 +410,8 @@ export const AboutPage = ()=> {
           <Grid item xs={3}></Grid>
          
           </Grid>
+
+         </motion.div>
 
     </Mainpage>
     )

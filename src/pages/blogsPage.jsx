@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import NavigationBar from '../components/navigationBar'
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion"
 
 const Mainpage = styled.div`
 background-color: #282947;
@@ -35,58 +36,28 @@ export const BlogsPage= ()=> {
         <br/>
         <br/>
         <br/>
+        <motion.div  
+         initial={{ opacity: 0,}}
+         animate={{ opacity: 1 }}
+         exit={{ opacity: 0 }}>  
+
         <Grid container spacing={0}>
-
-
             <Grid item xs={3}></Grid>
             <Grid item xs={6}>
               <PostCard 
                 title={'Emotional Design for Visualization'}
                 date={'15-Feb-2021'}
-                intro={'I am a Data Designer in Philips Design. Before I studied design, I was a Biomedical Engineer & Researcher. I obtained dual Bachelor degrees in Industrial Design and Biomedical Engineering at Chongqing University (2010). Afterward, I continued my master study at Northeastern University (2012), during which I focused on the design of mobile ECG monitoring application. In 2012, I went to Shenzhen and worked in Research Center for Neural Engineering, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences. In this year, my research explored the application of high-density EMG signal for biofeedback rehabilitation.'}
-                linkto={"/projects/HeartCalligraphy"}
+                intro={' When representing scientific data, we are generally not trying to evoke an emotional response from our readers, but rather to allow them to explore the data and draw empirical conclusions themselves.  While representing personal data to the everyday users for self-learning, self-regulation, self-management, the visualization could and sometimes should arouse user feelings directly. These emotions aroused by visualisations in access to their data might increase bond with personal data, and motivation to continuously use the data-related projects.'}
+                linkto={"/Blog-title"}
                 />
             </Grid>
             <Grid item xs={3}></Grid>
 
-            <Grid item xs={3}></Grid>
-            <Grid item xs={6}>
-              <PostCard 
-                title={'Emotional Design for Visualization'}
-                date={'15-Feb-2021'}
-                intro={'...coming soon'}
-                linkto={"/projects/HeartCalligraphy"}
-                />
-            </Grid>
-            <Grid item xs={3}></Grid>
-
-            <Grid item xs={3}></Grid>
-            <Grid item xs={6}>
-              <PostCard 
-                title={'Emotional Design for Visualization'}
-                date={'15-Feb-2021'}
-                intro={'...coming soon'}
-                linkto={"/projects/HeartCalligraphy"}
-                />
-            </Grid>
-            <Grid item xs={3}></Grid>
-
-            <Grid item xs={3}></Grid>
-            <Grid item xs={6}>
-              <PostCard 
-                title={'Emotional Design for Visualization'}
-                date={'15-Feb-2021'}
-                intro={'...coming soon'}
-                linkto={"/projects/HeartCalligraphy"}
-                />
-            </Grid>
-            <Grid item xs={3}></Grid>
         </Grid>
+      </motion.div>
     </Mainpage>
     )
  }
-
-
 
 
 function PostCard(props) {
@@ -95,7 +66,7 @@ function PostCard(props) {
       <div className='rowC'>
           <div>
             <TitleText>
-                <Link to={props.linkto} target="_blank">
+                <Link to={props.linkto}>
                   {props.title}
                 </Link>
                 </TitleText>

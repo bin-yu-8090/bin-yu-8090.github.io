@@ -30,38 +30,45 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     borderRadius: 0,
     width: 550,
-    background:'#FFFFFF',
+    background:'#464866',   
+    "&:hover  $content": {
+      color:'#D9D9D9',
+    },
+    "&:hover ": {
+      //border: '2px solid #d9d9d9',
+    }
   },
   actionArea: {
     display: 'flex',
-    "&:hover $focusHighlight": {
-      opacity: 0.1,
-      color:'#000000'
-    }
+    "&:hover": {
+      background:'#282947', //'#374785',  
+   }
   },
   details: {
     top:'0px',
     display: 'flex',
     flexDirection: 'column',
+    background:'none', 
   },
   content: {
     flex: '1 0 auto',
-   top:'0px',
+    background:'none', 
+    top:'0px',
     width: 275,
+    color: '#D9D9D9',
   },
   cover: {
     width: 275,
     height:275
   },
   focusHighlight:{
-
   },
   chipBox: {
     display: 'flex',
     justifyContent: 'left',
     flexWrap: 'wrap',
     '& > *': {
-      margin: theme.spacing(0.5),
+      margin: theme.spacing(0.4),
     },
   },
 }));
@@ -70,14 +77,12 @@ const useStyles = makeStyles((theme) => ({
 const CardTitleText = styled.h2`
   font-size: 1em;
   text-align: left;
-  color: #404040;
   font-family: 'Nutito-Bold';
 `;
 
 const CardContentText = styled.h2`
   font-size: 0.8em;
   text-align: left;
-  color: #404040;
   font-family: 'Nutito-Regular';
 `;
 
@@ -107,7 +112,7 @@ export default function ProjectCard(props) {
             </CardContentText>
             <div className={classes.chipBox}>
               {props.keypwords.map(keyword => 
-                <Chip label={keyword} size="small" style={{'font-size': '0.7em',fontFamily: 'Nutito-Regular', borderRadius: 0}}/>)}
+                <Chip label={keyword} size="small" style={{'font-size': '0.7em',fontFamily: 'Nutito-Regular', borderRadius: 25,  height:'20px', color:'#d9d9d9', background:'#717288'}}/>)}
              </div>
           </CardContent>
         </div>

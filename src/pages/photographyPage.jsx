@@ -4,12 +4,13 @@ import Grid from '@material-ui/core/Grid'
 import NavigationBar from '../components/navigationBar'
 import Carousel, { Modal, ModalGateway } from "react-images";
 import Gallery from "react-photo-gallery";
-import {PHOTOES} from '../images/photoLinks' 
+import {PHOTOES} from '../images/photoLinks';
+import { motion } from "framer-motion"
 
 
 const Mainpage = styled.div`
-background-color: '#F5F5F5';
-min-height: 100vh;
+  background-color: #282947;
+  min-height: 100vh;
 `;
 
 export function PhotographyPage (props){
@@ -27,9 +28,16 @@ export function PhotographyPage (props){
     setViewerIsOpen(false);
   };
 
-   return (     
+   return (  
+
       <Mainpage>
-        <NavigationBar theme={'light'}/>
+        <NavigationBar theme={'dark'}/>
+
+        <motion.div  
+         initial={{ opacity: 0,}}
+         animate={{ opacity: 1 }}
+         exit={{ opacity: 0 }}>  
+
         <Grid container spacing={2}>
         <Grid item xs={12}>
           <br/>
@@ -57,6 +65,7 @@ export function PhotographyPage (props){
             </Grid>
             <Grid item xs={3}></Grid>   
          </Grid>
+      </motion.div> 
     </Mainpage>
     )
  }

@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
+import { Link } from 'react-router-dom';
 import ReactPlayer from "react-player"
 import NavigationBar from '../../components/navigationBar'
+
 
 import heartbloom_img_1 from '../../images/heartBloom/heartbloom_1.gif'; 
 import heartbloom_img_2 from '../../images/heartBloom/heartbloom_2.gif'; 
@@ -65,44 +67,54 @@ const ProjectIntroText= styled.p`
   font-size: 1em;
   text-align: center;
   color: #7F7F7F;
-  font-family: 'Nutito-Light';
+  font-family: 'Nutito-Regular';
 `;
 
 const LinkText = styled.a`
   font-size: 1em;
   padding-left:0.5em;
   padding-right:0.5em;
-  color: #C19936;
+  color: #4C8AC6;
   font-family: 'Nutito-Light';
   &:hover {
-    color:#FF4C42;
+    color:#0063b2;
+    font-family: 'Nutito-Regular';
+  }
+`;
+
+const JumpLink = styled.a`
+  color: #964F4C;
+  font-family: 'Nutito-Regular';
+  &:hover {
+    color:#567572;
   }
 `;
 
 const ProjectDiscriptionText= styled.p`
   font-size: 0.9em;
-  padding-left:7em;
+  padding-top:5px;
+  padding-bottom:0px;
+  padding-left:5em;
   padding-right:5em;
-  text-align: left;
-  color: #807F7F;
-  font-family: 'Nutito-Light';
+  text-align: center;
+  color: #7F7F7F;
+  font-family: 'Nutito-Regular';
 `;
-
 
 const MultipleImgsFrame= styled.div`
   padding-left:6em;
   padding-right:6em;
 `;
 
-const ProjectEndText= styled.p`
+const ProjectEndingText= styled.p`
   font-size: 0.8em;
-  padding-top:5em;
   padding-left:8em;
   padding-right:5em;
   text-align: left;
   color: #807F7F;
   font-family: 'Nutito-Light';
 `;
+
 
 export const HeartBloomPage = ()=> { 
    return (     
@@ -120,16 +132,19 @@ export const HeartBloomPage = ()=> {
             </Grid>
             <Grid item xs={12}>
               <ProjectSubTitle>
-              Make each heartbeat count
+               A flower blooming with each heartbeat
               </ProjectSubTitle>
             </Grid>
             <Grid item xs={12}>
               <ProjectIntroText>
               Heart Bloom started with Biofeedback research (2014).
-              It is an exploration of tangible interface that empowers participants to see, hear and feel the rhythm of their heart. 
-              Also, it is a metaphorical visualization that illustrates the users’ heartbeat into a floral graphics, which reflects the natural biorhythm inside the human body.
-              Since 2015, Heart Bloom has been continuing to evolve from a biofeedback interface, a metaphorical visualization to
-              a live installation (2015), charity activity (2016) and fundraising (business) service design (2017).
+              It is an exploration of a tangible interface that empowers participants to see, hear and feel the rhythm of their heart. 
+              Also, it is a metaphorical visualization that illustrates the users’ heartbeat into floral graphics, which reflects the natural biorhythm inside the human body.
+              Since 2015, Heart Bloom has been continuing to evolve from 
+              a biofeedback interface,  metaphorical visualization <JumpLink href="/HeartBloom#2014">(2014)</JumpLink> to
+              a live interactive installation <JumpLink href="/HeartBloom#2015">(2015)</JumpLink>,
+              charity activity <JumpLink href="/HeartBloom#2016">(2016)</JumpLink>, 
+              and a service design for sustainable fundraising<JumpLink href="/HeartBloom#2017">(2017)</JumpLink>.           
               </ProjectIntroText>
             </Grid>
 
@@ -142,13 +157,15 @@ export const HeartBloomPage = ()=> {
 
             <Grid item xs={12}>
               <ProjectSectionTitle>
-                  HEART BLOOM as Biofeedback Interface
+                <a id="2014">
+                   HEART BLOOM as Biofeedback Interface
+                </a>
               </ProjectSectionTitle>
               <ProjectDiscriptionText>
-                Only when you experience excitement or fear you actually feel your heart beat fast inside our chest. 
-                However, without you being aware of it, the heart is continually changing its frequency. 
-                Biofeedback is a technique that measures physiological processes, and rapidly gives back the data to the users, 
-                helping them to be aware of their physiological conditions. 
+              Only when experiencing excitement or fear, we feel our heart beat fast inside our chest. 
+              Most of the time, the heart is continually changing its frequency without us being aware of it. 
+              With the Biofeedback technique, this naturally changing heartbeat rhythm can be captured and 
+              rapidly presented back to us, improving our awareness of physiological conditions and facilitating self-regulations.
               </ProjectDiscriptionText>
             </Grid>
 
@@ -160,15 +177,13 @@ export const HeartBloomPage = ()=> {
               </div>
             </Grid>
 
-
             <Grid item xs={12}>
               <ProjectDiscriptionText>
                 Heart Bloom is a tangible interface, which offers the users a biofeedback experience through mechanical movement, sound, and visualization. 
                 Each heartbeat triggers one movement, creating a line or a dot. The variation of the heart rate is demonstrated by the pen’s behaviour in real time. 
-                The overall heart rate variability is reflected by the visual characteristics of the generated drawing on paper. 
+                The overall heart rate variability is reflected by the visual characteristics of the generated flower drawing on paper. 
               </ProjectDiscriptionText>
             </Grid>
-
 
             <Grid item xs={12}>
             <MultipleImgsFrame >
@@ -210,13 +225,15 @@ export const HeartBloomPage = ()=> {
             
             <Grid item xs={12}>
               <ProjectSectionTitle>
+                <a id="2015">
                   HEART BLOOM as a participatory live-art installation
+                </a>
               </ProjectSectionTitle>
               <ProjectDiscriptionText>
-              In November 2015, Heart Bloom was exhibited as Dubai Design Week. As a live installation, it enable each audience to experience their heart rhythm in real time.
-              It only offered a on-site interactive experience, but also an extended participatory 'social' experience. 
-              The installation drawed the participant’s heartbeat data into a blooming flower on a postcard which was then mailed to their beloved ones 
-              as a special and ‘heartful’ greeting, shortening the distance of the heart and heart.
+              In November 2015, Heart Bloom was exhibited in Dubai Design Week. As a live installation, it enables each audience to experience their heart rhythm in real-time.
+              It offered participants an on-site interactive experience, but also an extended  'social' experience connected to someone they love.
+              The installation drew the participant’s heartbeat data into a blooming flower on a postcard which was then mailed to their beloved ones 
+              as a special ‘heartful’ greeting, shortening the distance of the heart and heart.
               </ProjectDiscriptionText>
             </Grid>
 
@@ -251,7 +268,9 @@ export const HeartBloomPage = ()=> {
 
             <Grid item xs={12}>
             <ProjectSectionTitle>
-                HEART BLOOM as a charitable initiative 
+               <a id="2016">
+                  HEART BLOOM as a charitable initiative 
+               </a>
               </ProjectSectionTitle>
 
             <ProjectDiscriptionText>
@@ -259,7 +278,6 @@ export const HeartBloomPage = ()=> {
               We brought HEART BLOOM to those CHD children to let them play with and create the ‘blooming flowers’ on cards. 
               The interaction with HEART BLOOM also allows them to see, hear and feel every beat of their heart. 
               We wanted to create a positive message to those CHD children that everyone is special, and their tender hearts are lovable and also full of power. 
-
             </ProjectDiscriptionText>
             </Grid>
 
@@ -291,9 +309,8 @@ export const HeartBloomPage = ()=> {
 
             <Grid item xs={12}>
               <ProjectDiscriptionText>
-                The HEART BLOOMs created by CHD children were made into a collective drawing which was exhibited in Ducth Design Week 2016,
-                which aimed to raise public attention and awareness that the heartbeat of a CHD children might be abnormal but inimitably beautiful, 
-                it is wonderful for us to help them to keep the heart beating, and to moisten these ‘flowers’ blooming for long.
+                In Dutch Design Week 2016, the HEART BLOOMs created by CHD children were exhibited as a collective drawing, 
+                which aimed to raise public attention and awareness that the heartbeat of CHD children might be abnormal but inimitably beautiful.
               </ProjectDiscriptionText>
             </Grid>
 
@@ -306,23 +323,28 @@ export const HeartBloomPage = ()=> {
             <Grid item xs={12}> <br/> <hr/> <br/></Grid>
 
           <Grid item xs={12}>
-           <ProjectSectionTitle>
-              HEART BLOOM as a charitable fundraising service
+            <ProjectSectionTitle>
+              <a id="2017">
+                HEART BLOOM as a charitable fundraising service
+              </a>
             </ProjectSectionTitle>
 
-            <ProjectDiscriptionText>
-              During Dutch Design Week 2016, Heart Bloom served as a charitable fundraising service for Hartstichting (Dutch Heart Foundation).
-              The on-site installation invite the visitors to participate in this charity project. By interacting with the installation, 
-              the participants created a unique Heart Bloom card, which was collected into a artwork that shows 
-              the diversity of the heart and raises awareness about congenital heart disease. 
-              We developed the 
-              <LinkText href="http://heartbloom.rogierarents.nl/ddw.html"  target="_blank" style={{'text-align': 'center'}}>
-              HeartBloom fundraising website
-              </LinkText>, which provides the participants the access to their heart bloom pattern 
-              and also an entry to Dutch Heart Foundation website for online donation. 
-              In this first stage of the project, a postcard printing and mailing service is provided. 
-              By making a small amount of online donation (5-20 euro), the participants can receive a postcard with their created Heart Bloom as a reward. 
-            </ProjectDiscriptionText>
+              <ProjectDiscriptionText>
+                Since Dutch Design Week 2016, Heart Bloom has served as a charitable fundraising service for Hartstichting (Dutch Heart Foundation).
+                The on-site installation invited people to participate in this charity project. By interacting with the installation, 
+                the participants could create a unique Heart Bloom card, which was collected into an artwork that shows 
+                the diversity of the heart and raises awareness about congenital heart disease. 
+                We developed the 
+                <LinkText href="http://heartbloom.rogierarents.nl/ddw.html"  target="_blank" style={{'text-align': 'center'}}>
+                HeartBloom fundraising website
+                </LinkText>, which provides the participantsaccess to their heart bloom pattern 
+                and also an entry to the Dutch Heart Foundation website for online donation. 
+                In this first stage of the project, we designed a data-driven approach that aims to transform a one-time donation into a sustainable fundraising service.
+                As the participant's heartbeat data  was collected in the on-site installation,
+                the participants could use their heartbeat data to create an artwork, like a flower print. 
+                And each order will make a 5-20 euro donation. The creation and updates of the data-artwork form might constantly 
+                engage the participants with the charity service and bring in new donations.
+              </ProjectDiscriptionText>
             </Grid>
 
             <Grid item xs={12}>
@@ -385,9 +407,20 @@ export const HeartBloomPage = ()=> {
             </Grid>
 
 
- 
+          <Grid item xs={12}>
+              <ProjectDiscriptionText>
+                and also an entry to the Dutch Heart Foundation website for online donation. 
+                In this first stage of the project, we designed a data-driven approach that aims to transform a one-time donation into a sustainable fundraising service.
+                As the participant's heartbeat data  was collected in the on-site installation,
+                the participants could use their heartbeat data to create an artwork, like a flower print. 
+                And each order will make a 5-20 euro donation. The creation and updates of the data-artwork form might constantly 
+                engage the participants with the charity service and bring in new donations.
+              </ProjectDiscriptionText>
+            </Grid>
+
+
             <Grid item xs={12}>
-            <ProjectDiscriptionText>
+            <ProjectEndingText>
             <strong className='strongtext'> Credits </strong>: <br/>
               Heart Calligraphy is a collaboration with  
               <LinkText href="https://www.rogierarents.nl/"  target="_blank" style={{'text-align': 'center'}}>
@@ -414,7 +447,7 @@ export const HeartBloomPage = ()=> {
               </LinkText> 
               In Extended Abstracts of the 2016 <em className='journalname'> CHI </em>, 2016. 
               <br/>      
-            </ProjectDiscriptionText>
+            </ProjectEndingText>
             </Grid>
             </Grid>
           </Grid>

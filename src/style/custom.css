@@ -95,3 +95,115 @@ a {
   display:flex; 
   flex-direction:row;
   padding-top:2em}
+
+
+  /* Animation Styling  */
+
+.one-second-animation {
+  font-size: 1em;
+  text-align: left;
+  color: #C6E1EA;
+  font-family: 'Nutito-Regular';
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+.one-second-fadein {
+  font-size: 1em;
+  text-align: left;
+  color: #C6E1EA;
+  font-family: 'Nutito-Regular';
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+
+
+.three-second-fadein {
+  font-size: 1em;
+  text-align: left;
+  color: #C6E1EA;
+  font-family: 'Nutito-Regular';
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+.five-second-fadein {
+  font-size: 1em;
+  text-align: left;
+  color: #C6E1EA;
+  font-family: 'Nutito-Regular';
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+.seven-second-fadein {
+  font-size: 1em;
+  text-align: left;
+  color: #C6E1EA;
+  font-family: 'Nutito-Regular';
+  animation: fadeIn ease 7s;
+  -webkit-animation: fadeIn ease 7s;
+  -moz-animation: fadeIn ease 7s;
+  -o-animation: fadeIn ease 7s;
+  -ms-animation: fadeIn ease 7s;
+}
+
+
+.nine-second-fadein {
+  font-size: 1em;
+  text-align: left;
+  color: #C6E1EA;
+  font-family: 'Nutito-Regular';
+  animation: fadeIn ease 9s;
+  -webkit-animation: fadeIn ease 9s;
+  -moz-animation: fadeIn ease 9s;
+  -o-animation: fadeIn ease 9s;
+  -ms-animation: fadeIn ease 9s;
+}
+
+
+
+
+/* Key Frames */
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  40%{opacity:0}
+  100% {opacity:1;}
+}
+  
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  40%{opacity:0}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  40%{opacity:0}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  40%{opacity:0}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  40%{opacity:0}
+  100% {opacity:1;}
+}

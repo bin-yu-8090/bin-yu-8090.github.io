@@ -37,21 +37,31 @@ const ProjectIntroText= styled.p`
   font-size: 1em;
   text-align: center;
   color: #7F7F7F;
-  font-family: 'Nutito-Light';
+  font-family: 'Nutito-Regular';
 `;
 
 const LinkText = styled.a`
   font-size: 1em;
   padding-left:0.5em;
   padding-right:0.5em;
-  color: #C19936;
+  color: #4C8AC6;
   font-family: 'Nutito-Light';
   &:hover {
-    color:#262626;
+    color:#0063b2;
+    font-family: 'Nutito-Regular';
   }
 `;
 
-const ProjectDiscriptionText= styled.p`
+const FigureText= styled.p`
+  font-size: 0.8em;
+  padding-top:5px;
+  padding-bottom:0px;
+  text-align: center;
+  color: #7F7F7F;
+  font-family: 'Nutito-Regular';
+`;
+
+const ProjectEndingText= styled.p`
   font-size: 0.8em;
   padding-left:8em;
   padding-right:5em;
@@ -59,6 +69,7 @@ const ProjectDiscriptionText= styled.p`
   color: #807F7F;
   font-family: 'Nutito-Light';
 `;
+
 
 export const HeartCalligraphyPage = ()=> { 
    return (     
@@ -81,13 +92,12 @@ export const HeartCalligraphyPage = ()=> {
             </Grid>
             <Grid item xs={12}>
               <ProjectIntroText>
-                In traditional Chinese culture calligraphy is seen as a silent reflection of the mind. 
-                A Chinese calligrapher believes that the mind leads the brush, and his goal is to vividly and honestly convey his mind on paper. 
-                Heart Calligraphy is inspired by this philosophy and enabled by biofeeddback techniques. 
-                It researches how human biodata can be translated into an aesthetic visual language [self-representation] and an aesthetic experience of self [self-awareness]. 
-                In this biofeedback installation, the heart leads the brush. When the participant places his or her hands on the sensor, 
-                the heartbeat is measured and directs a drawing machine to portray the human body from the inside, with a first-person view. 
-                The participant follows his or her heartbeat by observing the pen movement and an abstract portrait gradually appears. 
+              In traditional Chinese culture, calligraphy is seen as a silent reflection of the mind. 
+              A Chinese calligrapher believes that the mind leads the brush, and his goal is to vividly and honestly convey his mind on paper. 
+              Heart Calligraphy is inspired by this philosophy and enabled by biofeedback techniques. 
+              It researches how human biodata can be translated into an aesthetic visual language [self-representation] and an aesthetic experience of self [self-awareness]. 
+              In this biofeedback installation, the heart leads the brush. When the participant places his or her hands on the sensor, 
+              the heartbeat is measured and directs a drawing machine to create an abstract portrait gradually appears. 
               </ProjectIntroText>
             </Grid>
 
@@ -95,6 +105,10 @@ export const HeartCalligraphyPage = ()=> {
             <div style={{textAlign:'center'}}>
               <img src={heartcalligraphy_img_1} width='77%'/>
             </div>
+            <FigureText>
+              This Heart Calligraphy was produced on sketching paper with a charcoal stick. <br/>
+              The charcoal stick drew lines of equal length in rows, but the pen pressure was adjusted by the HR data.
+            </FigureText>
             </Grid>
 
 
@@ -102,12 +116,21 @@ export const HeartCalligraphyPage = ()=> {
             <div style={{textAlign:'center'}}>
               <img src={heartcalligraphy_img_2} width='77%'/>
             </div>
+            <FigureText>
+              This Heart Calligraphy was created by a brush using gouache paint on paper. <br/>
+              The heart rate data was mapped to pen downtime and pressure, leaving dots of different texture and shade. 
+            </FigureText>
             </Grid>
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
               <img src={heartcalligraphy_img_3} width='77%'/>
             </div>
+            <FigureText>
+            This Heart Calligraphy  was created by a pipette with inkjet ink on paper. The HR data was mapped to pen downtime. <br/>
+            With each heartbeat, the pipette was moved to the next position and placed on the paper until new data came in. <br/> 
+            The drawing created in this way shows an array of round ink spots of different size and intensity. 
+            </FigureText>
             </Grid>
 
             <Grid item xs={12}>
@@ -144,7 +167,7 @@ export const HeartCalligraphyPage = ()=> {
 
 
             <Grid item xs={12}>
-            <ProjectDiscriptionText>
+            <ProjectEndingText>
             <strong className='strongtext'> Credits </strong>: <br/>
               Heart Calligraphy is a collaboration with  
               <LinkText href="https://www.rogierarents.nl/"  target="_blank" style={{'text-align': 'center'}}>
@@ -179,7 +202,7 @@ export const HeartCalligraphyPage = ()=> {
               </LinkText> 
               In Extended Abstracts of the 2016 <em className='journalname'> CHI </em>, 2016. 
               <br/>      
-            </ProjectDiscriptionText>
+            </ProjectEndingText>
             </Grid>
             </Grid>
           </Grid>

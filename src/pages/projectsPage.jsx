@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ProjectCard from '../components/projectCard'
 import NavigationBar from '../components/navigationBar'
+import { motion } from "framer-motion"
 
 import BioMirror_IMAGE from '../images/projectCards/BioMirror_profile.jpg';
 import HeartCalligraphy_IMAGE from '../images/projectCards/Heart-Calligraphy_profile.png';
@@ -11,19 +12,25 @@ import Resonance_IMAGE from '../images/projectCards/resonance_profile.JPG'
 import HeartBloom_IMAGE from '../images/projectCards/heartbloom_profile.png'
 import Placeholder_IMAGE from '../images/projectCards/placeholder.png'
 
+
+
 const Mainpage = styled.div`
-  background-color: #F5F5F5;
+  background-color: #282947;
   min-height: 100vh;
 `;
 
 export const ProjecstPage = ()=> { 
 
-   return (    
+   return (     
       <Mainpage>
-          <NavigationBar theme={'light'}/>
+          <NavigationBar theme={'dark'}/>
       <br/>
       <br/>
-
+      <motion.div  
+         initial={{ opacity: 0,}}
+         animate={{ opacity: 1 }}
+         exit={{ opacity: 0 }}>  
+      
       <Grid container spacing={2}>
         <Grid item xs={2}></Grid>
 
@@ -83,13 +90,6 @@ export const ProjecstPage = ()=> {
         </Grid>
 
         <Grid item xs={4}> 
-        <ProjectCard
-              image={Placeholder_IMAGE}
-              name={"HRV Visualization"}
-              description={"In this work, we explored the role of the body as a channel through which physiology manifests itself as a form of beauty."}
-              linkto={"/HeartCalligraphy"}
-              keypwords={['Visualization']}
-            />  
         </Grid>
 
         <Grid item xs={2}> </Grid>
@@ -101,7 +101,10 @@ export const ProjecstPage = ()=> {
   
 
       </Grid>
+      
+      </motion.div>   
     </Mainpage>
+
     )
    }
 

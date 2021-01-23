@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import {Grid} from '@material-ui/core';
 import NavigationBar from '../components/navigationBar'
 import styled from 'styled-components'
+import { motion } from "framer-motion"
 
 // define the style of the elements in this component using Styled.component
+
+
 
 const Mainpage = styled.div`
   background-color: #282947;
@@ -24,6 +27,7 @@ const LinkText = styled.a`
     color: #FAE058;
   }
 `;
+
 
 
 class IntroPage extends Component {
@@ -47,40 +51,46 @@ class IntroPage extends Component {
   
     render (){
     return (  
-    <Mainpage>
-    <NavigationBar theme={'dark'}/>
-      <br/>
-      <br/>
-      <br/>
-      <Grid container spacing={1}  alignItems="center" justify="center"> 
-        <Grid item md={7}>
-          <div>
-            <canvas id="by_logo_canvas" width={800} height={600}> </canvas>
-          </div>
-        </Grid>
-        <Grid item md={5}>
-            <div>
-              <IntroText>I was born in China, and moved to Eindhoven in 2013.</IntroText>
-              <IntroText>I finished Ph.D on HCI <LinkText href="https://www.researchgate.net/profile/Bin_Yu38"  target="_blank"> Design Research </LinkText> for Biofeedback.</IntroText> 
-              <IntroText>I am now a Data Designer in
-                  <LinkText href="https://www.philips.com/a-w/about/philips-design.html"  target="_blank"> Philips Design </LinkText>.</IntroText> 
-              <IntroText>I focus on
-                <Link to="/projects"> data-driven design projects</Link>. 
-              </IntroText> 
-              <IntroText> I write 
-                  <LinkText href="https://codepen.io/yubin8090/"  target="_blank"> code </LinkText> and
-                  <LinkText href="https://medium.com/@binyu_71944" target="_blank"> articles</LinkText>.
-              </IntroText>
-              <IntroText> I use photos to record every facet of 
-                  <LinkText href="https://www.instagram.com/binyu8090/" target="_blank"> life</LinkText>.
-              </IntroText>
-              <IntroText>I have a more detailed 
-                  <LinkText href="https://www.linkedin.com/in/bin-yu-85935450/" target="_blank"> résumé</LinkText>.
-              </IntroText>
-            </div>
-        </Grid>  
-      </Grid>
-    </Mainpage>
+ 
+          <Mainpage>
+          <NavigationBar theme={'dark'}/>
+            <br/>
+            <br/>
+            <br/>
+
+            <motion.div  initial={{ opacity: 0,}} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>  
+
+            <Grid container spacing={1}  alignItems="center" justify="center"> 
+              <Grid item md={7}>
+                <div>
+                  <canvas id="by_logo_canvas" width={800} height={600}> </canvas>
+                </div>
+              </Grid>
+              <Grid item md={5}>
+                  <div>
+                    <p className="one-second-fadein">Hi, there ! My name is Bin Yu.</p>
+                    <p className="three-second-fadein">I was born in China, and moved to Eindhoven in 2013.</p>
+                    <p className="three-second-fadein">I finished Ph.D on HCI <LinkText href="https://www.researchgate.net/profile/Bin_Yu38"  target="_blank"> Design Research </LinkText> for Biofeedback.</p> 
+                    <p className="five-second-fadein">I am now a Data Designer in
+                        <LinkText href="https://www.philips.com/a-w/about/philips-design.html"  target="_blank"> Philips Design </LinkText>.</p> 
+                    <p className="five-second-fadein">I focus on
+                      <Link to="/projects"> data-driven design projects</Link>. 
+                    </p> 
+                    <p className="seven-second-fadein"> I write 
+                        <LinkText href="https://codepen.io/yubin8090/"  target="_blank"> code </LinkText> and
+                        <LinkText href="https://medium.com/@binyu_71944" target="_blank"> articles</LinkText>.
+                    </p>
+                    <p className="seven-second-fadein"> I use photos to record every facet of 
+                        <LinkText href="https://www.instagram.com/binyu8090/" target="_blank"> life</LinkText>.
+                    </p>
+                    <p className="nine-second-fadein">I have a more detailed 
+                        <LinkText href="https://www.linkedin.com/in/bin-yu-85935450/" target="_blank"> résumé</LinkText>.
+                    </p>
+                  </div>
+              </Grid>  
+            </Grid>
+          </motion.div> 
+      </Mainpage>
     )
    }
 }

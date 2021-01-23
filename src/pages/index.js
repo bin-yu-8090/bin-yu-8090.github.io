@@ -12,7 +12,10 @@ import {ResonancePage} from './project_Pages/resonancePage.jsx'
 import {HeartBloomPage} from './project_Pages/heartBloom.jsx'
 import {PhotographyPage}from './photographyPage.jsx'
 import {BlogsPage}from './blogsPage.jsx'
+import {TemplateProjectPage} from './project_Pages/templateProjectPage.jsx'
+import {TemplateBlogPage} from './blog_pages/templateBlogPage.jsx'
 
 
 export {IntroPage, ProjecstPage, AboutPage, PhotographyPage, BlogsPage,
-        BioMirrorPage,HeartCalligraphyPage,LightSitPage,ResonancePage,HeartBloomPage}
+        BioMirrorPage,HeartCalligraphyPage,LightSitPage,ResonancePage,HeartBloomPage,
+        TemplateProjectPage, TemplateBlogPage}

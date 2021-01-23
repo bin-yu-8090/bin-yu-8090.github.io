@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
 import NavigationBar from '../../components/navigationBar'
+import { motion } from "framer-motion"
 
 // import images in this page
 import biomirror_1_gif from '../../images/bioMirror/Biomirror_2_small.gif'; // Tell Webpack this JS file uses this image
@@ -37,21 +38,22 @@ const ProjectIntroText= styled.p`
   font-size: 1em;
   text-align: center;
   color: #807F7F;
-  font-family: 'Nutito-Light';
+  font-family: 'Nutito-Regular';
 `;
 
 const LinkText = styled.a`
   font-size: 1em;
   padding-left:0.5em;
   padding-right:0.5em;
-  color: #C19936;
+  color: #4C8AC6;
   font-family: 'Nutito-Light';
   &:hover {
-    color:  #7F7F7F;
+    color:#0063b2;
+    font-family: 'Nutito-Regular';
   }
 `;
 
-const ProjectDiscriptionText= styled.p`
+const ProjectEndingText= styled.p`
   font-size: 0.8em;
   padding-left:8em;
   padding-right:5em;
@@ -60,10 +62,24 @@ const ProjectDiscriptionText= styled.p`
   font-family: 'Nutito-Light';
 `;
 
+const FigureText= styled.p`
+  font-size: 0.8em;
+  padding-top:5px;
+  padding-bottom:0px;
+  text-align: center;
+  color: #7F7F7F;
+  font-family: 'Nutito-Regular';
+`;
+
 export const BioMirrorPage = ()=> { 
    return (     
       <Mainpage>
         <NavigationBar theme={'light'}/>
+
+        <motion.div  
+         initial={{ opacity: 0,}}
+         animate={{ opacity: 1 }}
+         exit={{ opacity: 0 }}>  
 
         <Grid container spacing={2}>
           <Grid item xs={3}></Grid>
@@ -81,11 +97,11 @@ export const BioMirrorPage = ()=> {
             </Grid>
             <Grid item xs={12}>
               <ProjectIntroText>
-              BioMirror is a set of interactive surfaces that respond to users ‘heartbeats, respiration and autonomic nervous system activities. 
+              BioMirror is a set of interactive surfaces that respond to users ‘heartbeats, respiration, and autonomic nervous system activities. 
               As a traditional mirror reflects one’s outside appearance, BioMirror reflects human internal bodily processes. 
-              The surface is complex paper-based structure with repetitive incisions created by laser cutting. 
-              The rear serves as a medium to transform force from servomotors, vibration motors or fans into an action, 
-              stimulating the patterns on the surface to vibrate, swing, bulge or rotate to display physiological information in dynamic physical form.
+              The surface is a complex paper-based structure with repetitive incisions created by laser cutting. 
+              The rear serves as a medium to transform force from servomotors, vibration motors, or fans into action, 
+              stimulating the patterns on the surface to vibrate, swing, bulge, or rotate to display physiological information in dynamic physical form.
               </ProjectIntroText>
             </Grid>
 
@@ -98,21 +114,35 @@ export const BioMirrorPage = ()=> {
             </Grid>
 
             <Grid item xs={12}>
-            <div style={{textAlign:'center'}}>
-              <img src={biomirror_1_gif}/>
-            </div>
+              <div style={{textAlign:'center'}}>
+                <img src={biomirror_1_gif}/>
+              </div>
+              <FigureText>
+                 The surface ‘dance’ with their heartbeats, <br/> 
+                 a high heart rate leads to a more ‘energetic’ surface with faster and stronger vibration.
+              </FigureText>
             </Grid>
 
             <Grid item xs={12}>
-            <div style={{textAlign:'center'}}>
-              <img src={biomirror_2_gif}/>
-            </div>
+              <div style={{textAlign:'center'}}>
+                <img src={biomirror_2_gif}/>
+              </div>
+              <FigureText>
+              The strip-shaped segments of the surface curves and  bulges  outward when user's breathe-in, <br/> 
+              and the surface become flat again when the user breathe out.
+              </FigureText>
             </Grid>
 
             <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
               <img src={biomirror_3_gif}/>
             </div>
+            <FigureText>
+            The spiral cut patterns do a circular motion around themselves. <br/>
+            A low Heart Rate Variability leads to a fast speed of motion indicating the user is in a  relatively stressful state, <br/>
+            and  a  slow  motion  indicates a relaxing state.
+            </FigureText>
+
             </Grid>
 
             <Grid item xs={12}>
@@ -131,11 +161,15 @@ export const BioMirrorPage = ()=> {
             <div style={{textAlign:'center'}}>
               <img src={biomirror_milan_img} width="77%" />
             </div>
+            <FigureText>
+              BioMirror was installed at the Dutch Invertuals Exhibition at Milan Design Week, Italy, in April 2015. <br/>
+              This allowed us to observe how audiences interact with the surfaces.
+            </FigureText>
             </Grid>
 
 
             <Grid item xs={12}>
-            <ProjectDiscriptionText>
+            <ProjectEndingText>
             <strong className='strongtext'> Credits </strong>: <br/>
               Biomirror is a collaboration with  
               <LinkText href="https://www.alissanienke.nl/"  target="_blank" style={{'text-align': 'center'}}>
@@ -160,24 +194,13 @@ export const BioMirrorPage = ()=> {
               In Proceedings of the 2016 <em className='journalname'> TEI </em>, 2016.
               <br/>
 
-            </ProjectDiscriptionText>
+            </ProjectEndingText>
             </Grid>
-
-
-
-
-
-
-
-
             </Grid>
-
-
-
           </Grid>
           <Grid item xs={3}></Grid>
-         
           </Grid>
+          </motion.div> 
 
     </Mainpage>
     )

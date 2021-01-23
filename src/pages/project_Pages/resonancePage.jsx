@@ -41,10 +41,11 @@ const LinkText = styled.a`
   font-size: 1em;
   padding-left:0.5em;
   padding-right:0.5em;
-  color: #C19936;
+  color: #4C8AC6;
   font-family: 'Nutito-Light';
   &:hover {
-    color:  #7F7F7F;
+    color:#0063b2;
+    font-family: 'Nutito-Regular';
   }
 `;
 
@@ -80,10 +81,10 @@ export const  ResonancePage= ()=> {
             <Grid item xs={12}>
               <ProjectIntroText>
               RESonance is a lightweight, room-scale audio-visual biofeedback system for relaxation training. 
-              RESonance harnesses ambient lights and natural sound to create an immersive environment where users can know about their physiological states and activities in real-time. 
+              RESonance harnesses ambient lights and natural sound to create an immersive environment where users can know about their physiological states in real-time. 
               On the one hand, as a biofeedback interface, RESonance presents heart rate variability (HRV) data to help the users learn and practice self-regulation (i.e., resonance breathing) for relaxation. 
               The design principle of ‘natural coupling’ was employed in interface design to provide a gentle-yet-intuitive representation of biofeedback.  
-              On the other hand, the stimuli of light and soundscape may lead to an enhanced relaxation effect.
+              On the other hand, the stimuli of light and soundscape may lead to an enhanced relaxation effect.  
               </ProjectIntroText>
             </Grid>
 
@@ -109,9 +110,8 @@ export const  ResonancePage= ()=> {
                     
             <Grid item xs={12}>
             <ProjectDiscriptionText>
-            Althrough the new way of working has many advantages, the more intelligent use of time, 
-            space and resources often results in less exercise and more stress.
-            LightSit offers a solution. A cushion fille
+             The heart rate variability (IBI and HRV) data are measured by a PPG sensor on the figner, and applied to control the brightness, color and distribution of 
+             the multiple ambient light sources in the room.
             </ProjectDiscriptionText>
             </Grid>
 
@@ -123,9 +123,10 @@ export const  ResonancePage= ()=> {
 
             <Grid item xs={12}>
             <ProjectDiscriptionText>
-            Althrough the new way of working has many advantages, the more intelligent use of time, 
-            space and resources often results in less exercise and more stress.
-            LightSit offers a solution. A cushion fille
+            As the user breathes in, the brightness is transferred to the center light close to the body. 
+            Conversely, on exhale, and the brightness is transferred to the ambient lights far from the body. 
+            Along with the deep breathing, when the user achieves better relaxation, 
+            the improved HRV will lead the lights to become more saturated blue-green.
             </ProjectDiscriptionText>
             </Grid>
 
@@ -153,6 +154,9 @@ export const  ResonancePage= ()=> {
                     RESonance: Lightweight, room-scale audio-visual biofeedback for immersive relaxation training. 
                     </LinkText>  <em className='journalname'>IEEE Access</em>, 2018
                 </ProjectDiscriptionText>
+                <br/>
+                <br/>
+
               </Grid>
             </Grid>
 
