@@ -1,14 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
-import ReactPlayer from "react-player"
 import NavigationBar from '../../components/navigationBar'
-
-import resonance_img_1 from '../../images/reSonance/resonance_closeUp.JPG'; 
-import resonance_img_2 from '../../images/reSonance/resonance_system.png'; 
-import resonance_img_3 from '../../images/reSonance/resonance_lab.png'; 
-import resonance_img_4 from '../../images/reSonance/resonance_psv_setup.png'; 
-import resonance_img_5 from '../../images/reSonance/resonance_psv.JPG'; 
 
 const Mainpage = styled.div`
 background-color: #F2F2F2;
@@ -89,7 +82,6 @@ export const  TemplateBlogPage= ()=> {
             ....coming soon
               </PostMainText>
             </Grid>
-
 
 
               <Grid item xs={12}>

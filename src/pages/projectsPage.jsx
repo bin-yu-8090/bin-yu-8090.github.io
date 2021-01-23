@@ -12,8 +12,6 @@ import Resonance_IMAGE from '../images/projectCards/resonance_profile.JPG'
 import HeartBloom_IMAGE from '../images/projectCards/heartbloom_profile.png'
 import Placeholder_IMAGE from '../images/projectCards/placeholder.png'
 
-
-
 const Mainpage = styled.div`
   background-color: #282947;
   min-height: 100vh;

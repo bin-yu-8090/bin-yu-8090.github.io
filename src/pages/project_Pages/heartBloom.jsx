@@ -1,10 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
-import { Link } from 'react-router-dom';
 import ReactPlayer from "react-player"
 import NavigationBar from '../../components/navigationBar'
-
 
 import heartbloom_img_1 from '../../images/heartBloom/heartbloom_1.gif'; 
 import heartbloom_img_2 from '../../images/heartBloom/heartbloom_2.gif'; 
@@ -147,8 +145,7 @@ export const HeartBloomPage = ()=> {
               and a service design for sustainable fundraising<JumpLink href="/HeartBloom#2017">(2017)</JumpLink>.           
               </ProjectIntroText>
             </Grid>
-
-    
+   
             <Grid item xs={12}>
             <br/>
             <hr/>

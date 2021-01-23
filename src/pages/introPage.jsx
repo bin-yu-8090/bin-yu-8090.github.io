@@ -29,7 +29,6 @@ const LinkText = styled.a`
 `;
 
 
-
 class IntroPage extends Component {
 
   constructor(props) {
