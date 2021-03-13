@@ -114,6 +114,7 @@ export default function ProjectCard(props) {
               {props.keypwords.map(keyword => 
                 <Chip label={keyword} size="small" style={{'font-size': '0.7em',fontFamily: 'Nutito-Regular', borderRadius: 25,  height:'20px', color:'#d9d9d9', background:'#717288'}}/>)}
              </div>
+             
           </CardContent>
         </div>
         </CardActionArea>

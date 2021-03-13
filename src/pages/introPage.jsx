@@ -49,6 +49,7 @@ class IntroPage extends Component {
    }
   
     render (){
+
     return (  
  
           <Mainpage>
@@ -56,13 +57,13 @@ class IntroPage extends Component {
             <br/>
             <br/>
             <br/>
-
+            
             <motion.div  initial={{ opacity: 0,}} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>  
 
             <Grid container spacing={1}  alignItems="center" justify="center"> 
               <Grid item md={7}>
                 <div>
-                  <canvas id="by_logo_canvas" width={800} height={600}> </canvas>
+                  <canvas id="by_logo_canvas" width={Math.trunc(window.innerWidth/2)} height={Math.trunc(window.innerHeight/2)}> </canvas>
                 </div>
               </Grid>
               <Grid item md={5}>
@@ -101,15 +102,18 @@ var flag=1;
 var count=1000;
 
 function draw() {
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+
 
   var ctx = document.getElementById("by_logo_canvas").getContext('2d');
-  ctx.clearRect(0, 0, 800, 600); // clear canvas
+      ctx.clearRect(0, 0, Math.trunc(width/2), Math.trunc(height/3)); // clear canvas
 
-  var logo_height=Math.floor(window.screen.height/8);
-  var logo_width=Math.floor(window.screen.width/4);
+  var logo_height=Math.floor(window.innerHeight/8);
+  var logo_width=Math.floor(window.innerWidth/4);
   var letter_w=Math.floor(logo_width/5);
-  var lc_x=Math.floor(window.screen.width/10);
-  var lc_y=2*Math.floor(window.screen.height/9);
+  var lc_x=Math.floor(window.innerWidth/10);
+  var lc_y=2*Math.floor(window.innerHeight/9);
 
   var interSpace=Math.floor(letter_w/2);
 
