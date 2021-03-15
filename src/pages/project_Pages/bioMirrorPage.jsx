@@ -77,18 +77,20 @@ export const BioMirrorPage = ()=> {
 
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
           <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
-            {Math.round(size?.width)>426? 
-               <ReactPlayer 
-                    width="100%" 
-                    url="https://vimeo.com/145148275"
-                  />
-                  :
+            <div ref={target}  style={{textAlign:'center'}}>
+            {Math.round(size?.width)>425? 
                   <ReactPlayer 
-                    width="100%" 
-                    height='100%'
-                    url="https://vimeo.com/145148275"
-                  />
-            }
+                        width="100%" 
+                        url="https://vimeo.com/145148275"
+                      />
+                      :
+                      <ReactPlayer 
+                        width="100%" 
+                        height='100%'
+                        url="https://vimeo.com/145148275"
+                      />
+                }
+             </div>
           </Grid>
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
