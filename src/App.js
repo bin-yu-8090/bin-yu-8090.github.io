@@ -12,11 +12,7 @@ import Global from "./style/global";
 import Home from "./pages/Home";
 import ProjectPage from './pages/projectPage'
 
-
-
 function App() {
-
-
     return (
         <>
         <Global />
