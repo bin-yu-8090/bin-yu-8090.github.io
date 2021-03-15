@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
 import NavigationBar from '../../components/navigationBar'
+import useResizeObserver from "@react-hook/resize-observer";
 
 import heartbloom_img_1 from '../../images/heartBloom/heartbloom_1.gif'; 
 import heartbloom_img_2 from '../../images/heartBloom/heartbloom_2.gif'; 
@@ -34,8 +35,24 @@ import heartbloom_img_26 from '../../images/heartBloom/HeartBloom_DDW_10.jpg';
 
 import{Mainpage, ProjectTitle, ProjectSubTitle, ProjectIntroText, LinkText,  ProjectDiscriptionText, ProjectSectionTitle, JumpLink, MultipleImgsFrame, ProjectEndingText} from './styledComponents'
 
+const useSize = (target) => {
+  const [size, setSize] = React.useState();
+
+  React.useLayoutEffect(() => {
+    setSize(target.current.getBoundingClientRect());
+  }, [target]);
+
+  // Where the magic happens
+  useResizeObserver(target, (entry) => setSize(entry.contentRect));
+  return size;
+};
+
 
 export const HeartBloomPage = ()=> { 
+
+  const target = React.useRef(null);
+  const size = useSize(target);
+
    return (     
       <Mainpage>
         <NavigationBar theme={'light'}/>
@@ -96,6 +113,7 @@ export const HeartBloomPage = ()=> {
 
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
           <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+          <div ref={target}  style={{textAlign:'center'}}>
             {Math.round(size?.width)>425? 
                 <ReactPlayer 
                       width="100%" 
@@ -108,6 +126,7 @@ export const HeartBloomPage = ()=> {
                       url="https://vimeo.com/188134735"
                     />
               }
+             </div>
           </Grid>
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 

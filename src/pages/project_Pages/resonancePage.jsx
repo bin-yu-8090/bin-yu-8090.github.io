@@ -2,6 +2,7 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
 import NavigationBar from '../../components/navigationBar'
+import useResizeObserver from "@react-hook/resize-observer";
 
 import resonance_img_1 from '../../images/reSonance/resonance_closeUp.JPG'; 
 import resonance_img_2 from '../../images/reSonance/resonance_system.png'; 
@@ -13,7 +14,24 @@ import resonance_img_5 from '../../images/reSonance/resonance_psv.JPG';
 import{Mainpage, ProjectTitle, ProjectSubTitle, ProjectIntroText, LinkText, ProjectDiscriptionText, ProjectEndingText} from './styledComponents'
 
 
+const useSize = (target) => {
+  const [size, setSize] = React.useState();
+
+  React.useLayoutEffect(() => {
+    setSize(target.current.getBoundingClientRect());
+  }, [target]);
+
+  // Where the magic happens
+  useResizeObserver(target, (entry) => setSize(entry.contentRect));
+  return size;
+};
+
+
 export const  ResonancePage= ()=> { 
+
+  const target = React.useRef(null);
+  const size = useSize(target);
+
    return (     
       <Mainpage>
         <NavigationBar theme={'light'}/>
@@ -56,6 +74,7 @@ export const  ResonancePage= ()=> {
 
           <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
           <Grid item xs={10} sm={8} md={6} lg={6} xl={4}>
+          <div ref={target}  style={{textAlign:'center'}}>
             {Math.round(size?.width)>425? 
                   <ReactPlayer 
                         width="100%" 
@@ -63,11 +82,12 @@ export const  ResonancePage= ()=> {
                       />
                       :
                       <ReactPlayer 
-                      width="100%" 
+                        width="100%" 
                         height='100%'
                         url="https://vimeo.com/265450859"
                       />
                 }
+             </div>
           </Grid>
           <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
 

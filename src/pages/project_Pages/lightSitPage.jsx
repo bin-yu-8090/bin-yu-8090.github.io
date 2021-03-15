@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import ReactPlayer from "react-player"
 import NavigationBar from '../../components/navigationBar'
+import useResizeObserver from "@react-hook/resize-observer";
 
 import lightsit_img_1 from '../../images/lightSit/LightSit_pics-00.jpg'; 
 import lightsit_img_2 from '../../images/lightSit/system.png'; 
@@ -17,8 +18,25 @@ import lightsit_img_8 from '../../images/lightSit/breathing_mode.jpg';
 import{Mainpage, ProjectTitle, ProjectSubTitle, ProjectIntroText, LinkText,  ProjectDiscriptionText, ProjectSectionTitle, JumpLink, MultipleImgsFrame, ProjectEndingText} from './styledComponents'
 
 
+const useSize = (target) => {
+  const [size, setSize] = React.useState();
+
+  React.useLayoutEffect(() => {
+    setSize(target.current.getBoundingClientRect());
+  }, [target]);
+
+  // Where the magic happens
+  useResizeObserver(target, (entry) => setSize(entry.contentRect));
+  return size;
+};
+
+
 
 export const LightSitPage = ()=> { 
+
+  const target = React.useRef(null);
+  const size = useSize(target);
+
    return (     
       <Mainpage>
         <NavigationBar theme={'light'}/>
@@ -64,6 +82,7 @@ export const LightSitPage = ()=> {
 
           <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
           <Grid item xs={10} sm={8} md={6} lg={6} xl={4}>
+          <div ref={target}  style={{textAlign:'center'}}>
            {Math.round(size?.width)>425? 
                   <ReactPlayer 
                         width="100%" 
@@ -76,6 +95,7 @@ export const LightSitPage = ()=> {
                         url="https://vimeo.com/267333802"
                       />
                 }
+            </div>
           </Grid>
           <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
 
