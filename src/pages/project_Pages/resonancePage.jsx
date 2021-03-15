@@ -56,10 +56,18 @@ export const  ResonancePage= ()=> {
 
           <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
           <Grid item xs={10} sm={8} md={6} lg={6} xl={4}>
-            <ReactPlayer style={{margin: '0 auto'}}
+            {Math.round(size?.width)>425? 
+                  <ReactPlayer 
+                        width="100%" 
                         url="https://vimeo.com/265450859"
-                        width="100%"
                       />
+                      :
+                      <ReactPlayer 
+                      width="100%" 
+                        height='100%'
+                        url="https://vimeo.com/265450859"
+                      />
+                }
           </Grid>
           <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
 

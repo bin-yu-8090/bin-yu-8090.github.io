@@ -125,10 +125,19 @@ export const HeartCalligraphyPage = ()=> {
 
           <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
           <Grid item xs={10} sm={8} md={6} lg={6} xl={4}>
-                  <ReactPlayer style={{margin: '0 auto'}}
-                      url="https://vimeo.com/501280561"
-                      width="100%"
-                    />
+
+          {Math.round(size?.width)>425? 
+                  <ReactPlayer 
+                        width="100%" 
+                        url="https://vimeo.com/501280561"
+                      />
+                      :
+                      <ReactPlayer 
+                      width="100%" 
+                        height='100%'
+                        url="https://vimeo.com/501280561"
+                      />
+                }
           </Grid>
           <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
 

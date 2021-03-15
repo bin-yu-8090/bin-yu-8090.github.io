@@ -96,10 +96,18 @@ export const HeartBloomPage = ()=> {
 
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
           <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
-                  <ReactPlayer 
+            {Math.round(size?.width)>425? 
+                <ReactPlayer 
                       width="100%" 
                       url="https://vimeo.com/188134735"
                     />
+                    :
+                    <ReactPlayer 
+                    width="100%" 
+                      height='100%'
+                      url="https://vimeo.com/188134735"
+                    />
+              }
           </Grid>
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
@@ -177,10 +185,18 @@ export const HeartBloomPage = ()=> {
 
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
           <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+            {Math.round(size?.width)>425? 
                   <ReactPlayer 
+                        width="100%" 
+                        url="https://vimeo.com/146027682"
+                      />
+                      :
+                      <ReactPlayer 
                       width="100%" 
-                      url="https://vimeo.com/146027682"
-                    />
+                        height='100%'
+                        url="https://vimeo.com/146027682"
+                      />
+                }
           </Grid>
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
@@ -315,10 +331,18 @@ export const HeartBloomPage = ()=> {
 
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
           <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
-                <ReactPlayer style={{margin: '0 auto'}}
-                  width="100%"
-                    url="https://vimeo.com/188135542"
-                  />
+           {Math.round(size?.width)>425? 
+                  <ReactPlayer 
+                        width="100%" 
+                        url="https://vimeo.com/188135542"
+                      />
+                      :
+                      <ReactPlayer 
+                      width="100%" 
+                        height='100%'
+                        url="https://vimeo.com/188135542"
+                      />
+                }
           </Grid>
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
