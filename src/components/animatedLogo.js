@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+
+// here is the annimated code
 class AnimatedLogo extends Component{
 
   constructor(props) {
