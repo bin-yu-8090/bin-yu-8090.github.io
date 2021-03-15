@@ -11,6 +11,9 @@ const TopNavBar = styled.div`
   font-family: 'Nutito-Bold';
   color: #C6E1EA;
   text-align:right;
+  @media screen and (max-width: 767px) {
+    font-size: 2em;
+  }
 `;
 
 

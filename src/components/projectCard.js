@@ -1,5 +1,5 @@
 import React from 'react'
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -9,27 +9,16 @@ import { Link } from 'react-router-dom';
 import Chip from '@material-ui/core/Chip';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
+
 const theme = createMuiTheme({
   shadows: ["none"],
 });
-
-// const useStyles = makeStyles({
-//   root: {
-//     borderRadius: 0,
-//     maxWidth: 480,
-//     background:'#F5F5F5',
-//   },
-//   media: {
-//     height: 200,
-//   },
-// });
-
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     borderRadius: 0,
-    width: 550,
+    width: props => props.width + 'px',
     background:'#464866',   
     "&:hover  $content": {
       color:'#D9D9D9',
@@ -39,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   actionArea: {
-    display: 'flex',
+    //display: 'flex',
     "&:hover": {
       background:'#282947', //'#374785',  
    }
@@ -51,43 +40,67 @@ const useStyles = makeStyles((theme) => ({
     background:'none', 
   },
   content: {
-    flex: '1 0 auto',
+    //flex: '1 0 auto',
     background:'none', 
-    top:'0px',
-    width: 275,
+    width: props => props.width + 'px',
     color: '#D9D9D9',
   },
   cover: {
-    width: 275,
-    height:275
+    width: props => props.width + 'px',
+    height:props => props.width + 'px',
   },
   focusHighlight:{
   },
-  chipBox: {
-    display: 'flex',
-    justifyContent: 'left',
-    flexWrap: 'wrap',
-    '& > *': {
-      margin: theme.spacing(0.4),
-    },
-  },
+  chip:{
+    backgroundColor:'#717288',
+    borderRadius:20,
+    height:30,
+    color:'#d9d9d9',
+  }
 }));
+
 
 
 const CardTitleText = styled.h2`
   font-size: 1em;
   text-align: left;
   font-family: 'Nutito-Bold';
+  @media screen and (max-width: 767px) {
+    font-size: 3em;
+  }
 `;
 
 const CardContentText = styled.h2`
   font-size: 0.8em;
   text-align: left;
   font-family: 'Nutito-Regular';
+  @media screen and (max-width: 767px) {
+    font-size: 2em;
+  }
 `;
 
+const Keywords= styled.p`
+  font-size: 0.8em;
+  text-align: left;
+  font-family: 'Nutito-Regular';
+  @media screen and (max-width: 767px) {
+    font-size: 2em;
+  }
+`;
+
+const ChipsBox = styled.div`
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align:left;
+  display: 'flex';
+`;
+
+
+
+
 export default function ProjectCard(props) {
-  const classes = useStyles();
+
+  const classes = useStyles(props.style);
 
   return (
     <ThemeProvider theme={theme}>
@@ -108,13 +121,10 @@ export default function ProjectCard(props) {
               {props.name}
             </CardTitleText>
             <CardContentText>
+            <br/>
               {props.description}
-            </CardContentText>
-            <div className={classes.chipBox}>
-              {props.keypwords.map(keyword => 
-                <Chip label={keyword} size="small" style={{'font-size': '0.7em',fontFamily: 'Nutito-Regular', borderRadius: 25,  height:'20px', color:'#d9d9d9', background:'#717288'}}/>)}
-             </div>
-             
+              <br/>
+            </CardContentText>  
           </CardContent>
         </div>
         </CardActionArea>
@@ -148,3 +158,10 @@ export default function ProjectCard(props) {
         </CardActionArea>
       </Link> 
     </Card> */}
+
+
+  //   <ChipsBox >
+  //   {props.keypwords.map(keyword => 
+  //      <Keywords>{keyword}</Keywords>
+  //    )}
+  //  </ChipsBox>

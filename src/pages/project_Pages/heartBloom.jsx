@@ -32,86 +32,7 @@ import heartbloom_img_25 from '../../images/heartBloom/HeartBloom_DDW_9.jpg';
 import heartbloom_img_26 from '../../images/heartBloom/HeartBloom_DDW_10.jpg'; 
 
 
-const Mainpage = styled.div`
-background-color: #F2F2F2;
-min-height: 100vh;
-`;
-
-const ProjectTitle = styled.h1`
-  font-size: 4em;
-  color: #262626;
-  padding-top:1em;
-  text-align: center;
-  font-family: 'Nutito-Regular';
-`;
-
-const ProjectSubTitle = styled.h2`
-  font-size: 1.2em;
-  color:#000000;
-  text-align: center;
-  font-family: 'Nutito-Regular';
-`;
-
-const ProjectSectionTitle = styled.h3`
-  font-size: 1.2em;
-  color:#000000;
-  padding-bottom: 1em;
-  text-align: center;
-  font-family: 'Nutito-Regular';
-`;
-
-
-const ProjectIntroText= styled.p`
-  font-size: 1em;
-  text-align: center;
-  color: #7F7F7F;
-  font-family: 'Nutito-Regular';
-`;
-
-const LinkText = styled.a`
-  font-size: 1em;
-  padding-left:0.5em;
-  padding-right:0.5em;
-  color: #4C8AC6;
-  font-family: 'Nutito-Light';
-  &:hover {
-    color:#0063b2;
-    font-family: 'Nutito-Regular';
-  }
-`;
-
-const JumpLink = styled.a`
-  color: #964F4C;
-  font-family: 'Nutito-Regular';
-  &:hover {
-    color:#567572;
-  }
-`;
-
-const ProjectDiscriptionText= styled.p`
-  font-size: 0.9em;
-  padding-top:5px;
-  padding-bottom:0px;
-  padding-left:5em;
-  padding-right:5em;
-  text-align: center;
-  color: #7F7F7F;
-  font-family: 'Nutito-Regular';
-`;
-
-const MultipleImgsFrame= styled.div`
-  padding-left:6em;
-  padding-right:6em;
-`;
-
-const ProjectEndingText= styled.p`
-  font-size: 0.8em;
-  padding-left:8em;
-  padding-right:5em;
-  text-align: left;
-  color: #807F7F;
-  font-family: 'Nutito-Light';
-`;
+import{Mainpage, ProjectTitle, ProjectSubTitle, ProjectIntroText, LinkText,  ProjectDiscriptionText, ProjectSectionTitle, JumpLink, MultipleImgsFrame, ProjectEndingText} from './styledComponents'
 
 
 export const HeartBloomPage = ()=> { 
@@ -120,40 +41,46 @@ export const HeartBloomPage = ()=> {
         <NavigationBar theme={'light'}/>
 
         <Grid container spacing={2}>
-          <Grid item xs={3}></Grid>
-          <Grid item xs={6}>
-            <Grid container spacing={2}>
-            <Grid item xs={12}>
+
+         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
               <ProjectTitle>
-                HeartBloom
+              HeartBloom
               </ProjectTitle>
-            </Grid>
-            <Grid item xs={12}>
-              <ProjectSubTitle>
-               A flower blooming with each heartbeat
+          </Grid>
+
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={4}>
+             <ProjectSubTitle>
+             A flower blooming with each heartbeat
               </ProjectSubTitle>
-            </Grid>
-            <Grid item xs={12}>
-              <ProjectIntroText>
-              Heart Bloom started with Biofeedback research (2014).
-              It is an exploration of a tangible interface that empowers participants to see, hear and feel the rhythm of their heart. 
-              Also, it is a metaphorical visualization that illustrates the users’ heartbeat into floral graphics, which reflects the natural biorhythm inside the human body.
-              Since 2015, Heart Bloom has been continuing to evolve from 
-              a biofeedback interface,  metaphorical visualization <JumpLink href="/HeartBloom#2014">(2014)</JumpLink> to
-              a live interactive installation <JumpLink href="/HeartBloom#2015">(2015)</JumpLink>,
-              charity activity <JumpLink href="/HeartBloom#2016">(2016)</JumpLink>, 
-              and a service design for sustainable fundraising<JumpLink href="/HeartBloom#2017">(2017)</JumpLink>.           
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
+
+
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={4}>
+            <ProjectIntroText>
+                 Heart Bloom started with Biofeedback research (2014).
+                  It is an exploration of a tangible interface that empowers participants to see, hear and feel the rhythm of their heart. 
+                  Also, it is a metaphorical visualization that illustrates the users’ heartbeat into floral graphics, which reflects the natural biorhythm inside the human body.
+                  Since 2015, Heart Bloom has been continuing to evolve from 
+                  a biofeedback interface,  metaphorical visualization <JumpLink href="/HeartBloom#2014">(2014)</JumpLink> to
+                  a live interactive installation <JumpLink href="/HeartBloom#2015">(2015)</JumpLink>,
+                  charity activity <JumpLink href="/HeartBloom#2016">(2016)</JumpLink>, 
+                  and a service design for sustainable fundraising<JumpLink href="/HeartBloom#2017">(2017)</JumpLink>.     
               </ProjectIntroText>
-            </Grid>
-   
-            <Grid item xs={12}>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
+
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
             <br/>
             <hr/>
             <br/>
-            </Grid>
+          </Grid>
 
-            <Grid item xs={12}>
-              <ProjectSectionTitle>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={4}>
+            <ProjectSectionTitle>
                 <a id="2014">
                    HEART BLOOM as Biofeedback Interface
                 </a>
@@ -164,64 +91,77 @@ export const HeartBloomPage = ()=> {
               With the Biofeedback technique, this naturally changing heartbeat rhythm can be captured and 
               rapidly presented back to us, improving our awareness of physiological conditions and facilitating self-regulations.
               </ProjectDiscriptionText>
-            </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
 
-            <Grid item xs={12}>
-              <div>
-                  <ReactPlayer style={{margin: '0 auto'}}
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+                  <ReactPlayer 
+                      width="100%" 
                       url="https://vimeo.com/188134735"
                     />
-              </div>
-            </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
-            <Grid item xs={12}>
-              <ProjectDiscriptionText>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={4}>
+            <ProjectDiscriptionText>
                 Heart Bloom is a tangible interface, which offers the users a biofeedback experience through mechanical movement, sound, and visualization. 
                 Each heartbeat triggers one movement, creating a line or a dot. The variation of the heart rate is demonstrated by the pen’s behaviour in real time. 
                 The overall heart rate variability is reflected by the visual characteristics of the generated flower drawing on paper. 
               </ProjectDiscriptionText>
-            </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
 
-            <Grid item xs={12}>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={4}>
             <MultipleImgsFrame >
-              <Grid container spacing={1}>
-                <Grid item xs={6}>
-                  <img src={heartbloom_img_1} width='100%' />
-                </Grid>
-                <Grid item xs={6}>
-                  <img src={heartbloom_img_2}  width='100%'/>
-                </Grid>
-                <Grid item xs={6}>
-                  <img src={heartbloom_img_3}  width='100%'/>
-                </Grid>
-                <Grid item xs={6}>
-                  <img src={heartbloom_img_4}  width='100%'/>
-                </Grid>
-              </Grid>            
-            </MultipleImgsFrame>
-            </Grid>
+                  <Grid container spacing={1}>
+                    <Grid item xs={6}>
+                      <img src={heartbloom_img_1} width='100%' />
+                    </Grid>
+                    <Grid item xs={6}>
+                      <img src={heartbloom_img_2}  width='100%'/>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <img src={heartbloom_img_3}  width='100%'/>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <img src={heartbloom_img_4}  width='100%'/>
+                    </Grid>
+                  </Grid>            
+              </MultipleImgsFrame>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
 
-            <Grid item xs={12}>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={4}>
              <div style={{textAlign:'center'}}>
-               <img src={heartbloom_img_5} width='77%'/>
+                <img src={heartbloom_img_5} width='100%'/>
               </div>
-             </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
 
-
-            <Grid item xs={12}>
-            <ProjectDiscriptionText>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={4}>
+           <ProjectDiscriptionText>
               Each Heart Bloom has itself unique pattern based on different physiological and emotional conditions. 
             </ProjectDiscriptionText>
-     
              <div style={{textAlign:'center'}}>
-               <img src={heartbloom_img_6} width='77%'/>
+               <img src={heartbloom_img_6} width='100%'/>
               </div>
-             </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
 
-             <Grid item xs={12}> <br/> <hr/> <br/></Grid>
-            
-            <Grid item xs={12}>
-              <ProjectSectionTitle>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+            <br/>
+            <hr/>
+            <br/>
+          </Grid>
+
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={4}>
+          <ProjectSectionTitle>
                 <a id="2015">
                   HEART BLOOM as a participatory live-art installation
                 </a>
@@ -232,95 +172,122 @@ export const HeartBloomPage = ()=> {
               The installation drew the participant’s heartbeat data into a blooming flower on a postcard which was then mailed to their beloved ones 
               as a special ‘heartful’ greeting, shortening the distance of the heart and heart.
               </ProjectDiscriptionText>
-            </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={4}> </Grid>
 
-            <Grid item xs={12}>
-            <div>
-                  <ReactPlayer style={{margin: '0 auto'}}
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+                  <ReactPlayer 
+                      width="100%" 
                       url="https://vimeo.com/146027682"
                     />
-              </div>
-            </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
-            <Grid item xs={12}>
-              <MultipleImgsFrame >
-                <Grid container spacing={1}>
-                  <Grid item xs={6}>
-                    <img src={heartbloom_img_7} width='100%' />
-                  </Grid>
-                  <Grid item xs={6}>
-                    <img src={heartbloom_img_8}  width='100%'/>
-                  </Grid>
-                  <Grid item xs={6}>
-                    <img src={heartbloom_img_9}  width='100%'/>
-                  </Grid>
-                  <Grid item xs={6}>
-                    <img src={heartbloom_img_10}  width='100%'/>
-                  </Grid>
-                </Grid>            
-              </MultipleImgsFrame>
-            </Grid>
 
-            <Grid item xs={12}> <br/> <hr/> <br/></Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+            <MultipleImgsFrame >
+                  <Grid container spacing={1}>
+                    <Grid item xs={6}>
+                      <img src={heartbloom_img_7} width='100%' />
+                    </Grid>
+                    <Grid item xs={6}>
+                      <img src={heartbloom_img_8}  width='100%'/>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <img src={heartbloom_img_9}  width='100%'/>
+                    </Grid>
+                    <Grid item xs={6}>
+                      <img src={heartbloom_img_10}  width='100%'/>
+                    </Grid>
+                  </Grid>            
+                </MultipleImgsFrame>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
-            <Grid item xs={12}>
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+            <br/>
+            <hr/>
+            <br/>
+          </Grid>
+
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
             <ProjectSectionTitle>
-               <a id="2016">
-                  HEART BLOOM as a charitable initiative 
-               </a>
-              </ProjectSectionTitle>
+                <a id="2016">
+                    HEART BLOOM as a charitable initiative 
+                </a>
+                </ProjectSectionTitle>
 
-            <ProjectDiscriptionText>
-              In 2016, HEART BLOOM served as a charitable initiative that aims to help children with congenital heart disease (CHD).
-              We brought HEART BLOOM to those CHD children to let them play with and create the ‘blooming flowers’ on cards. 
-              The interaction with HEART BLOOM also allows them to see, hear and feel every beat of their heart. 
-              We wanted to create a positive message to those CHD children that everyone is special, and their tender hearts are lovable and also full of power. 
-            </ProjectDiscriptionText>
-            </Grid>
-
-            <Grid item xs={12}>
-              <MultipleImgsFrame >
-                <Grid container spacing={1}>
-                  <Grid item xs={6}>
-                  <img src={heartbloom_img_11} width='100%'/>
-                  </Grid>
-                  <Grid item xs={6}>
-                  <img src={heartbloom_img_12} width='100%'/>
-                  </Grid>
-                  <Grid item xs={6}>
-                  <img src={heartbloom_img_13} width='100%'/>
-                  </Grid>
-                  <Grid item xs={6}>
-                  <img src={heartbloom_img_14} width='100%'/>
-                  </Grid>
-                </Grid>            
-              </MultipleImgsFrame>
-            </Grid>
-
-            <Grid item xs={12}>
-            <div style={{textAlign:'center'}}>
-              <img src={heartbloom_img_15} width='77%'/>
-            </div>
-            </Grid>
-
-
-            <Grid item xs={12}>
               <ProjectDiscriptionText>
+                In 2016, HEART BLOOM served as a charitable initiative that aims to help children with congenital heart disease (CHD).
+                We brought HEART BLOOM to those CHD children to let them play with and create the ‘blooming flowers’ on cards. 
+                The interaction with HEART BLOOM also allows them to see, hear and feel every beat of their heart. 
+                We wanted to create a positive message to those CHD children that everyone is special, and their tender hearts are lovable and also full of power. 
+              </ProjectDiscriptionText>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+            <MultipleImgsFrame >
+                  <Grid container spacing={1}>
+                    <Grid item xs={6}>
+                    <img src={heartbloom_img_11} width='100%'/>
+                    </Grid>
+                    <Grid item xs={6}>
+                    <img src={heartbloom_img_12} width='100%'/>
+                    </Grid>
+                    <Grid item xs={6}>
+                    <img src={heartbloom_img_13} width='100%'/>
+                    </Grid>
+                    <Grid item xs={6}>
+                    <img src={heartbloom_img_14} width='100%'/>
+                    </Grid>
+                  </Grid>            
+              </MultipleImgsFrame>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+            <div style={{textAlign:'center'}}>
+                <img src={heartbloom_img_15} width='100%'/>
+              </div>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+
+
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+            <ProjectDiscriptionText>
                 In Dutch Design Week 2016, the HEART BLOOMs created by CHD children were exhibited as a collective drawing, 
                 which aimed to raise public attention and awareness that the heartbeat of CHD children might be abnormal but inimitably beautiful.
               </ProjectDiscriptionText>
-            </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
-            <Grid item xs={12}>
+
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
             <div style={{textAlign:'center'}}>
-              <img src={heartbloom_img_16} width='77%'/>
+              <img src={heartbloom_img_16} width='100%'/>
             </div>
-            </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
-            <Grid item xs={12}> <br/> <hr/> <br/></Grid>
 
-          <Grid item xs={12}>
-            <ProjectSectionTitle>
+
+          <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+            <br/>
+            <hr/>
+            <br/>
+          </Grid>
+
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+          <ProjectSectionTitle>
               <a id="2017">
                 HEART BLOOM as a charitable fundraising service
               </a>
@@ -342,18 +309,22 @@ export const HeartBloomPage = ()=> {
                 And each order will make a 5-20 euro donation. The creation and updates of the data-artwork form might constantly 
                 engage the participants with the charity service and bring in new donations.
               </ProjectDiscriptionText>
-            </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
-            <Grid item xs={12}>
-            <div>
-                  <ReactPlayer style={{margin: '0 auto'}}
-                      url="https://vimeo.com/188135542"
-                    />
-              </div>
-            </Grid>
 
-            <Grid item xs={12}>
-              <MultipleImgsFrame >
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+                <ReactPlayer style={{margin: '0 auto'}}
+                  width="100%"
+                    url="https://vimeo.com/188135542"
+                  />
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+            <MultipleImgsFrame >
                 <Grid container spacing={1}>
                   <Grid item xs={6}>
                   <img src={heartbloom_img_17} width='100%'/>
@@ -369,11 +340,12 @@ export const HeartBloomPage = ()=> {
                   </Grid>
                 </Grid>            
               </MultipleImgsFrame>
-            </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
-
-            <Grid item xs={12}>
-              <MultipleImgsFrame >
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+          <MultipleImgsFrame >
                 <Grid container spacing={1}>
                   <Grid item xs={6}>
                   <img src={heartbloom_img_21} width='100%'/>
@@ -389,34 +361,41 @@ export const HeartBloomPage = ()=> {
                   </Grid>
                 </Grid>            
               </MultipleImgsFrame>
-            </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
-
-            <Grid item xs={12}>
-            <div style={{textAlign:'center'}}>
-              <img src={heartbloom_img_25} width='77%'/>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+           <div style={{textAlign:'center'}}>
+              <img src={heartbloom_img_25} width='100%'/>
             </div>
-            </Grid>
-            <Grid item xs={12}>
-            <div style={{textAlign:'center'}}>
-              <img src={heartbloom_img_26} width='77%'/>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+
+
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+           <div style={{textAlign:'center'}}>
+              <img src={heartbloom_img_26} width='100%'/>
             </div>
-            </Grid>
+          </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
-
-          <Grid item xs={12}>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+            <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
               <ProjectDiscriptionText>
-                and also an entry to the Dutch Heart Foundation website for online donation. 
-                In this first stage of the project, we designed a data-driven approach that aims to transform a one-time donation into a sustainable fundraising service.
-                As the participant's heartbeat data  was collected in the on-site installation,
-                the participants could use their heartbeat data to create an artwork, like a flower print. 
-                And each order will make a 5-20 euro donation. The creation and updates of the data-artwork form might constantly 
-                engage the participants with the charity service and bring in new donations.
-              </ProjectDiscriptionText>
+                  and also an entry to the Dutch Heart Foundation website for online donation. 
+                  In this first stage of the project, we designed a data-driven approach that aims to transform a one-time donation into a sustainable fundraising service.
+                  As the participant's heartbeat data  was collected in the on-site installation,
+                  the participants could use their heartbeat data to create an artwork, like a flower print. 
+                  And each order will make a 5-20 euro donation. The creation and updates of the data-artwork form might constantly 
+                  engage the participants with the charity service and bring in new donations.
+                </ProjectDiscriptionText>
             </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
 
-
-            <Grid item xs={12}>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+            <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
             <ProjectEndingText>
             <strong className='strongtext'> Credits </strong>: <br/>
               Heart Calligraphy is a collaboration with  
@@ -446,10 +425,9 @@ export const HeartBloomPage = ()=> {
               <br/>      
             </ProjectEndingText>
             </Grid>
-            </Grid>
-          </Grid>
-          <Grid item xs={3}></Grid>
-         
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}> </Grid>
+
+
           </Grid>
 
     </Mainpage>

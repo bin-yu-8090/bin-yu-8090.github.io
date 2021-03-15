@@ -43,8 +43,8 @@ export function PhotographyPage (props){
           <br/>
           <br/>
         </Grid>
-          <Grid item xs={3}></Grid>
-            <Grid item xs={6}>
+        <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
               <div>
                 <Gallery photos={PHOTOES} onClick={openLightbox} />
                 <ModalGateway>
@@ -63,7 +63,7 @@ export function PhotographyPage (props){
                 </ModalGateway>
               </div>
             </Grid>
-            <Grid item xs={3}></Grid>   
+            <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
          </Grid>
       </motion.div> 
     </Mainpage>

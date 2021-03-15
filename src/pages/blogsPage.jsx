@@ -14,18 +14,27 @@ const TitleText = styled.p`
   font-size: 1.2em;
   color: #C6E1EA;
   font-family: 'Nutito-Regular';
+  @media screen and (max-width: 767px) {
+    font-size: 2em;
+  }
 `;
 
 const DateText = styled.p`
   font-size: 0.8em;
   color: #C6E1EA;
   font-family: 'Nutito-Light';
+  @media screen and (max-width: 767px) {
+    font-size: 1.2em;
+  }
 `;
 
 const DetailsText = styled.p`
   font-size: 0.9em;
   color: #C6E1EA;
   font-family: 'Nutito-Light';
+  @media screen and (max-width: 767px) {
+    font-size: 1.5em;
+  }
 `;
 
 
@@ -42,8 +51,8 @@ export const BlogsPage= ()=> {
          exit={{ opacity: 0 }}>  
 
         <Grid container spacing={0}>
-            <Grid item xs={3}></Grid>
-            <Grid item xs={6}>
+           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
+           <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
               <PostCard 
                 title={'Emotional Design for Visualization'}
                 date={'15-Feb-2021'}
@@ -51,7 +60,7 @@ export const BlogsPage= ()=> {
                 linkto={"/Blog-title"}
                 />
             </Grid>
-            <Grid item xs={3}></Grid>
+            <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
 
         </Grid>
       </motion.div>

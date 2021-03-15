@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import NavigationBar from '../components/navigationBar'
 import { motion } from "framer-motion"
+import useResizeObserver from "@react-hook/resize-observer";
 
 import profile_img from '../images/by_profile_photo.png'; // Tell Webpack this JS file uses this image
 
@@ -15,24 +16,37 @@ const TitleText = styled.h2`
   font-size: 1.2em;
   color: #C6E1EA;
   font-family: 'Nutito-Regular';
+
+  @media screen and (max-width: 767px) {
+    font-size: 2em;
+  }
+
 `;
 
 const SectionTitleText= styled.p`
   font-size: 1em;
   color: #C6E1EA;
   font-family: 'Nutito-Bold';
+  @media screen and (max-width: 767px) {
+    font-size: 1.8em;
+  }
 `;
 
 const SubsectionTitleText = styled.p`
   font-size: 0.9em;
   color: #C6E1EA;
   font-family: 'Nutito-Regular';
+  @media screen and (max-width: 767px) {
+    font-size: 1.5em;
+  }
 `;
 
 const DetailsText = styled.p`
-  font-size: 0.9em;
   color: #C6E1EA;
   font-family: 'Nutito-Light';
+  @media screen and (max-width: 767px) {
+    font-size: 1.5em;
+  }
 `;
 
 const LinkPublication = styled.a`
@@ -46,7 +60,25 @@ const LinkPublication = styled.a`
 `;
 
 
+const useSize = (target) => {
+  const [size, setSize] = React.useState();
+
+  React.useLayoutEffect(() => {
+    setSize(target.current.getBoundingClientRect());
+  }, [target]);
+
+  // Where the magic happens
+  useResizeObserver(target, (entry) => setSize(entry.contentRect));
+  return size;
+};
+
+
+
 export const AboutPage = ()=> { 
+
+  const target = React.useRef(null);
+  const size = useSize(target);
+
    return (     
       <Mainpage>
         <NavigationBar theme={'dark'}/>
@@ -60,14 +92,18 @@ export const AboutPage = ()=> {
 
         <Grid container spacing={2}>
 
+
           <Grid item xs={12}>
-            <div style={{textAlign:'center'}}>
-              <img src={profile_img}  height="180"  style={{ marginLeft: '20px', marginRight: '20px'}}/>
+            <div ref={target} style={{textAlign:'center'}}>
+              <img src={profile_img}  height={Math.round(size?.width)> 576? "180": "100"}  style={{ marginLeft: '20px', marginRight: '20px'}}/>
             </div>
           </Grid>
 
+
+
           <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
+            <br/>
             <TitleText>
               Bin YU 
             </TitleText>
@@ -77,8 +113,8 @@ export const AboutPage = ()=> {
             </div>
           </Grid>
 
-          <Grid item xs={3}></Grid>
-          <Grid item xs={6}>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
             <DetailsText>
               I am a Data Designer in Philips Design. Before I studied design, I was a Biomedical Engineer & Researcher. 
               I obtained dual Bachelor degrees in Industrial Design and Biomedical Engineering at Chongqing University (2010). 
@@ -91,10 +127,10 @@ export const AboutPage = ()=> {
 
             </DetailsText>
           </Grid>
-          <Grid item xs={3}></Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
 
-          <Grid item xs={3}></Grid>
-          <Grid item xs={6}>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
            <SectionTitleText>
              Employment
            </SectionTitleText>
@@ -105,10 +141,10 @@ export const AboutPage = ()=> {
               2012.09 - 2013.09,  Research Assistant, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences. <br/>  
             </DetailsText>
           </Grid>
-          <Grid item xs={3}></Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
 
-          <Grid item xs={3}></Grid>
-          <Grid item xs={6}>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
            <SectionTitleText>
              Education
            </SectionTitleText>
@@ -119,10 +155,10 @@ export const AboutPage = ()=> {
                2006.09 - 2010.07 Bachelor Biomedical Engineering, ChongQing Univerity, Chongqing, China. <br/>
             </DetailsText>
           </Grid>
-          <Grid item xs={3}></Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
 
-          <Grid item xs={3}></Grid>
-          <Grid item xs={6}>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
            <SectionTitleText>
              Exhibitions 
            </SectionTitleText>
@@ -138,10 +174,10 @@ export const AboutPage = ()=> {
               "Dialogue“, Dutch  invertuals, SALONE DEL MOBILE MILAN, Milan, Italy, 2015<br/>
             </DetailsText>
           </Grid>
-          <Grid item xs={3}></Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
 
-          <Grid item xs={3}></Grid>
-          <Grid item xs={6}>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
            <SectionTitleText>
              Grants
            </SectionTitleText>
@@ -151,11 +187,10 @@ export const AboutPage = ()=> {
             “Dutch Research for Design”, Design United (4TU federation), 2015<br/>
             </DetailsText>
           </Grid>
-          <Grid item xs={3}></Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
 
-
-         <Grid item xs={3}></Grid>
-          <Grid item xs={6}>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
            <SectionTitleText>
              Publications
            </SectionTitleText>
@@ -391,10 +426,10 @@ export const AboutPage = ()=> {
             </p>
             </DetailsText>
           </Grid>
-          <Grid item xs={3}></Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
 
-          <Grid item xs={3}></Grid>
-          <Grid item xs={6}>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
+          <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
            <SectionTitleText>
              Patents
            </SectionTitleText>
@@ -407,7 +442,7 @@ export const AboutPage = ()=> {
               一种反馈治疗吞咽障碍的装置及设备, 201310317860.3  <br/>
             </DetailsText>
           </Grid>
-          <Grid item xs={3}></Grid>
+          <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
          
           </Grid>
 
