@@ -1,6 +1,8 @@
 
 import styled from 'styled-components'
 
+// add the styledComponent here
+
 export const Mainpage = styled.div`
   background-color: #F2F2F2;
   min-height: 100vh;
