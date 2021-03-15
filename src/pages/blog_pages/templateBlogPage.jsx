@@ -1,56 +1,8 @@
 import React from 'react'
-import styled from 'styled-components'
 import Grid from '@material-ui/core/Grid'
 import NavigationBar from '../../components/navigationBar'
 
-const Mainpage = styled.div`
-background-color: #F2F2F2;
-min-height: 100vh;
-`;
-
-const PostTitle = styled.h1`
-  font-size: 2em;
-  color: #262626;
-  padding-top:1em;
-  text-align: center;
-  font-family: 'Nutito-Regular';
-`;
-
-
-const PostAbstractText= styled.p`
-  font-size: 1em;
-  text-align: left;
-  color: #807F7F;
-  font-family: 'Nutito-Light';
-`;
-
-const PostMainText= styled.p`
-  font-size: 0.8em;
-  text-align: left;
-  color: #807F7F;
-  font-family: 'Nutito-Light';
-`;
-
-const PostSupportText= styled.p`
-  font-size: 0.8em;
-  text-align: left;
-  color: #807F7F;
-  font-family: 'Nutito-Light';
-`;
-
-
-
-
-const LinkText = styled.a`
-  font-size: 1em;
-  padding-left:0.5em;
-  padding-right:0.5em;
-  color: #C19936;
-  font-family: 'Nutito-Light';
-  &:hover {
-    color:  #7F7F7F;
-  }
-`;
+import {Mainpage, PostTitle,PostAbstractText, PostMainText,PostSupportText,LinkText} from './blogPageComponents'
 
 
 export const  TemplateBlogPage= ()=> { 
@@ -82,7 +34,7 @@ export const  TemplateBlogPage= ()=> {
 
             <Grid item xs={12}>
              <PostMainText>
-            ....coming soon
+             coming soon...
               </PostMainText>
             </Grid>
 
@@ -90,10 +42,10 @@ export const  TemplateBlogPage= ()=> {
               <Grid item xs={12}>
                 <PostSupportText>
                   <strong className='strongtext'> ... </strong>: <br/>
-                    Share with Friends
+                  Share
                   <br/>
                   <strong className='strongtext'> ...</strong>: <br/>
-                  Share with Friends
+                  Comment
                 </PostSupportText>
               </Grid>
             </Grid>

@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React  from 'react'
 import styled from "styled-components";
-import px2vw from "../utils/px2vw";
 import { Link } from 'react-router-dom';
+import Grid from '@material-ui/core/Grid'
 
 import NavigationBar from '../components/navigationBar'
 import AnimatedLogo from '../components/animatedLogo'
@@ -30,40 +30,48 @@ const useSize = (target) => {
       return ( 
         <Mainpage>
           <NavigationBar theme={'dark'}/>
-            <Container>
-                <Box ref={target} bgColor={"#282947"}>  
-                  <AnimatedLogo logoSize={{width: Math.round(size?.width), height: Math.round(size?.height)}}/>     
-                </Box>
 
-                <Box bgColor={"#282947"}>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                    <BoxText className="one-second-fadein">Hi, there ! My name is Bin Yu.</BoxText>
-                    <BoxText className="three-second-fadein">I was born in China, and moved to Eindhoven in 2013.</BoxText>
-                    <BoxText className="three-second-fadein">I finished Ph.D on HCI <LinkText href="https://www.researchgate.net/profile/Bin_Yu38"  target="_blank"> Design Research </LinkText> for Biofeedback.</BoxText> 
-                    <BoxText className="five-second-fadein">I am now a Data Designer in
-                        <LinkText href="https://www.philips.com/a-w/about/philips-design.html"  target="_blank"> Philips Design </LinkText>.</BoxText> 
-                    <BoxText className="five-second-fadein">I focus on
+          <Grid container spacing={0}>
+
+            <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+              <div ref={target} style={{
+                paddingLeft: Math.round(size?.width)>425? Math.round(size?.width)/10+'px': '10px',
+                paddingRight: Math.round(size?.width)>425? Math.round(size?.width)/10+'px': '10px'
+                }}
+                >
+                <AnimatedLogo logoSize={{width: Math.round(size?.width), height: Math.round(size?.height)}}/>     
+              </div>
+            
+            </Grid>
+            <Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+              <TextBox>
+                  <HomeText className="one-second-fadein">Hi, there ! My name is Bin Yu.</HomeText>
+                    <HomeText className="three-second-fadein">I was born in China, and moved to Eindhoven in 2013.</HomeText>
+                    <HomeText className="three-second-fadein">I finished Ph.D on HCI <LinkText href="https://www.researchgate.net/profile/Bin_Yu38"  target="_blank"> Design Research </LinkText> for Biofeedback.</HomeText> 
+                    <HomeText className="five-second-fadein">I am now a Data Designer in
+                        <LinkText href="https://www.philips.com/a-w/about/philips-design.html"  target="_blank"> Philips Design </LinkText>.</HomeText> 
+                    <HomeText className="five-second-fadein">I focus on
                       <Link to="/projects"> data-driven design projects</Link>. 
-                    </BoxText> 
-                    <BoxText className="seven-second-fadein"> I write 
+                    </HomeText> 
+                    <HomeText className="seven-second-fadein"> I write 
                         <LinkText href="https://codepen.io/yubin8090/"  target="_blank"> code </LinkText> and
                         <LinkText href="https://medium.com/@binyu_71944" target="_blank"> articles</LinkText>.
-                    </BoxText>
-                    <BoxText className="seven-second-fadein"> I use photos to record every facet of 
+                    </HomeText>
+                    <HomeText className="seven-second-fadein"> I use photos to record every facet of 
                         <LinkText href="https://www.instagram.com/binyu8090/" target="_blank"> life</LinkText>.
-                    </BoxText>
-                    <BoxText className="nine-second-fadein">I have a more detailed 
+                    </HomeText>
+                    <HomeText className="nine-second-fadein">I have a more detailed 
                         <LinkText href="https://www.linkedin.com/in/bin-yu-85935450/" target="_blank"> résumé</LinkText>.
-                    </BoxText>    
-                </Box>
-            </Container>
+                    </HomeText>   
+                </TextBox> 
+            </Grid>
+
+
+  </Grid>
+
         </Mainpage>
       );
 }
-
 
 
 
@@ -76,53 +84,27 @@ const Mainpage = styled.div`
 `;
 
 
-const Container = styled.div`
-  background-color: #282947;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: ${px2vw(32)};
-  max-width: 100%;
-
-  @media (min-width: 1024px) {
-    flex-wrap: nowrap;
+const TextBox=styled.div`
+  padding-top:100px;
+  padding-left:35px;
+  background-color:'red';
+  @media screen and (max-width: 1024px) {
+  padding-top:0px;
+  padding-left:0px;
+  background-color:'red';
   }
+
 `;
 
-const Box = styled.div`
-  display: flex;
-  width: ${px2vw(320, 320)};
-  min-height: ${px2vw(200, 320)};
-  flex-direction: column;
-  padding: ${px2vw(20)};
-  margin: ${px2vw(20)};
-  background-color: ${props => props.bgColor};
-  height: 100%;
-
-  @media (min-width: 768px) {
-    width: ${px2vw(320, 768)};
-    min-height: ${px2vw(200, 768)};
-    height: 100%;
-  }
-
-  @media (min-width: 1024px) {
-    width: ${px2vw(500)};
-    min-height: ${px2vw(500)};
-    height: 100%;
-  }
-`;
-
-const BoxText = styled.p`
-  font-size: 1.5rem;
+const HomeText = styled.p`
+  font-size: 1.2em;
   color: #C6E1EA;
   font-family: 'Nutito-Regular';
-
-  @media (min-width: 1024px) {
-    font-size: 1rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 2em;
+    text-align:center;
   }
 `;
-//  margin-top: ${px2vw(20)};
-
 
 const LinkText = styled.a`
   color: #68CAFA
@@ -130,3 +112,37 @@ const LinkText = styled.a`
     color: #FAE058;
   }
 `;
+
+
+{/*   
+<Container>
+                <Box ref={target} bgColor={"#282947"}>  
+                  <AnimatedLogo logoSize={{width: Math.round(size?.width), height: Math.round(size?.height)}}/>     
+                </Box>
+
+                <Box bgColor={"#282947"}>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                    <HomeText className="one-second-fadein">Hi, there ! My name is Bin Yu.</HomeText>
+                    <HomeText className="three-second-fadein">I was born in China, and moved to Eindhoven in 2013.</HomeText>
+                    <HomeText className="three-second-fadein">I finished Ph.D on HCI <LinkText href="https://www.researchgate.net/profile/Bin_Yu38"  target="_blank"> Design Research </LinkText> for Biofeedback.</HomeText> 
+                    <HomeText className="five-second-fadein">I am now a Data Designer in
+                        <LinkText href="https://www.philips.com/a-w/about/philips-design.html"  target="_blank"> Philips Design </LinkText>.</HomeText> 
+                    <HomeText className="five-second-fadein">I focus on
+                      <Link to="/projects"> data-driven design projects</Link>. 
+                    </HomeText> 
+                    <HomeText className="seven-second-fadein"> I write 
+                        <LinkText href="https://codepen.io/yubin8090/"  target="_blank"> code </LinkText> and
+                        <LinkText href="https://medium.com/@binyu_71944" target="_blank"> articles</LinkText>.
+                    </HomeText>
+                    <HomeText className="seven-second-fadein"> I use photos to record every facet of 
+                        <LinkText href="https://www.instagram.com/binyu8090/" target="_blank"> life</LinkText>.
+                    </HomeText>
+                    <HomeText className="nine-second-fadein">I have a more detailed 
+                        <LinkText href="https://www.linkedin.com/in/bin-yu-85935450/" target="_blank"> résumé</LinkText>.
+                    </HomeText>    
+                </Box>
+            </Container> */}
+                                                       

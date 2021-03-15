@@ -21,7 +21,7 @@ export  const ProjectSubTitle = styled.h2`
   color: #7F7F7F;
   text-align: center;
   font-family: 'Nutito-Regular';
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:768px) {
     font-size: 2em;
   }
 `;
@@ -31,7 +31,7 @@ export  const ProjectIntroText= styled.p`
   text-align: center;
   color: #807F7F;
   font-family: 'Nutito-Regular';
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:768px) {
     font-size: 1.5em;
   }
 `;
@@ -43,14 +43,12 @@ export const ProjectDiscriptionText= styled.p`
   text-align: center;
   color: #7F7F7F;
   font-family: 'Nutito-Regular';
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:768px) {
     font-size: 1.2em;
     padding-left:1em;
     padding-right:1em;
   }
 `;
-
-
 
 export  const ProjectEndingText= styled.p`
   font-size: 0.8em;
@@ -59,7 +57,7 @@ export  const ProjectEndingText= styled.p`
   text-align: left;
   color: #807F7F;
   font-family: 'Nutito-Light';
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:768px) {
     font-size: 1.2em;
   }
 `;
@@ -71,7 +69,7 @@ export  const FigureText= styled.p`
   text-align: center;
   color: #7F7F7F;
   font-family: 'Nutito-Regular';
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:768px) {
     font-size: 1.2em;
   }
 `;
@@ -86,9 +84,6 @@ export  const LinkText = styled.a`
     color:#0063b2;
     font-family: 'Nutito-Regular';
   }
-  @media screen and (max-width: 767px) {
-    font-size: 1.5em;
-  }
 `;
 
 export const ProjectSectionTitle = styled.h3`
@@ -97,7 +92,7 @@ export const ProjectSectionTitle = styled.h3`
   padding-bottom: 1em;
   text-align: center;
   font-family: 'Nutito-Regular';
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:768px) {
     font-size: 2em;
   }
 `;
@@ -115,7 +110,7 @@ export const JumpLink = styled.a`
 export const MultipleImgsFrame= styled.div`
   padding-left:1em;
   padding-right:1em;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width:768px) {
     padding-left:0.5em;
     padding-right:0.5em;
   }

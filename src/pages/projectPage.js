@@ -52,9 +52,9 @@ const PorjectData = [
         keypwords:['Unobtrusive Sensing','Ambient Light','Workplace heath']
     },
     {
-        name:"",
+        name:"Data Vis",
         image:Placeholder_IMAGE,
-        description:"Coming soon...",
+        description:"...",
         linkto:"/",
         keypwords:['Data Visualization']
     }
