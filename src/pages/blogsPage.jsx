@@ -45,10 +45,6 @@ export const BlogsPage= ()=> {
         <br/>
         <br/>
         <br/>
-        <motion.div  
-         initial={{ opacity: 0,}}
-         animate={{ opacity: 1 }}
-         exit={{ opacity: 0 }}>  
 
         <Grid container spacing={0}>
            <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
@@ -63,7 +59,7 @@ export const BlogsPage= ()=> {
             <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
 
         </Grid>
-      </motion.div>
+
     </Mainpage>
     )
  }

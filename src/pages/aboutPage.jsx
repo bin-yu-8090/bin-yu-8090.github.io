@@ -23,7 +23,7 @@ const TitleText = styled.h2`
 
 `;
 
-const SectionTitleText= styled.p`
+const SectionTitleText= styled.text`
   font-size: 1em;
   color: #C6E1EA;
   font-family: 'Nutito-Bold';
@@ -32,7 +32,7 @@ const SectionTitleText= styled.p`
   }
 `;
 
-const SubsectionTitleText = styled.p`
+const SubsectionTitleText = styled.text`
   font-size: 0.9em;
   color: #C6E1EA;
   font-family: 'Nutito-Regular';
@@ -41,7 +41,7 @@ const SubsectionTitleText = styled.p`
   }
 `;
 
-const DetailsText = styled.p`
+const DetailsText = styled.text`
   color: #C6E1EA;
   font-family: 'Nutito-Light';
   @media screen and (max-width: 767px) {
@@ -91,15 +91,11 @@ export const AboutPage = ()=> {
          exit={{ opacity: 0 }}>  
 
         <Grid container spacing={2}>
-
-
           <Grid item xs={12}>
             <div ref={target} style={{textAlign:'center'}}>
               <img src={profile_img}  height={Math.round(size?.width)> 576? "180": "100"}  style={{ marginLeft: '20px', marginRight: '20px'}}/>
             </div>
           </Grid>
-
-
 
           <Grid item xs={12}>
             <div style={{textAlign:'center'}}>
@@ -150,7 +146,7 @@ export const AboutPage = ()=> {
            </SectionTitleText>
             <DetailsText>
                2013.10 - 2017.12 Ph.D. Industrial Design, Eindhoven University of Technology, TU/e. <br/>
-               2010.09 - 2012.08 Master Biomedical Engineering, Eindhoven University of Technology, TU/e. <br/>
+               2010.09 - 2012.08 Master Biomedical Engineering, Northeastern University, Shenyang, China. <br/>
                2008.09 - 2010.07 Bachelor Industrial Design, ChongQing Univerity, Chongqing, China. <br/>
                2006.09 - 2010.07 Bachelor Biomedical Engineering, ChongQing Univerity, Chongqing, China. <br/>
             </DetailsText>
@@ -197,7 +193,15 @@ export const AboutPage = ()=> {
             <SubsectionTitleText>
               - Journals -
             </SubsectionTitleText>
-            <DetailsText>
+            <DetailsText>         
+            <p>
+             <strong className='strongtext'> Yu, B.</strong>, An, P., Hendriks, S., Zhang, N., Feijs, L., Li, M., & Hu, J. (2021).
+              <LinkPublication href="https://www.tandfonline.com/doi/full/10.1080/10447318.2021.1898827"  target="_blank"> 
+              ViBreathe: Heart Rate Variability Enhanced Respiration Training for Workaday Stress Management via an Eyes-free Tangible Interface
+              </LinkPublication>
+              <em className='journalname'>International Journal of Human–Computer Interaction</em>, 2021.
+            </p>
+
             <p>
               Xue, M., Liang, R. H., <strong className='strongtext'> Yu, B.</strong>, Funk, M., Hu, J., & Feijs, L.
               <LinkPublication href="https://ieeexplore.ieee.org/abstract/document/8831373"  target="_blank"> 
