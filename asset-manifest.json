@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.f21693ee.chunk.css",
-    "main.js": "/static/js/main.d0e9cfe5.chunk.js",
-    "main.js.map": "/static/js/main.d0e9cfe5.chunk.js.map",
+    "main.js": "/static/js/main.ce815e74.chunk.js",
+    "main.js.map": "/static/js/main.ce815e74.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4be3c4b9.js",
     "runtime-main.js.map": "/static/js/runtime-main.4be3c4b9.js.map",
     "static/css/2.8d8110cb.chunk.css": "/static/css/2.8d8110cb.chunk.css",
@@ -21,6 +21,7 @@
     "static/media/Biomirror_1_2_small.ca048d8e.gif": "/static/media/Biomirror_1_2_small.ca048d8e.gif",
     "static/media/Biomirror_2_small.d379bcd0.gif": "/static/media/Biomirror_2_small.d379bcd0.gif",
     "static/media/Biomirror_3_small.08c999f8.gif": "/static/media/Biomirror_3_small.08c999f8.gif",
+    "static/media/CV_BY_2021.3bc0ee78.pdf": "/static/media/CV_BY_2021.3bc0ee78.pdf",
     "static/media/HC_1.4d4f2359.jpg": "/static/media/HC_1.4d4f2359.jpg",
     "static/media/HC_2.bfb61319.jpg": "/static/media/HC_2.bfb61319.jpg",
     "static/media/HC_3.6e6e5296.jpg": "/static/media/HC_3.6e6e5296.jpg",
@@ -80,6 +81,6 @@
     "static/css/2.8d8110cb.chunk.css",
     "static/js/2.81a2824a.chunk.js",
     "static/css/main.f21693ee.chunk.css",
-    "static/js/main.d0e9cfe5.chunk.js"
+    "static/js/main.ce815e74.chunk.js"
   ]
 }
