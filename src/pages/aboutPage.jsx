@@ -6,6 +6,7 @@ import { motion } from "framer-motion"
 import useResizeObserver from "@react-hook/resize-observer";
 
 import profile_img from '../images/by_profile_photo.png'; // Tell Webpack this JS file uses this image
+import CvPDF from '../pdf/CV_BY_2021.pdf'
 
 const Mainpage = styled.div`
 background-color: #282947;
@@ -23,7 +24,7 @@ const TitleText = styled.h2`
 
 `;
 
-const SectionTitleText= styled.text`
+const SectionTitleText= styled.p`
   font-size: 1em;
   color: #C6E1EA;
   font-family: 'Nutito-Bold';
@@ -32,16 +33,16 @@ const SectionTitleText= styled.text`
   }
 `;
 
-const SubsectionTitleText = styled.text`
-  font-size: 0.9em;
+const SubsectionTitleText = styled.p`
+  font-size: 1em;
   color: #C6E1EA;
   font-family: 'Nutito-Regular';
   @media screen and (max-width: 767px) {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 `;
 
-const DetailsText = styled.text`
+const DetailsText = styled.p`
   color: #C6E1EA;
   font-family: 'Nutito-Light';
   @media screen and (max-width: 767px) {
@@ -112,16 +113,17 @@ export const AboutPage = ()=> {
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
           <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
             <DetailsText>
-              I am a Data Designer in Philips Design. Before I studied design, I was a Biomedical Engineer & Researcher. 
+              I am a Data Designer at Philips. Before I studied HCI design, I was a Biomedical Engineer & Researcher. 
               I obtained dual Bachelor degrees in Industrial Design and Biomedical Engineering at Chongqing University (2010). 
-              Afterward, I continued my master study at Northeastern University (2012), during which I focused on the design of mobile ECG monitoring application. 
-              In 2012, I went to Shenzhen and worked in Research Center for Neural Engineering, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences. 
-              In this year, my research explored the application of high-density EMG signal for biofeedback rehabilitation.
+              Afterward, I continued my Master study at Northeastern University (2012), during which I focused on the design of mobile ECG monitoring applications. 
+              In 2012, I went to Shenzhen and worked in the Research Center for Neural Engineering, Chinese Academy of Sciences. 
+              In this year, my research explored the visualization of high-density EMG signals for the early detection and rehabilitation of swallowing disorders.
               In 2013, I moved to Eindhoven and started my Ph.D. journey at Industrial Design department, Eindhoven Univerity of Technology.
-              My PhD topic is 'Designing Biofeedback for Stress Management', which lies in the intersection of personalized healthcare, Human-Computer-Interaction and data visualisation. 
-              My current work focuses on Human-Ai Collaboratioin in clinical context and Data Visualization for story-telling and sense-making.
+              My Ph.D. topic is "Designing Biofeedback for Stress Management", which lies in the intersection of personalized healthcare, Human-Computer-Interaction,and data visualization. 
+              My current work focuses on Human-Ai Collaboration in a clinical context and Data Visualization for story-telling and insight generation.
 
             </DetailsText>
+
           </Grid>
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
 
@@ -131,7 +133,7 @@ export const AboutPage = ()=> {
              Employment
            </SectionTitleText>
             <DetailsText>
-              2019.03 - Now,  Data Designer, Philips Design, Royal Philips <br/>
+              2019.03 - Now,  Data Designer, Data-Enabled Design, Philips <br/>
               2018.01 - 2019.02,  Post-Doc Researcher, Industrial Design, Eindhoven University of Technology, TU/e. <br/>
               2013.10 - 2017.12,  Ph.D. Researcher, Industrial Design, Eindhoven University of Technology, TU/e. <br/>
               2012.09 - 2013.09,  Research Assistant, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences. <br/>  
@@ -145,10 +147,10 @@ export const AboutPage = ()=> {
              Education
            </SectionTitleText>
             <DetailsText>
-               2013.10 - 2017.12 Ph.D. Industrial Design, Eindhoven University of Technology, TU/e. <br/>
-               2010.09 - 2012.08 Master Biomedical Engineering, Northeastern University, Shenyang, China. <br/>
-               2008.09 - 2010.07 Bachelor Industrial Design, ChongQing Univerity, Chongqing, China. <br/>
-               2006.09 - 2010.07 Bachelor Biomedical Engineering, ChongQing Univerity, Chongqing, China. <br/>
+               2013.10 - 2017.12 Ph.D., Industrial Design, Eindhoven University of Technology, TU/e. <br/>
+               2010.09 - 2012.08 Master, Biomedical Engineering, Northeastern University, Shenyang, China. <br/>
+               2008.09 - 2010.07 Bachelor, Industrial Design, ChongQing Univerity, Chongqing, China. <br/>
+               2006.09 - 2010.07 Bachelor, Biomedical Engineering, ChongQing Univerity, Chongqing, China. <br/>
             </DetailsText>
           </Grid>
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
@@ -160,6 +162,7 @@ export const AboutPage = ()=> {
            </SectionTitleText>
             <DetailsText>
               "LightSit", Mind the Step, Dutch Design Week, Eindhoven, the Netherlands, 2018 <br/>
+              “Zen-Light", World Industrial Design Conference, Hangzhou, China, 2018 
               "BioFidget", Mind the Step, Dutch Design Week, Eindhoven, the Netherlands, 2018 <br/>
               "Heart Bloom", Mind the Step, Dutch Design Week, Eindhoven, the Netherlands, 2017<br/>
               "Heart Bloom", the WantedDesign, New York Design Week, New York, USA, 2016<br/>
@@ -190,6 +193,19 @@ export const AboutPage = ()=> {
            <SectionTitleText>
              Publications
            </SectionTitleText>
+           <SubsectionTitleText>
+              - Thesis -
+            </SubsectionTitleText>
+            <DetailsText>         
+            <p>
+             <strong className='strongtext'> Yu, B.</strong>(2018).
+              <LinkPublication href="https://pure.tue.nl/ws/files/97242301/20180524_Yu_B.pdf"  target="_blank"> 
+              Designing Biofeedback for Managing Stress
+              </LinkPublication>
+              <em className='journalname'>Technische Universiteit Eindhoven</em>.
+            </p>
+            </DetailsText>   
+
             <SubsectionTitleText>
               - Journals -
             </SubsectionTitleText>
@@ -445,6 +461,12 @@ export const AboutPage = ()=> {
               一种吞咽肌障碍的检测装置及设备, 201310316387.7 <br/>
               一种反馈治疗吞咽障碍的装置及设备, 201310317860.3  <br/>
             </DetailsText>
+
+            <DetailsText>
+            <br/>
+             <a href = {CvPDF} target = "_blank">Download CV</a>
+            </DetailsText>
+
           </Grid>
           <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
          
