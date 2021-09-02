@@ -34,8 +34,8 @@ function App() {
                         <Route path="/LightSit" exact component={LightSitPage}/>
                         <Route path="/Resonance" exact component={ResonancePage}/>
                         <Route path="/HeartBloom" exact component={HeartBloomPage}/> 
-                        <Route path="/HRVisualization" exact component={HRVVisualizationPage} target="_blank"/> 
-                        <Route path="/MetaphoricalVisualization" exact component={MetaphoricalVisualizationPage} target="_blank"/> 
+                        <Route path="/HRVisualization" exact component={HRVVisualizationPage}/> 
+                        <Route path="/MetaphoricalVisualization" exact component={MetaphoricalVisualizationPage}/> 
                         <Route path="/Blog-title" exact component={TemplateBlogPage}/>  
                         <Route path="/FutureBiofeedback" exact component={FutureBiofeedbackBlogPage}/>  
                         
