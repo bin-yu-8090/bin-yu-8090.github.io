@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.4b80dfeb.chunk.css",
-    "main.js": "/static/js/main.4e5634c3.chunk.js",
-    "main.js.map": "/static/js/main.4e5634c3.chunk.js.map",
+    "main.js": "/static/js/main.9804cac0.chunk.js",
+    "main.js.map": "/static/js/main.9804cac0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.54788d7f.js",
     "runtime-main.js.map": "/static/js/runtime-main.54788d7f.js.map",
     "static/css/2.55ad8a16.chunk.css": "/static/css/2.55ad8a16.chunk.css",
@@ -69,6 +69,7 @@
     "static/media/heartbloom_red_flower_drawing.3baf048a.JPG": "/static/media/heartbloom_red_flower_drawing.3baf048a.JPG",
     "static/media/intervention_mode.8f1a0b2d.jpg": "/static/media/intervention_mode.8f1a0b2d.jpg",
     "static/media/lightSit_profile.59823c0c.JPG": "/static/media/lightSit_profile.59823c0c.JPG",
+    "static/media/metaVis_profile.54266c7d.png": "/static/media/metaVis_profile.54266c7d.png",
     "static/media/placeholder.49c4778e.png": "/static/media/placeholder.49c4778e.png",
     "static/media/resonance_closeUp.0553579b.JPG": "/static/media/resonance_closeUp.0553579b.JPG",
     "static/media/resonance_lab.b2d935e2.png": "/static/media/resonance_lab.b2d935e2.png",
@@ -84,6 +85,6 @@
     "static/css/2.55ad8a16.chunk.css",
     "static/js/2.267da346.chunk.js",
     "static/css/main.4b80dfeb.chunk.css",
-    "static/js/main.4e5634c3.chunk.js"
+    "static/js/main.9804cac0.chunk.js"
   ]
 }
