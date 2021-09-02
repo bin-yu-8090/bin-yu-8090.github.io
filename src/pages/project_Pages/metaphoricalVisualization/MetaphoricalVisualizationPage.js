@@ -14,53 +14,22 @@ const questionList=[
 'Sleep well', 'Eat Healthy', 'Good exercise', 'Bound to friends', 'Family time', 'Work-life balance', 'Positive Attitude', 'Low stress', 'Meaning of Life',
 ];
 
-class MetaphoricalVisualizationPage extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-           surveydata: Array(9).fill(0),
-           visMode:'function',
-        }
-          this.clearAnswers=this.clearAnswers.bind(this);
-          this.loadRandomAnswers=this.loadRandomAnswers.bind(this);
-          this.changeVisModetoFunc=this.changeVisModetoFunc.bind(this);
-          this.changeVisModetoMeta=this.changeVisModetoMeta.bind(this);
-      }
+export const MetaphoricalVisualizationPage = ()=> { 
 
-      clearAnswers(){
-        this.setState({surveydata:Array(9).fill(0)});
-       }
+  const [surveydata, setSurveydata] = React.useState(Array(9).fill(0));
+  const [visMode, setvisMode] = React.useState('function');
 
-     loadRandomAnswers(){
+     const loadRandomAnswers= () => {
         const min = Math.ceil(1);
         const max = Math.floor(4);
         var randomarr=Array.from({ 
           length: 9
         }, () => Math.floor(Math.random() * (max - min)) + min); 
-        this.updateSurveyData(randomarr);
+        setSurveydata(randomarr);
       }
 
-      updateSurveyData = (surveyanswers) => {
-        this.setState({
-             surveydata: surveyanswers,
-          });
-       }
 
-       changeVisModetoFunc = () => {
-        this.setState({
-          visMode: 'function',
-        });
-      };
-
-      changeVisModetoMeta = () => {
-        this.setState({
-          visMode: 'emotion',
-        });
-      };
-
-
-  render(){
     return (
     <div>
       
@@ -81,13 +50,14 @@ class MetaphoricalVisualizationPage extends React.Component {
           <Grid item xs={1} sm={2} md={3} lg={2} xl={2}> </Grid>
           <Grid item xs={10} sm={8} md={6} lg={8} xl={8}>
           <div style={{'text-align':'center'}}> 
-           <Button className='buttonStyle' size='tiny' onClick={this.loadRandomAnswers}>Load data</Button>
-           <Button className='buttonStyle'  size='tiny' onClick={this.clearAnswers}> Reset </Button> 
+           <Button className='buttonStyle' size='tiny' onClick={loadRandomAnswers}>Load data</Button>
+           <Button className='buttonStyle'  size='tiny' onClick={()=> setSurveydata(Array(9).fill(0))}> Reset </Button> 
            <Button.Group size='tiny' >
            <Button className='funcButtonStyle' 
-                  onClick ={this.changeVisModetoFunc}>Functional</Button>
+                  onClick={() => setvisMode('function')}>Functional</Button>
            <Button.Or/>
-           <Button className='metaButtonStyle'  onClick ={this.changeVisModetoMeta}>Metaphorical</Button>
+           <Button className='metaButtonStyle'  
+                 onClick={() => setvisMode('emotion')}>Metaphorical</Button>
           </Button.Group>
          </div>
           </Grid>
@@ -96,19 +66,19 @@ class MetaphoricalVisualizationPage extends React.Component {
 
           <Grid item xs={12} sm={12} md={4} lg={4} xl={4}> 
           <div style={{padding:'5%'}}>
-            <PetalFlowerChart data={this.state.surveydata} measureNames={questionList} charttype ={this.state.visMode}/>
+            <PetalFlowerChart data={surveydata} measureNames={questionList} charttype ={visMode}/>
            </div>      
           </Grid>
 
           <Grid item xs={12} sm={12} md={4} lg={4} xl={4}> 
           <div style={{padding:'5%'}}>
-          <CircleFlowerChart data={this.state.surveydata} measureNames={questionList} charttype ={this.state.visMode}/>
+          <CircleFlowerChart data={surveydata} measureNames={questionList} charttype ={visMode}/>
            </div>      
           </Grid>
 
           <Grid item xs={12} sm={12} md={4} lg={4} xl={4}> 
           <div style={{padding:'5%'}}>
-          <PoppyFlowerChart data={this.state.surveydata} measureNames={questionList} charttype ={this.state.visMode}/>
+          <PoppyFlowerChart data={surveydata} measureNames={questionList} charttype ={visMode}/>
            </div>      
           </Grid>
 
@@ -119,8 +89,7 @@ class MetaphoricalVisualizationPage extends React.Component {
 
   );
   }
-    }
+  
 
-export default MetaphoricalVisualizationPage;
 
 

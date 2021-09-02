@@ -17,11 +17,12 @@ import {BlogsPage}from './blogsPage.jsx'
 import {TemplateProjectPage} from './project_Pages/templateProjectPage.jsx'
 import {TemplateBlogPage} from './blog_pages/templateBlogPage.jsx'
 import {FutureBiofeedbackBlogPage} from './blog_pages/blog_FutureBiofeedback.jsx'
-import MetaphoricalVisualizationPage from './project_Pages/metaphoricalVisualization/MetaphoricalVisualizationPage.js'
+import {MetaphoricalVisualizationPage} from './project_Pages/metaphoricalVisualization/MetaphoricalVisualizationPage.js'
 
 
 export {IntroPage,AboutPage, PhotographyPage, BlogsPage,
         BioMirrorPage,HeartCalligraphyPage,LightSitPage,ResonancePage,HeartBloomPage,
-        HRVVisualizationPage, MetaphoricalVisualizationPage,
+        HRVVisualizationPage, 
         TemplateProjectPage, TemplateBlogPage, 
-        FutureBiofeedbackBlogPage}
+        FutureBiofeedbackBlogPage,
+        MetaphoricalVisualizationPage}

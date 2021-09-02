@@ -6,9 +6,10 @@ import {BlogsPage, PhotographyPage, AboutPage,
         BioMirrorPage, HeartCalligraphyPage, LightSitPage, ResonancePage,HeartBloomPage, 
         HRVVisualizationPage, 
         TemplateBlogPage, 
-        FutureBiofeedbackBlogPage} from './pages/index'
+        FutureBiofeedbackBlogPage,
+        MetaphoricalVisualizationPage} from './pages/index'
 
-import MetaphoricalVisualizationPage from './pages/project_Pages/metaphoricalVisualization/MetaphoricalVisualizationPage.js'
+
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './style/custom.css'
