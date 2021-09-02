@@ -38,7 +38,6 @@ function App() {
                         <Route path="/MetaphoricalVisualization" exact component={MetaphoricalVisualizationPage}/> 
                         <Route path="/Blog-title" exact component={TemplateBlogPage}/>  
                         <Route path="/FutureBiofeedback" exact component={FutureBiofeedbackBlogPage}/>  
-                        
                 </Switch>
             </Router>
        </AnimatePresence>

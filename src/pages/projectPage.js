@@ -13,6 +13,7 @@ import LightSit_IMAGE from '../images/projectCards/lightSit_profile.JPG'
 import Resonance_IMAGE from '../images/projectCards/resonance_profile.JPG'
 import HeartBloom_IMAGE from '../images/projectCards/heartbloom_profile.png'
 import Placeholder_IMAGE from '../images/projectCards/placeholder.png'
+import MetaVis_IMAGE from '../images/projectCards/metaVis_profile.png'
 
 
 const PorjectData = [
@@ -57,12 +58,12 @@ const PorjectData = [
         newTab:false
     },
     {
-        name:"Data Vis",
-        image:Placeholder_IMAGE,
-        description:"...",
+        name:"Metaphorical Visualization",
+        image:MetaVis_IMAGE ,
+        description:"Metaphorical visualizations map the characteristics of some well-understood visual images/patterns to the data source, making the visualization more meaningful and understandable.",
         linkto:"/MetaphoricalVisualization",
         keypwords:['Data Visualization'],
-        newTab:true
+        newTab:false
     }
   ];
 
