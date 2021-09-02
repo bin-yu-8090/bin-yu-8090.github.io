@@ -102,10 +102,12 @@ export default function ProjectCard(props) {
 
   const classes = useStyles(props.style);
 
+
   return (
     <ThemeProvider theme={theme}>
     <Card className={classes.root}>
-    <Link to={props.linkto}> 
+  
+    <Link style={{'text-decoration': 'none'}} to={props.linkto} target={props.newTab? "_blank": ''}> 
       <CardActionArea 
          classes={{
           root: classes.actionArea,
@@ -129,6 +131,7 @@ export default function ProjectCard(props) {
         </div>
         </CardActionArea>
       </Link> 
+
    </Card>
  
     </ThemeProvider>

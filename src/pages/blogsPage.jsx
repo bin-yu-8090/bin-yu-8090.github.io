@@ -47,6 +47,21 @@ export const BlogsPage= ()=> {
         <br/>
 
         <Grid container spacing={0}>
+
+                
+        <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
+           <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
+              <PostCard 
+                title={'How I envision Biofeebdack after 6 years research'}
+                date={'15-Feb-2021'}
+                intro={'Seven years ago, I started my Ph.D. research with a question: how to bring biofeedback closer to our everyday life so that we can use it intuitively with comfort. Since then, I have tried to find my answers in the field of Human-Computer Interaction (HCI) and have done a lot of design explorations on biofeedback sensing, display, and user interactions. Although I got some promising findings and design implications, my Ph.D. work might still be a probe into the potential of biofeedback in everyday use. And I see more future explorations are needed from the field of HCI. In this article, I will share my thoughts about future research on Biofeedback.'}
+                linkto={"/FutureBiofeedback"}
+                />
+            </Grid>
+            <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
+
+
+
            <Grid item xs={1} sm={2} md={3} lg={3} xl={3}></Grid>
            <Grid item xs={10} sm={8} md={6} lg={6} xl={6}>
               <PostCard 
@@ -71,7 +86,7 @@ function PostCard(props) {
       <div className='rowC'>
           <div>
             <TitleText>
-                <Link to={props.linkto}>
+                <Link style={{'text-decoration': 'none'}} to={props.linkto}>
                   {props.title}
                 </Link>
                 </TitleText>

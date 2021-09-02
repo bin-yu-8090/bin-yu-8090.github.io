@@ -74,27 +74,39 @@ a {
 
 .navigationBarLink{
   color:#FFFFFF;
+  text-decoration: none;
   padding-right: 15px;
 }
 
 .navigationBarLink:hover{
   color:#68CAFA;
+  text-decoration: none;
 }
 
 
 .navigationBarLink_Light{
   color:#404040;
+  text-decoration: none;
   padding-right: 15px;
 }
 
 .navigationBarLink_Light:hover{
   color:#63BCE5;
+  text-decoration: none;
 }
 
 .rowC{
   display:flex; 
   flex-direction:row;
   padding-top:2em}
+
+.rowCenterButton{
+    display:flex; 
+    flex-direction:row;
+    padding-top:1em;
+    width:100%;
+    background:red}
+  
 
 
   /* Animation Styling  */

@@ -21,42 +21,48 @@ const PorjectData = [
       image:BioMirror_IMAGE,
       description:"In this work, we investigated the interaction between ourselves and the spaces we inhabit, translating internal bodily processes to tactile surfaces.",
       linkto:"/BioMirror",
-      keypwords:['Tangible Interface', 'Shape-changing Interface','HCI','Biofeedback']
+      keypwords:['Tangible Interface', 'Shape-changing Interface','HCI','Biofeedback'],
+      newTab:false
     },
     {
         name:"Heart Calligraphy",
         image:HeartCalligraphy_IMAGE,
         description:"In this work, we explored the role of the body as a channel through which physiology manifests itself as a form of beauty.",
         linkto:"/HeartCalligraphy",
-        keypwords:['Artistic Visualization', 'Live-art Installation','Biofeedback']
+        keypwords:['Artistic Visualization', 'Live-art Installation','Biofeedback'],
+        newTab:false
     },
     {
         name:"Heart Bloom",
         image:HeartBloom_IMAGE,
         description:"In this work, we explored the role of the body as a channel through which physiology manifests itself as a form of beauty.",
         linkto:"/HeartBloom",
-        keypwords:['Metaphorical Visualization','Live-art Installation','Biofeedback','Charity design']
+        keypwords:['Metaphorical Visualization','Live-art Installation','Biofeedback','Charity design'],
+        newTab:false
     },
     {
         name:"RESonance",
         image:Resonance_IMAGE,
         description:"In this work, we investigate a biofeedback environment that enhances the self-awareness and self-regulation of its inhabitant for better health.",
         linkto:"/Resonance",
-        keypwords:['Ambient Interface','Immersive Experience','Biofeedback']
+        keypwords:['Ambient Interface','Immersive Experience','Biofeedback'],
+        newTab:false
     },
     {
         name:"LightSit",
         image:LightSit_IMAGE,
         description:"In this work, we designed a health-promoting system that can easily embed into a workplace to support fitness and relaxation breaks.",
         linkto:"/LightSit",
-        keypwords:['Unobtrusive Sensing','Ambient Light','Workplace heath']
+        keypwords:['Unobtrusive Sensing','Ambient Light','Workplace heath'],
+        newTab:false
     },
     {
         name:"Data Vis",
         image:Placeholder_IMAGE,
         description:"...",
-        linkto:"/",
-        keypwords:['Data Visualization']
+        linkto:"/MetaphoricalVisualization",
+        keypwords:['Data Visualization'],
+        newTab:true
     }
   ];
 
@@ -95,6 +101,7 @@ export default function ProjectPage() {
                         description={project.description}
                         linkto={project.linkto}
                         keypwords={project.keypwords}
+                        newTab={project.newTab}
                         /> 
                     </Box>
                 ))}

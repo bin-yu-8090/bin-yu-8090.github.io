@@ -47,11 +47,11 @@ const useSize = (target) => {
               <TextBox>
                   <HomeText className="one-second-fadein">Hi, there ! My name is Bin Yu.</HomeText>
                     <HomeText className="three-second-fadein">I was born in China, and moved to Eindhoven in 2013.</HomeText>
-                    <HomeText className="three-second-fadein">I finished Ph.D on HCI <LinkText href="https://www.researchgate.net/profile/Bin_Yu38"  target="_blank"> Design Research </LinkText> for Biofeedback.</HomeText> 
+                    <HomeText className="three-second-fadein">I finished Ph.D on HCI <LinkText href="https://www.researchgate.net/profile/Bin_Yu38"  target="_blank"> Research </LinkText> for Biofeedback.</HomeText> 
                     <HomeText className="five-second-fadein">I am now a Data Designer in
                         <LinkText href="https://www.philips.com/a-w/about/philips-design.html"  target="_blank"> Philips Design </LinkText>.</HomeText> 
                     <HomeText className="five-second-fadein">I focus on
-                      <Link to="/projects"> data-driven design projects</Link>. 
+                      <LinkText to="/projects"> Data-driven Design projects</LinkText>. 
                     </HomeText> 
                     <HomeText className="seven-second-fadein"> I write 
                         <LinkText href="https://codepen.io/yubin8090/"  target="_blank"> code </LinkText> and
@@ -107,6 +107,7 @@ const HomeText = styled.p`
 `;
 
 const LinkText = styled.a`
+  text-decoration: none;
   color: #68CAFA
   &:hover {
     color: #FAE058;
@@ -114,35 +115,4 @@ const LinkText = styled.a`
 `;
 
 
-{/*   
-<Container>
-                <Box ref={target} bgColor={"#282947"}>  
-                  <AnimatedLogo logoSize={{width: Math.round(size?.width), height: Math.round(size?.height)}}/>     
-                </Box>
-
-                <Box bgColor={"#282947"}>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                    <HomeText className="one-second-fadein">Hi, there ! My name is Bin Yu.</HomeText>
-                    <HomeText className="three-second-fadein">I was born in China, and moved to Eindhoven in 2013.</HomeText>
-                    <HomeText className="three-second-fadein">I finished Ph.D on HCI <LinkText href="https://www.researchgate.net/profile/Bin_Yu38"  target="_blank"> Design Research </LinkText> for Biofeedback.</HomeText> 
-                    <HomeText className="five-second-fadein">I am now a Data Designer in
-                        <LinkText href="https://www.philips.com/a-w/about/philips-design.html"  target="_blank"> Philips Design </LinkText>.</HomeText> 
-                    <HomeText className="five-second-fadein">I focus on
-                      <Link to="/projects"> data-driven design projects</Link>. 
-                    </HomeText> 
-                    <HomeText className="seven-second-fadein"> I write 
-                        <LinkText href="https://codepen.io/yubin8090/"  target="_blank"> code </LinkText> and
-                        <LinkText href="https://medium.com/@binyu_71944" target="_blank"> articles</LinkText>.
-                    </HomeText>
-                    <HomeText className="seven-second-fadein"> I use photos to record every facet of 
-                        <LinkText href="https://www.instagram.com/binyu8090/" target="_blank"> life</LinkText>.
-                    </HomeText>
-                    <HomeText className="nine-second-fadein">I have a more detailed 
-                        <LinkText href="https://www.linkedin.com/in/bin-yu-85935450/" target="_blank"> résumé</LinkText>.
-                    </HomeText>    
-                </Box>
-            </Container> */}
                                                        

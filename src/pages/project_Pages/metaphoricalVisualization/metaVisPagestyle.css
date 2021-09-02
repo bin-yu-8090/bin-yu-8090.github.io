@@ -1,0 +1,51 @@
+.ui.button.buttonStyle {
+    width: 150px;
+    background-color:#BFBFBF;
+    font-size: 0.8em;
+    color: #262626;
+    text-align: center;
+    font-family: 'Nutito-Regular';
+    margin-right:0.2em;
+  }
+
+  .ui.button.metaButtonStyle {
+    width: 150px;
+    background-color:#BFBFBF;
+    color: #262626;
+    font-family: 'Nutito-Regular';
+  }
+
+  .ui.button.metaButtonStyle:hover{
+    background-color:#eec9c7;
+  }
+
+  .ui.button.metaButtonStyle:active{
+    background-color:#E78E89;
+  }
+
+  .ui.button.metaButtonStyle:focus{
+    background-color:#E78E89;
+  }
+  
+  
+
+
+  .ui.button.funcButtonStyle {
+    width: 150px;
+    background-color:#BFBFBF;
+    color: #262626;
+    font-family: 'Nutito-Regular';
+  }
+
+  .ui.button.funcButtonStyle:focus {
+    background-color:#919FBA;
+  }
+
+  .ui.button.funcButtonStyle:active {
+    background-color:#919FBA;
+  }
+
+  .ui.button.funcButtonStyle:hover{
+    background-color:#b2c2e2;
+  }
+  

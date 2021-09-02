@@ -19,6 +19,18 @@ export const PostTitle = styled.h1`
   }
 `;
 
+export const PostSubTitle = styled.h2`
+  font-size: 1em;
+  color: #262626;
+  padding-top:1em;
+  text-align: left;
+  font-family: 'Nutito-Bold';
+  @media screen and (max-width: 768px) {
+    font-size: 3em;
+  }
+`;
+
+
 
 export const PostAbstractText= styled.p`
   font-size: 1em;
@@ -31,7 +43,7 @@ export const PostAbstractText= styled.p`
 `;
 
 export const PostMainText= styled.p`
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-align: left;
   color: #807F7F;
   font-family: 'Nutito-Light';

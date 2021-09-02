@@ -12,11 +12,16 @@ import {LightSitPage} from './project_Pages/lightSitPage.jsx'
 import {ResonancePage} from './project_Pages/resonancePage.jsx'
 import {HeartBloomPage} from './project_Pages/heartBloom.jsx'
 import {PhotographyPage}from './photographyPage.jsx'
+import {HRVVisualizationPage} from './project_Pages/hrv_VisualizationPage.js'
 import {BlogsPage}from './blogsPage.jsx'
 import {TemplateProjectPage} from './project_Pages/templateProjectPage.jsx'
 import {TemplateBlogPage} from './blog_pages/templateBlogPage.jsx'
+import {FutureBiofeedbackBlogPage} from './blog_pages/blog_FutureBiofeedback.jsx'
+import MetaphoricalVisualizationPage from './project_Pages/metaphoricalVisualization/MetaphoricalVisualizationPage.js'
 
 
 export {IntroPage,AboutPage, PhotographyPage, BlogsPage,
         BioMirrorPage,HeartCalligraphyPage,LightSitPage,ResonancePage,HeartBloomPage,
-        TemplateProjectPage, TemplateBlogPage}
+        HRVVisualizationPage, MetaphoricalVisualizationPage,
+        TemplateProjectPage, TemplateBlogPage, 
+        FutureBiofeedbackBlogPage}

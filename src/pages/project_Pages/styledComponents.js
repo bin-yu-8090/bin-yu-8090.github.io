@@ -16,6 +16,17 @@ export  const ProjectTitle = styled.h1`
   font-family: 'Nutito-Regular';
 `;
 
+export  const ProjectTitleAPP = styled.h1`
+  font-size: 2em;
+  color: #262626;
+  padding-top:1em;
+  text-align: center;
+  font-family: 'Nutito-Regular';
+  @media screen and (max-width:768px) {
+    font-size: 2em;
+  }
+`;
+
 export  const ProjectSubTitle = styled.h2`
   font-size: 1.2em;
   color: #7F7F7F;

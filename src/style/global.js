@@ -5,7 +5,6 @@ import px2vw from "../utils/px2vw";
 
 // Reset some CSS properties 
 // Define our HTML root with font sizes that we will use
-
 // px2vw function converts pixels to viewport width
 
 
