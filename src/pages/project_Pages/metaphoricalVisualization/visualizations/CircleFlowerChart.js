@@ -1,12 +1,9 @@
 import React from 'react';
 import {Radar} from 'react-chartjs-2';
-import Box from '@material-ui/core/Box';
-import {Card, Grid} from '@material-ui/core';
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
+import {Card} from '@material-ui/core';
 
 
-class CircleFlowerChart extends React.Component {
+export default class CircleFlowerChart extends React.Component {
 
     constructor(props){
       super(props)
@@ -404,87 +401,89 @@ class CircleFlowerChart extends React.Component {
       if(this.props.charttype === 'emotion')
       {
         return (
-          <Card style={card_style}>
+          <div style={card_style}>
             <div>
                <h2 style = {h2_style}> EMOTIONAL VISUALIZATION</h2>
             </div>
               <div>
                 <Radar data={this.state.flowerChartdata} options={CircleFlowerOptions} width="600" height="500"/>
               </div>    
-         </Card>
+         </div>
         )
       }
       else if(this.props.charttype === 'function'){
         return(
-          <Card style={card_style}>
+          <div style={card_style}>
             <div>
               <h2 style = {h2_style}>FUNCTIONAL VISUALIZATION</h2>
             </div>
             <div>
               <Radar data={this.state.circleBarChartdata} options={CircleBarChartOptions} width="600" height="500"/>     
             </div>    
-       </Card>
+       </div>
        )        
      }
   }
 }
 
-export default CircleFlowerChart;
+
 
 const CircleFlowerOptions = { 
-  scales: {
-    r: {
-      angleLines: {
-        display:false,
-      },
-      pointLabels: {
-        color: 'gray',
-        font: {
-          size: 12,
-          family: 'Nutito-Regular'
-        },
-      },
-      ticks: {
-        display:false,
-      },
-        suggestedMin: 0,
-        suggestedMax: 15,
-     },
-    },
 
-   plugins: {
-    legend: {
-        display: false,
-      }
-   },
+  scale: {
+    ticks: {  
+      max: 15,
+      min: 0,
+      stepSize: 5,
+      callback: function() {return ""}
+      },
+      pointLabels:{
+        fontSize: 14,
+        fontColor: 'gray',
+        fontFamily:'Nutito-Regular'
+    },
+     
+},
+
+legend:{
+  display: false,
+ },
+ layout: {
+  padding: {
+    left: 15,
+    right:15,
+    top: 15,
+    bottom: 15
+  }
+},
 };
 
 const CircleBarChartOptions = { 
-  scales: {
-    r: {
-      angleLines: {
-        display:false,
-      },
-      pointLabels: {
-        color: 'gray',
-        font: {
-          size: 12,
-          family: 'Nutito-Regular'
-        },
-      },
-      ticks: {
-        display:false,
-      },
-        suggestedMin: 0,
-        suggestedMax: 15,
-     },
-    },
 
-   plugins: {
-    legend: {
-        display: false,
+    scale: {
+      ticks: {  
+        max: 15,
+        min: 0,
+        stepSize: 5,
+        callback: function() {return ""}
+        },
+        pointLabels:{
+          fontSize: 14,
+          fontColor: 'gray',
+          fontFamily:'Nutito-Regular'
+      },
+  },
+    legend:{
+      display: false,
+     },
+     layout: {
+      padding: {
+        left: 15,
+        right:15,
+        top: 15,
+        bottom: 15
       }
-   },
+ },
  
 };
 

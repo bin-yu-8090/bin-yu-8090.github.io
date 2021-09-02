@@ -4,9 +4,6 @@ import { Icon, Button } from 'semantic-ui-react'
 import './metaVisPagestyle.css';
 import 'semantic-ui-css/semantic.min.css'
 
-// import DonutLargeIcon from '@material-ui/icons/DonutLarge';
-// import FilterVintageIcon from '@material-ui/icons/FilterVintage';
-
 import{Mainpage, ProjectTitleAPP, ProjectSubTitle, ProjectIntroText, LinkText,  ProjectDiscriptionText, ProjectSectionTitle, JumpLink, MultipleImgsFrame, ProjectEndingText} from '../styledComponents'
 
 import PoppyFlowerChart from './visualizations/PoppyFlowerChart'
@@ -86,7 +83,7 @@ class MetaphoricalVisualizationPage extends React.Component {
           <div style={{'text-align':'center'}}> 
            <Button className='buttonStyle' size='tiny' onClick={this.loadRandomAnswers}>Load data</Button>
            <Button className='buttonStyle'  size='tiny' onClick={this.clearAnswers}> Reset </Button> 
-           <Button.Group size='tiny'>
+           <Button.Group size='tiny' >
            <Button className='funcButtonStyle' 
                   onClick ={this.changeVisModetoFunc}>Functional</Button>
            <Button.Or/>
@@ -94,6 +91,7 @@ class MetaphoricalVisualizationPage extends React.Component {
           </Button.Group>
          </div>
           </Grid>
+          <Grid item xs={1} sm={2} md={3} lg={2} xl={2}> </Grid>
     
 
           <Grid item xs={12} sm={12} md={4} lg={4} xl={4}> 
@@ -114,11 +112,6 @@ class MetaphoricalVisualizationPage extends React.Component {
            </div>      
           </Grid>
 
-    
-
-
-
-
           </Grid>
           
         </div>
@@ -130,52 +123,4 @@ class MetaphoricalVisualizationPage extends React.Component {
 
 export default MetaphoricalVisualizationPage;
 
-const card_style = {
-  margin:'0.2em',
-  padding:'0.5em',
-  height:'500px',
-  width:'800px',
-  color: '#DDDDDD',
- };
-const headBar_Dark_style = {
-  background:'#454545', // Gray 60,
-  padding: '0.8em',
-  color: '#DDDDDD',
-  fontFamily:'philipsFont_Book',
-  fontSize: '1.1em'
- };
- 
-  const h2_style= {
-    color: '#4d4d4d',
-    'text-align': 'left', 
-    fontFamily:'philipsFont_Book',
-    fontSize: '1em'
-  }
 
-  const h1_style= {
-    color: '#696969',
-    'text-align': 'left', 
-    fontFamily:'philipsFont_Book',
-    fontSize: '1em'
-  }
-
-  const text_style= {
-    padding:'10px',
-    color: '#696969',
-    'text-align': 'left', 
-    fontFamily:'philipsFont_Book',
-    fontSize: '0.9em'
-  }
-
-
-
-  
-                      /* <ToggleButton value="function">
-                       <Icon name='home' size='small' />
-                          <p style={{'margin-top':'0px', 'margin-bottom':'0px', 'margin-left':'5px'}}> Function </p>
-                      </ToggleButton>
-                      <ToggleButton  value="emotion">
-                  
-                        <p style={{'margin-top':'0px', 'margin-bottom':'0px', 'margin-left':'5px'}}> Emotion </p>
-                      </ToggleButton>
-                    </ToggleButtonGroup>  */

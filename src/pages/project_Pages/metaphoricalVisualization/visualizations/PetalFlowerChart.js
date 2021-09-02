@@ -1,14 +1,10 @@
 import React from 'react';
-import {Radar, PolarArea} from 'react-chartjs-2';
+import {Radar, Polar} from 'react-chartjs-2';
+import {Card, } from '@material-ui/core';
 
 
 
-import {Card, Grid} from '@material-ui/core';
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
-
-
-class PetalFlowerChart extends React.Component {
+export default class PetalFlowerChart extends React.Component {
 
   constructor(props){
     super(props)
@@ -212,8 +208,6 @@ class PetalFlowerChart extends React.Component {
   tranformingPolarData(){
    var dataforpolar_ini=this.props.data.map(x=>x+3);
 
-   console.log('dataforpolar_ini', dataforpolar_ini);
-
    var polardata = {
      labels: this.props.measureNames,
      datasets: [
@@ -242,103 +236,90 @@ class PetalFlowerChart extends React.Component {
   }
 
   render() {
-   
+
       if(this.props.charttype === 'emotion')
       {
         return (
-          <Card style={card_style}>
+          <div style={card_style}>
           <div>
             <h2 style = {h2_style}> EMOTIONAL VISUALIZATION </h2>
           </div>
              <div>
                <Radar data={this.state.flowerChartdata} options={flowerChartoptions} width="600" height="500"/>     
              </div>
-             </Card>
+             </div>
         )
       }
       else if (this.props.charttype === 'function'){
         return(
-          <Card style={card_style}>
+          <div style={card_style}>
           <div>
           <h2 style = {h2_style}> FUNCTIONAL VISUALIZATION </h2>
             </div>
             <div>
-            <PolarArea data={this.state.polarChartdata} options={PolarChartoptions} width="600" height="500"/>
+            <Polar data={this.state.polarChartdata} options={PolarChartoptions} width="600" height="500"/>
             </div>
-
-             </Card>
+             </div>
         )
       }
   }
 }
-export default PetalFlowerChart;
+
 
 
 const flowerChartoptions = { 
-  animations: {
-    tension: {
-      duration: 1000,
-      easing: 'linear',
-      from: 1,
-      to: 0,
-      loop: true
-    }
-  },
-  scales: {
-    r: {
-      angleLines: {
-        display:false,
+  scale: {
+    ticks: {  
+      max: 16,
+      min: 0,
+      stepSize: 16,
+      callback: function() {return ""}
       },
-      pointLabels: {
-        display:true,
-        color: 'gray',
-        font: {
-          size: 12,
-          family: 'Nutito-Regular'
-        },
-      },
-      ticks: {
-        display:false,
-      },
-        suggestedMin: 0,
-        suggestedMax: 16,
-     },
+      pointLabels:{
+        fontSize: 14,
+        fontColor: 'gray',
+        fontFamily:'Nutito-Regular'
     },
-
-   plugins: {
-    legend: {
-        display: false,
-      }
-   },
+},
+  layout: {
+    padding: {
+      left: 15,
+      right:15,
+      top: 15,
+      bottom: 15
+    }
+ },
+ legend:{
+  display:false,
+},
 };
 
 const PolarChartoptions = { 
-  scales: {
-    r: {
-      angleLines: {
-        display:false,
-      },
-      pointLabels: {
-        display:true,
-        color: 'gray',
-        font: {
-          size: 12,
-          family: 'Nutito-Regular'
-        },
-      },
-      ticks: {
-        display:false,
-      },
-        suggestedMin: 0,
-        suggestedMax: 7,
-     },
+    legend:{
+      display:false,
     },
-
-   plugins: {
-    legend: {
-        display: false,
+    scale: {
+      ticks: {  
+        max: 7,
+        min: 0,
+        stepSize: 1,
+        callback: function() {return ""}
+        },
+      pointLabels:{
+        display:true,
+        fontSize: 14,
+        fontColor: 'gray',
+        fontFamily:'Nutito-Regular'
+    },
+  },
+    layout: {
+      padding: {
+        left: 15,
+        right:15,
+        top: 15,
+        bottom: 15
       }
-   },
+  },
 };
 
 

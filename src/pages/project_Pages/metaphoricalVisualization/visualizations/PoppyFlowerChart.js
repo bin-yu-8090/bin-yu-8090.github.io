@@ -1,13 +1,9 @@
 import React from 'react';
 import {Radar} from 'react-chartjs-2';
-import Box from '@material-ui/core/Box';
 import {Card} from '@material-ui/core';
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 
-
-class PoppyFlowerChart extends React.Component {
+export default class PoppyFlowerChart extends React.Component {
 
     constructor(props){
       super(props)
@@ -70,7 +66,7 @@ class PoppyFlowerChart extends React.Component {
           label: 'Baseline',
           backgroundColor:'rgba(183, 28, 28, 0.2)',
           borderWidth:0,
-          lineTension: 0.5,
+          lineTension: 0.4,
           pointRadius:0,
           data:[14,14,14,14,14,14,14,14,14]
         },
@@ -129,106 +125,89 @@ class PoppyFlowerChart extends React.Component {
 
     render() {
 
-            if(this.props.charttype == 'emotion')
+            if(this.props.charttype === 'emotion')
             {
               return (
-                <Card style={card_style}>
+                <div style={card_style}>
                 <div>
                    <h2 style = {h2_style}> EMOTIONAL VISUALIZATION</h2>
                 </div>
                 <div>
                    <Radar data={this.state.flowerchartdata} options={flowerChartoptions} width="600" height="500"/>
                 </div>
-                </Card>
+                </div>
               )
             }
-            else if (this.props.charttype == 'function'){
+            else if (this.props.charttype === 'function'){
               return(
-                <Card style={card_style}>
+                <div style={card_style}>
                   <div>
                     <h2 style = {h2_style}> FUNCTIONAL VISUALIZATION</h2>
                   </div>
                 <div>
                    <Radar data={this.state.radarchartdata} options={radarChartoptions} width="600" height="500"/>
                 </div>         
-             </Card>
+             </div>
               )
             }
       }   
     
 }
 
-export default PoppyFlowerChart;
 
 const flowerChartoptions = { 
-  scales: {
-    r: {
-      angleLines: {
-        display:false,
+  scale: {
+    ticks: {  
+      max: 16,
+      min: 0,
+      stepSize: 8,
+      callback: function() {return ""}
       },
-      pointLabels: {
-        color: 'gray',
-        font: {
-          size: 12,
-          family: 'Nutito-Regular'
-        },
-      },
-      ticks: {
-        display:false,
-      },
-        suggestedMin: 0,
-        suggestedMax: 16
-    }
+      pointLabels:{
+        fontSize: 14,
+        fontColor: 'gray',
+        fontFamily:'Nutito-Regular'
     },
-    layout: {
-        padding: {
-        left: 20,
-        right: 20,
-        top: 20,
-        bottom: 10
-      }
-   },
-   plugins: {
-    legend: {
-        display: false,
-      }
-   },
+  },
+  layout: {
+    padding: {
+      left: 15,
+      right:15,
+      top: 15,
+      bottom: 15
+    }
+ },
+ legend:{
+  display: false,
+  }
 };
 
 const radarChartoptions = { 
-    scales: {
-      r: {
-        pointLabels: {
-          color: 'gray',
-          font: {
-            size: 12,
-            family: 'Nutito-Regular'
-          },
+  scale: {
+    ticks: {  
+        max: 7,
+        min: 0,
+        stepSize: 1,
+        callback: function() {return ""}
         },
-        ticks: {
-          display:false,
-        },
-        angleLines: {
-              display: true,
-          },
-        suggestedMin: 0,
-        suggestedMax: 7
-      }
-  },
+        pointLabels:{
+          fontSize: 14,
+          fontColor: 'gray',
+          fontFamily:'Nutito-Regular'
+      },
+   },
+   legend:{
+    display: false,
+   },
     layout: {
-        padding: {
-        left: 20,
-        right: 20,
-        top: 20,
-        bottom: 10
-      }
-   },
-   plugins: {
-    legend: {
-        display: false,
-      }
-   },
-};
+    padding: {
+      left: 15,
+      right:15,
+      top: 15,
+      bottom: 15
+    }
+},
+}
 
 const card_style = {
   margin:'0.2em',
@@ -237,7 +216,7 @@ const card_style = {
   width:'100%',
   color: '#DDDDDD',
  };
- 
+
  const h2_style= {
   color: '#757575',
   'text-align': 'center', 
