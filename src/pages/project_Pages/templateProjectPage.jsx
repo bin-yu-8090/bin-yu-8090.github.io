@@ -26,6 +26,7 @@ const ProjectSubTitle = styled.h2`
   font-family: 'Nutito-Regular';
 `;
 
+
 const ProjectIntroText= styled.p`
   font-size: 1em;
   text-align: center;

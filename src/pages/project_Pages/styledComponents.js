@@ -37,6 +37,17 @@ export  const ProjectSubTitle = styled.h2`
   }
 `;
 
+export const ProjectBoldSectionTitle = styled.h2`
+  font-size: 1em;
+  color: #7F7F7F;
+  text-align: center;
+  font-family: 'Nutito-Bold';
+  @media screen and (max-width:768px) {
+    font-size: 1.5em;
+  }
+`;
+
+
 export  const ProjectIntroText= styled.p`
   font-size: 1em;
   text-align: center;

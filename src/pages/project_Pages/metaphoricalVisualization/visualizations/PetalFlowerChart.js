@@ -241,9 +241,6 @@ export default class PetalFlowerChart extends React.Component {
       {
         return (
           <div style={card_style}>
-          <div>
-            <h2 style = {h2_style}> EMOTIONAL VISUALIZATION </h2>
-          </div>
              <div>
                <Radar data={this.state.flowerChartdata} options={flowerChartoptions} width="600" height="500"/>     
              </div>
@@ -253,9 +250,6 @@ export default class PetalFlowerChart extends React.Component {
       else if (this.props.charttype === 'function'){
         return(
           <div style={card_style}>
-          <div>
-          <h2 style = {h2_style}> FUNCTIONAL VISUALIZATION </h2>
-            </div>
             <div>
             <Polar data={this.state.polarChartdata} options={PolarChartoptions} width="600" height="500"/>
             </div>
@@ -268,6 +262,9 @@ export default class PetalFlowerChart extends React.Component {
 
 
 const flowerChartoptions = { 
+  tooltips:{
+    enabled:false
+  },
   scale: {
     ticks: {  
       max: 16,
@@ -276,7 +273,7 @@ const flowerChartoptions = {
       callback: function() {return ""}
       },
       pointLabels:{
-        fontSize: 14,
+      //  fontSize: 14,
         fontColor: 'gray',
         fontFamily:'Nutito-Regular'
     },
@@ -295,6 +292,9 @@ const flowerChartoptions = {
 };
 
 const PolarChartoptions = { 
+  tooltips:{
+    enabled:false
+  },
     legend:{
       display:false,
     },
@@ -307,7 +307,7 @@ const PolarChartoptions = {
         },
       pointLabels:{
         display:true,
-        fontSize: 14,
+        //fontSize: 14,
         fontColor: 'gray',
         fontFamily:'Nutito-Regular'
     },

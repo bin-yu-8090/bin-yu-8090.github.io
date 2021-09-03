@@ -402,9 +402,6 @@ export default class CircleFlowerChart extends React.Component {
       {
         return (
           <div style={card_style}>
-            <div>
-               <h2 style = {h2_style}> EMOTIONAL VISUALIZATION</h2>
-            </div>
               <div>
                 <Radar data={this.state.flowerChartdata} options={CircleFlowerOptions} width="600" height="500"/>
               </div>    
@@ -414,9 +411,6 @@ export default class CircleFlowerChart extends React.Component {
       else if(this.props.charttype === 'function'){
         return(
           <div style={card_style}>
-            <div>
-              <h2 style = {h2_style}>FUNCTIONAL VISUALIZATION</h2>
-            </div>
             <div>
               <Radar data={this.state.circleBarChartdata} options={CircleBarChartOptions} width="600" height="500"/>     
             </div>    
@@ -429,6 +423,9 @@ export default class CircleFlowerChart extends React.Component {
 
 
 const CircleFlowerOptions = { 
+  tooltips:{
+    enabled:false
+  },
 
   scale: {
     ticks: {  
@@ -438,7 +435,7 @@ const CircleFlowerOptions = {
       callback: function() {return ""}
       },
       pointLabels:{
-        fontSize: 14,
+        //fontSize: 14,
         fontColor: 'gray',
         fontFamily:'Nutito-Regular'
     },
@@ -459,6 +456,9 @@ legend:{
 };
 
 const CircleBarChartOptions = { 
+  tooltips:{
+    enabled:false
+  },
 
     scale: {
       ticks: {  
@@ -468,7 +468,7 @@ const CircleBarChartOptions = {
         callback: function() {return ""}
         },
         pointLabels:{
-          fontSize: 14,
+          //fontSize: 14,
           fontColor: 'gray',
           fontFamily:'Nutito-Regular'
       },

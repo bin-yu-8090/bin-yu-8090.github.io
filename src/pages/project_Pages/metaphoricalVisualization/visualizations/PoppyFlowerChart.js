@@ -128,10 +128,7 @@ export default class PoppyFlowerChart extends React.Component {
             if(this.props.charttype === 'emotion')
             {
               return (
-                <div style={card_style}>
-                <div>
-                   <h2 style = {h2_style}> EMOTIONAL VISUALIZATION</h2>
-                </div>
+                <div style={card_style}> 
                 <div>
                    <Radar data={this.state.flowerchartdata} options={flowerChartoptions} width="600" height="500"/>
                 </div>
@@ -141,9 +138,6 @@ export default class PoppyFlowerChart extends React.Component {
             else if (this.props.charttype === 'function'){
               return(
                 <div style={card_style}>
-                  <div>
-                    <h2 style = {h2_style}> FUNCTIONAL VISUALIZATION</h2>
-                  </div>
                 <div>
                    <Radar data={this.state.radarchartdata} options={radarChartoptions} width="600" height="500"/>
                 </div>         
@@ -156,6 +150,9 @@ export default class PoppyFlowerChart extends React.Component {
 
 
 const flowerChartoptions = { 
+  tooltips:{
+    enabled:false
+  },
   scale: {
     ticks: {  
       max: 16,
@@ -164,7 +161,7 @@ const flowerChartoptions = {
       callback: function() {return ""}
       },
       pointLabels:{
-        fontSize: 14,
+       // fontSize: 14,
         fontColor: 'gray',
         fontFamily:'Nutito-Regular'
     },
@@ -183,6 +180,9 @@ const flowerChartoptions = {
 };
 
 const radarChartoptions = { 
+  tooltips:{
+    enabled:false
+  },
   scale: {
     ticks: {  
         max: 7,
@@ -191,7 +191,7 @@ const radarChartoptions = {
         callback: function() {return ""}
         },
         pointLabels:{
-          fontSize: 14,
+         // fontSize: 14,
           fontColor: 'gray',
           fontFamily:'Nutito-Regular'
       },
@@ -217,10 +217,3 @@ const card_style = {
   color: '#DDDDDD',
  };
 
- const h2_style= {
-  color: '#757575',
-  'text-align': 'center', 
-  fontFamily:'Nutito-Regular',
-  padding:'5px',
-  fontSize: '0.8em'
-}
