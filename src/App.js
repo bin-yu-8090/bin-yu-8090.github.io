@@ -1,5 +1,5 @@
 import React from 'react'
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import {HashRouter, Route, Switch} from 'react-router-dom'
 import { AnimatePresence } from "framer-motion";
 
 import {BlogsPage, PhotographyPage, AboutPage, 
@@ -22,24 +22,24 @@ function App() {
         <>
         <Global />
         <AnimatePresence>
-            <Router>
+        <HashRouter>
                 <Switch>
-                        <Route path="/bin-yu-8090.github.io" exact component={Home}/>
-                        <Route path="/bin-yu-8090.github.io/about" exact component={AboutPage}/>
-                        <Route path="/bin-yu-8090.github.io/photography" exact component={PhotographyPage}/>
-                        <Route path="/bin-yu-8090.github.io/projects" exact component={ProjectPage}/>         
-                        <Route path="/bin-yu-8090.github.io/blogs" exact component={BlogsPage}/>
-                        <Route path="/bin-yu-8090.github.io/BioMirror" exact component={BioMirrorPage}/>
-                        <Route path="/bin-yu-8090.github.io/HeartCalligraphy" exact component={HeartCalligraphyPage}/>
-                        <Route path="/bin-yu-8090.github.io/LightSit" exact component={LightSitPage}/>
-                        <Route path="/bin-yu-8090.github.io/Resonance" exact component={ResonancePage}/>
-                        <Route path="/bin-yu-8090.github.io/HeartBloom" exact component={HeartBloomPage}/> 
-                        <Route path="/bin-yu-8090.github.io/HRVVisualization" exact component={HRVVisualizationPage}/> 
-                        <Route path="/bin-yu-8090.github.io/MetaphoricalVisualization" exact component={MetaphoricalVisualizationPage}/> 
-                        <Route path="/bin-yu-8090.github.io/Blog-title" exact component={TemplateBlogPage}/>  
-                        <Route path="/bin-yu-8090.github.io/FutureBiofeedback" exact component={FutureBiofeedbackBlogPage}/>  
+                        <Route path="/" exact component={Home}/>
+                        <Route path="/about" exact component={AboutPage}/>
+                        <Route path="/photography" exact component={PhotographyPage}/>
+                        <Route path="/projects" exact component={ProjectPage}/>         
+                        <Route path="/blogs" exact component={BlogsPage}/>
+                        <Route path="/BioMirror" exact component={BioMirrorPage}/>
+                        <Route path="/HeartCalligraphy" exact component={HeartCalligraphyPage}/>
+                        <Route path="/LightSit" exact component={LightSitPage}/>
+                        <Route path="/Resonance" exact component={ResonancePage}/>
+                        <Route path="/HeartBloom" exact component={HeartBloomPage}/> 
+                        <Route path="/HRVVisualization" exact component={HRVVisualizationPage}/> 
+                        <Route path="/MetaphoricalVisualization" exact component={MetaphoricalVisualizationPage}/> 
+                        <Route path="/Blog-title" exact component={TemplateBlogPage}/>  
+                        <Route path="/FutureBiofeedback" exact component={FutureBiofeedbackBlogPage}/>  
                 </Switch>
-            </Router>
+         </HashRouter>
        </AnimatePresence>
        </>
     )
