@@ -64,7 +64,15 @@ const PorjectData = [
         linkto:"/MetaphoricalVisualization",
         keypwords:['Data Visualization'],
         newTab:false
-    }
+    }, 
+    {
+      name:"InnerScape",
+      image:Placeholder_IMAGE,
+      description:"how to visualize physiological data into an artwork",
+      linkto:"/HRVVisualization",
+      keypwords:['Data Visualization'],
+      newTab:false
+   }
   ];
 
   const useSize = (target) => {

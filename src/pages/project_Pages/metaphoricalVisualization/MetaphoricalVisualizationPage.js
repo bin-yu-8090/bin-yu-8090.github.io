@@ -86,10 +86,10 @@ export const MetaphoricalVisualizationPage = ()=> {
            <Button className='buttonStyle' size='tiny' onClick={loadRandomAnswers}>Load data</Button>
            <Button className='buttonStyle'  size='tiny' onClick={()=> setSurveydata(Array(9).fill(0))}> Reset </Button> 
            <Button.Group size='tiny' >
-           <Button className='funcButtonStyle' 
+           <Button size='tiny' className='funcButtonStyle' 
                   onClick={() => setvisMode('function')}>Functional</Button>
-           <Button.Or/>
-           <Button className='metaButtonStyle'  
+           <Button.Or />
+           <Button size='tiny' className='metaButtonStyle'  
                  onClick={() => setvisMode('emotion')}>Metaphorical</Button>
           </Button.Group>
          </div>
